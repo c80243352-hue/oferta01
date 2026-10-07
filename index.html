@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -18,715 +21,471 @@ src="https://www.facebook.com/tr?id=1981315135910431&ev=PageView&noscript=1"
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#059669">
-<meta name="description" content="Protocolo Ciclo Circadiano — método de 7 noites para reorganizar o fechamento do dia. Sem dieta maluca. Sem suplemento.">
-<title>Protocolo Ciclo Circadiano — 7 Noites Pra Reorganizar o Ciclo</title>
+<meta name="description" content="Protocolo Ciclo Circadiano — 7 noites para regular o ritmo do sono. Mais disposição, sem pílulas.">
+<title>Protocolo Ciclo Circadiano — Recupere sua disposição</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg: #F5F5F5;
-  --bg-2: #FFFFFF;
-  --bg-soft: #E8F5EF;
-  --line: rgba(11, 61, 46, 0.08);
-  --line-green: rgba(5, 150, 105, 0.28);
-  --green: #059669;
-  --green-strong: #10B981;
-  --green-dark: #047857;
-  --green-glow: rgba(16, 185, 129, 0.35);
-  --ink: #0C1F17;
-  --dim: #3D5249;
-  --faint: #7A9088;
-  --rose: #DC2626;
-  --serif: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  --shadow-sm: 0 1px 3px rgba(11, 61, 46, 0.04);
-  --shadow: 0 4px 24px -6px rgba(11, 61, 46, 0.1);
-  --shadow-lg: 0 12px 40px -8px rgba(11, 61, 46, 0.14);
-  --shadow-xl: 0 20px 56px -12px rgba(5, 150, 105, 0.22);
-  --radius: 16px;
-  --radius-sm: 12px;
-  --ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --duration: 0.35s;
-  --safe-bottom: env(safe-area-inset-bottom, 0px);
+:root{
+  --bg:#F4F6F5;--bg2:#fff;--soft:#E8F5EF;--line:rgba(11,61,46,.08);--lineG:rgba(5,150,105,.28);
+  --g:#059669;--gs:#10B981;--gd:#047857;--glow:rgba(16,185,129,.35);
+  --ink:#0C1F17;--dim:#3D5249;--faint:#7A9088;--rose:#DC2626;
+  --serif:'Plus Jakarta Sans',system-ui,sans-serif;--sans:Inter,system-ui,-apple-system,sans-serif;
+  --r:16px;--rs:12px;--ease:cubic-bezier(.22,1,.36,1);--safe:env(safe-area-inset-bottom,0px);
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
-body {
-  background: var(--bg); color: var(--ink); font-family: var(--sans);
-  font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; overflow-x: hidden; text-rendering: optimizeLegibility;
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button,a.btn{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px}
+.wrapw{max-width:900px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--serif);font-weight:800;line-height:1.28;letter-spacing:-.02em;color:var(--ink);text-wrap:balance}
+h1{font-size:clamp(1.48rem,4.6vw,2.3rem)}
+h2{font-size:clamp(1.25rem,3.5vw,1.8rem);margin-bottom:12px}
+h3{font-size:1.05rem}
+p{color:var(--dim);font-size:1.05rem;margin-bottom:.95rem;max-width:54ch}
+.lede{font-size:clamp(1rem,2.3vw,1.12rem);color:var(--dim);line-height:1.65}
+.center{text-align:center}
+.center h2,.center p,.center .lede{margin-left:auto;margin-right:auto}
+.bgw{background:var(--bg2)}
+section{padding:48px 0}
+@media(min-width:768px){section{padding:64px 0}}
+.hl{color:var(--gd);font-weight:700;background:linear-gradient(180deg,transparent 62%,rgba(16,185,129,.2) 62%);padding:0 2px;border-radius:2px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;width:100%;max-width:440px;
+  background:linear-gradient(165deg,var(--gs) 0%,var(--g) 45%,var(--gd) 100%);
+  color:#fff;font-weight:800;font-size:clamp(.95rem,2.3vw,1.08rem);padding:18px 22px;border-radius:14px;border:0;cursor:pointer;
+  box-shadow:0 8px 28px -4px var(--glow);text-align:center;letter-spacing:.01em;
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease);
 }
-img, svg { display: block; max-width: 100%; }
-a { color: inherit; text-decoration: none; }
-button, a.btn { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
-.wrap { max-width: 620px; margin: 0 auto; padding: 0 20px; }
-.wrap-w { max-width: 900px; margin: 0 auto; padding: 0 20px; }
-h1,h2,h3 { font-family: var(--serif); font-weight: 800; line-height: 1.25; letter-spacing: -0.03em; color: var(--ink); text-wrap: balance; }
-h1 { font-size: clamp(1.55rem, 5vw, 2.45rem); }
-h2 { font-size: clamp(1.3rem, 3.8vw, 1.9rem); margin-bottom: 12px; }
-h3 { font-size: 1.05rem; }
-p { color: var(--dim); font-size: 1rem; margin-bottom: 0.95rem; max-width: 54ch; text-wrap: pretty; }
-.lede { font-size: clamp(0.95rem, 2.4vw, 1.1rem); color: var(--dim); line-height: 1.65; }
-.center { text-align: center; }
-.center h2, .center p, .center .lede { margin-left: auto; margin-right: auto; }
-.bg-w { background: var(--bg-2); }
-section { padding: 52px 0; content-visibility: auto; contain-intrinsic-size: auto 600px; }
-@media (min-width: 768px) { section { padding: 72px 0; } }
-.hl { color: var(--green-dark); font-weight: 700; background: linear-gradient(180deg, transparent 62%, rgba(16,185,129,0.2) 62%); padding: 0 2px; border-radius: 2px; }
-.hl-ink { color: var(--ink); font-weight: 700; }
-.btn {
-  display: inline-flex; align-items: center; justify-content: center; width: 100%; max-width: 420px;
-  background: linear-gradient(165deg, var(--green-strong) 0%, var(--green) 45%, var(--green-dark) 100%);
-  color: #fff; font-weight: 800; font-size: clamp(0.92rem, 2.4vw, 1.05rem); padding: 18px 24px; border-radius: 14px; border: none; cursor: pointer;
-  box-shadow: 0 8px 28px -4px var(--green-glow), 0 1px 0 rgba(255,255,255,0.18) inset;
-  transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease), filter var(--duration) var(--ease);
-  text-align: center; letter-spacing: 0.01em; position: relative; overflow: hidden; isolation: isolate;
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 36px -4px rgba(5,150,105,.48)}
+.btn:active{transform:scale(.98)}
+.btn-pulse{animation:bp 2.6s ease-in-out infinite}
+@keyframes bp{0%,100%{box-shadow:0 8px 28px -4px var(--glow)}50%{box-shadow:0 8px 42px -2px rgba(16,185,129,.55)}}
+.cta{display:flex;flex-direction:column;align-items:center;gap:10px}
+.micro{font-size:.8rem;color:var(--faint);font-weight:500;text-align:center}
+.hero{
+  text-align:center;padding:32px 0 44px;
+  background:radial-gradient(ellipse 80% 50% at 50% -10%,rgba(16,185,129,.11),transparent 60%),linear-gradient(180deg,#fff,var(--bg));
 }
-.btn::after { content: ''; position: absolute; inset: 0; background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.12) 50%, transparent 60%); transform: translateX(-120%); transition: transform 0.6s var(--ease); pointer-events: none; }
-.btn:hover { transform: translateY(-3px) scale(1.012); box-shadow: 0 14px 36px -4px rgba(5,150,105,0.48), 0 1px 0 rgba(255,255,255,0.18) inset; filter: brightness(1.03); }
-.btn:hover::after { transform: translateX(120%); }
-.btn:active { transform: translateY(0) scale(0.985); filter: brightness(0.97); }
-.btn:focus-visible { outline: 3px solid var(--green-strong); outline-offset: 3px; }
-.btn-pulse { animation: btnPulse 2.6s ease-in-out infinite; }
-@keyframes btnPulse { 0%,100% { box-shadow: 0 8px 28px -4px var(--green-glow), 0 1px 0 rgba(255,255,255,0.18) inset; } 50% { box-shadow: 0 8px 42px -2px rgba(16,185,129,0.55), 0 1px 0 rgba(255,255,255,0.18) inset; } }
-.cta { display: flex; flex-direction: column; align-items: center; gap: 10px; }
-.micro { font-size: 0.76rem; color: var(--faint); font-weight: 500; text-align: center; }
-.hero { text-align: center; padding: 40px 0 52px; background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(16,185,129,0.11) 0%, transparent 60%), linear-gradient(180deg, #fff 0%, var(--bg) 100%); position: relative; }
-.badge { display: inline-flex; align-items: center; gap: 7px; font-size: 0.68rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--green-dark); background: var(--bg-soft); border: 1px solid var(--line-green); padding: 7px 14px; border-radius: 100px; margin-bottom: 18px; animation: fadeUp 0.55s var(--ease-out) both; backdrop-filter: blur(8px); }
-.badge i { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 3px rgba(16,185,129,0.25); animation: blink 1.6s infinite; }
-@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.28} }
-.hero h1 { max-width: 18ch; margin: 0 auto 16px; animation: fadeUp 0.55s 0.07s var(--ease-out) both; }
-.hero .lede { max-width: 42ch; margin: 0 auto 28px; animation: fadeUp 0.55s 0.14s var(--ease-out) both; }
-
-@keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
-.story p { font-size: 1.05rem; line-height: 1.8; }
-.story strong { color: var(--ink); font-weight: 700; }
-.punch { font-family: var(--serif); font-weight: 800; font-size: clamp(1.15rem, 3vw, 1.4rem); color: var(--ink); line-height: 1.35; max-width: 34ch; margin: 24px 0; text-wrap: balance; }
-.g2 { display: grid; grid-template-columns: 1fr; gap: 12px; }
-@media (min-width: 600px) { .g2 { grid-template-columns: 1fr 1fr; gap: 14px; } }
-.card { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 18px; box-shadow: var(--shadow-sm); transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease), border-color var(--duration) var(--ease); position: relative; overflow: hidden; will-change: transform; }
-.card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--green-strong), var(--green-dark)); opacity: 0; transition: opacity var(--duration) var(--ease); }
-.card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: var(--line-green); }
-.card:hover::before { opacity: 1; }
-.card h3 { margin-bottom: 6px; font-size: 1rem; }
-.card p { margin: 0; font-size: 0.9rem; }
-.fluxo { display: flex; flex-direction: column; align-items: center; max-width: 280px; margin: 28px auto 0; }
-.fi { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 12px 16px; font-size: 0.9rem; font-weight: 600; text-align: center; width: 100%; transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease); }
-.fi:hover { transform: scale(1.035); box-shadow: var(--shadow); }
-.fi.hot { background: linear-gradient(165deg, #fff 0%, var(--bg-soft) 100%); border: 1.5px solid var(--line-green); color: var(--green-dark); box-shadow: 0 4px 16px -4px var(--green-glow); }
-.fa { color: var(--green); font-weight: 800; padding: 3px 0; font-size: 1.15rem; line-height: 1; }
-.solucao-box { background: linear-gradient(165deg, #fff 0%, var(--bg-soft) 100%); border: 1.5px solid var(--line-green); border-radius: var(--radius); padding: 28px 22px; box-shadow: var(--shadow-lg); max-width: 540px; margin: 0 auto; position: relative; }
-.solucao-box::after { content: ''; position: absolute; inset: -1px; border-radius: inherit; background: linear-gradient(135deg, rgba(16,185,129,0.15), transparent 40%, transparent 60%, rgba(5,150,105,0.1)); pointer-events: none; z-index: 0; }
-.solucao-box > * { position: relative; z-index: 1; }
-.solucao-box h3 { font-size: clamp(1.1rem, 2.8vw, 1.3rem); margin-bottom: 14px; color: var(--green-dark); }
-.solucao-box p { max-width: none; font-size: 0.98rem; }
-.solucao-box ul { list-style: none; display: grid; gap: 11px; margin-top: 16px; }
-.solucao-box li { display: flex; gap: 10px; align-items: flex-start; font-size: 0.95rem; color: var(--ink); font-weight: 500; }
-.solucao-box li::before { content: '→'; color: var(--green); font-weight: 800; flex-shrink: 0; margin-top: 1px; }
-.pilares { display: grid; grid-template-columns: 1fr; gap: 12px; }
-@media (min-width: 700px) { .pilares { grid-template-columns: 1fr 1fr; } }
-@media (min-width: 900px) { .pilares { grid-template-columns: repeat(5, 1fr); } }
-.pilar { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 14px; transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease), border-color var(--duration) var(--ease); will-change: transform; }
-.pilar:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--line-green); }
-.pilar .n { font-family: var(--serif); font-size: 1.4rem; color: var(--green); font-weight: 800; margin-bottom: 6px; line-height: 1; font-variant-numeric: tabular-nums; }
-.pilar h3 { font-size: 0.95rem; margin-bottom: 5px; }
-.pilar p { margin: 0; font-size: 0.84rem; }
-.ng { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-@media (min-width: 560px) { .ng { grid-template-columns: repeat(4, 1fr); } }
-@media (min-width: 860px) { .ng { grid-template-columns: repeat(7, 1fr); } }
-.nt { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 14px 8px; text-align: center; transition: transform 0.28s var(--ease), box-shadow 0.28s var(--ease), border-color 0.28s var(--ease), background 0.28s var(--ease); will-change: transform; }
-.nt:hover { transform: translateY(-4px) scale(1.04); box-shadow: var(--shadow); border-color: var(--line-green); background: linear-gradient(180deg, #fff, var(--bg-soft)); }
-.nt .n { font-family: var(--serif); font-size: 1.3rem; color: var(--green); font-weight: 800; font-variant-numeric: tabular-nums; }
-.nt h3 { font-size: 0.76rem; margin-top: 4px; }
-.nt p { font-size: 0.68rem; color: var(--faint); margin: 2px 0 0; }
-.compare { display: grid; grid-template-columns: 1fr; gap: 12px; max-width: 560px; margin: 0 auto; text-align: left; }
-@media (min-width: 560px) { .compare { grid-template-columns: 1fr 1fr; gap: 14px; } }
-.compare-box { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 16px; box-shadow: var(--shadow-sm); transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease); }
-.compare-box:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
-.compare-box.depois { border-color: var(--line-green); background: linear-gradient(165deg, #fff 0%, var(--bg-soft) 100%); }
-.compare-box h3 { font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 12px; color: var(--faint); }
-.compare-box.depois h3 { color: var(--green-dark); }
-.compare-box ul { list-style: none; display: grid; gap: 10px; }
-.compare-box li { font-size: 0.9rem; color: var(--ink); font-weight: 500; line-height: 1.45; padding-left: 14px; position: relative; }
-.compare-box li::before { content: '·'; position: absolute; left: 0; color: var(--faint); font-weight: 800; }
-.compare-box.depois li::before { color: var(--green); content: '→'; }
-.cl { list-style: none; display: grid; gap: 10px; max-width: 480px; margin: 0 auto; }
-.cl li { display: flex; gap: 12px; align-items: flex-start; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 14px 16px; font-size: 0.94rem; font-weight: 500; color: var(--ink); transition: transform 0.28s var(--ease), box-shadow 0.28s var(--ease), border-color 0.28s var(--ease); }
-.cl li:hover { transform: translateX(5px); box-shadow: var(--shadow); border-color: var(--line-green); }
-.cl li::before { content: '✓'; color: #fff; background: var(--green); font-weight: 800; flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.72rem; margin-top: 1px; box-shadow: 0 2px 6px -1px var(--green-glow); }
-.stack { display: grid; gap: 8px; max-width: 480px; margin: 0 auto; }
-.si { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 13px 15px; font-size: 0.9rem; transition: transform 0.22s var(--ease), box-shadow 0.22s var(--ease); }
-.si:hover { transform: scale(1.012); box-shadow: var(--shadow-sm); }
-.si .nm { font-weight: 500; color: var(--ink); text-align: left; }
-.si .nm small { display: block; color: var(--faint); font-size: 0.74rem; font-weight: 400; margin-top: 2px; line-height: 1.4; }
-.si .pr { font-weight: 600; color: var(--dim); white-space: nowrap; padding-top: 2px; font-variant-numeric: tabular-nums; }
-.si.main { background: #fff; border: 2px solid var(--green); box-shadow: 0 6px 20px -4px var(--green-glow); padding: 16px 15px; }
-.si.main .nm { font-weight: 700; font-size: 0.95rem; }
-.si.main .pr { color: var(--ink); font-weight: 700; font-size: 1rem; }
-.si.main .badge-main { display: inline-block; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: #fff; background: linear-gradient(135deg, var(--green-strong), var(--green-dark)); padding: 3px 9px; border-radius: 5px; margin-bottom: 6px; }
-.si.bn { border-color: var(--line-green); background: linear-gradient(180deg, #fff, var(--bg-soft)); }
-.si.bn .pr { color: var(--green-dark); }
-.si.bn .badge-bn { display: inline-block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; color: var(--green-dark); background: rgba(16,185,129,0.15); padding: 2px 7px; border-radius: 4px; margin-bottom: 5px; }
-.si.tot { border: none; background: none; font-family: var(--serif); font-weight: 800; font-size: 1.05rem; padding: 10px 2px 0; }
-.si.tot:hover { transform: none; box-shadow: none; }
-.si.tot .pr { text-decoration: line-through; color: var(--faint); font-weight: 500; }
-.offer-box { background: var(--bg-2); border: 2px solid var(--green); border-radius: var(--radius); padding: 28px 20px 32px; box-shadow: var(--shadow-xl); max-width: 480px; margin: 0 auto; position: relative; }
-.offer-box::before { content: ''; position: absolute; top: -1px; left: 20%; right: 20%; height: 3px; background: linear-gradient(90deg, transparent, var(--green-strong), transparent); border-radius: 0 0 4px 4px; }
-.tag { display: inline-block; background: linear-gradient(135deg, var(--green-strong), var(--green-dark)); color: #fff; font-size: 0.68rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; padding: 6px 12px; border-radius: 6px; margin-bottom: 12px; }
-.price-block { text-align: center; margin: 18px 0 6px; }
-.price-block .de { font-size: 0.95rem; color: var(--faint); text-decoration: line-through; }
-.price-block .amt { font-family: var(--serif); font-size: clamp(2.8rem, 9vw, 3.7rem); color: var(--green-dark); font-weight: 800; line-height: 1; display: block; margin: 4px 0; text-shadow: 0 2px 12px rgba(5,150,105,0.15); font-variant-numeric: tabular-nums; }
-.price-block .amt sup { font-size: .38em; top: -.85em; margin-right: 2px; }
-.price-block .parc { font-size: 0.95rem; font-weight: 600; color: var(--ink); }
-.price-block .term { font-size: 0.78rem; color: var(--faint); margin-top: 3px; }
-.urg { display: flex; align-items: center; justify-content: center; gap: 6px; background: linear-gradient(135deg, #FEF2F2, #FFF1F2); border: 1px solid rgba(220,38,38,0.2); border-radius: var(--radius-sm); padding: 12px 14px; margin: 16px 0 18px; font-size: 0.9rem; color: var(--dim); font-weight: 500; }
-.urg .tm { font-weight: 800; color: var(--rose); font-variant-numeric: tabular-nums; font-size: 1.12rem; animation: urgPulse 1.5s ease-in-out infinite; min-width: 3.2em; text-align: center; }
-@keyframes urgPulse { 0%,100% { opacity: 1; } 50% { opacity: 0.65; } }
-.gar { display: flex; gap: 12px; align-items: flex-start; background: var(--bg-soft); border: 1px solid var(--line-green); border-radius: var(--radius-sm); padding: 15px; margin-bottom: 20px; text-align: left; }
-.gar svg { width: 24px; height: 24px; stroke: var(--green); fill: none; stroke-width: 1.5; flex-shrink: 0; margin-top: 1px; }
-.gar h3 { font-size: 0.95rem; margin-bottom: 2px; }
-.gar p { margin: 0; font-size: 0.86rem; }
-.resumo { max-width: 480px; margin: 16px auto 0; background: linear-gradient(165deg, #fff 0%, var(--bg-soft) 100%); border: 1.5px solid var(--line-green); border-radius: 14px; padding: 18px 18px 16px; box-shadow: var(--shadow); text-align: left; }
-.resumo-label { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--green-dark); margin: 0 0 8px; }
-.resumo-texto { font-size: 0.95rem; color: var(--ink); line-height: 1.55; margin: 0 0 12px; max-width: none; }
-.resumo-texto strong { color: var(--green-dark); font-weight: 700; }
-.resumo-fecho { font-size: 0.82rem; color: var(--dim); margin: 0; padding-top: 12px; border-top: 1px dashed var(--line); max-width: none; }
-.resumo-fecho strong { color: var(--green-dark); font-weight: 800; }
-.faq { display: grid; gap: 8px; }
-details { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-sm); transition: border-color 0.22s var(--ease), box-shadow 0.22s var(--ease); }
-details[open] { border-color: var(--line-green); box-shadow: var(--shadow); }
-summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 10px; font-family: var(--serif); font-size: 0.95rem; font-weight: 700; padding: 14px 16px; color: var(--ink); user-select: none; }
-summary::-webkit-details-marker { display: none; }
-summary:focus-visible { outline: 2px solid var(--green-strong); outline-offset: -2px; border-radius: var(--radius-sm); }
-summary .pl { width: 22px; height: 22px; position: relative; flex-shrink: 0; background: var(--bg-soft); border-radius: 6px; transition: background 0.22s var(--ease); }
-details[open] summary .pl { background: rgba(16,185,129,0.2); }
-summary .pl::before, summary .pl::after { content: ''; position: absolute; background: var(--green); top: 50%; left: 50%; transform: translate(-50%,-50%); }
-summary .pl::before { width: 11px; height: 2px; }
-summary .pl::after { width: 2px; height: 11px; transition: transform 0.28s var(--ease); }
-details[open] summary .pl::after { transform: translate(-50%,-50%) rotate(90deg); }
-details p { margin: 0; padding: 0 16px 14px; font-size: 0.9rem; animation: faqOpen 0.3s var(--ease-out); }
-@keyframes faqOpen { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
-.final { text-align: center; background: radial-gradient(ellipse 70% 60% at 50% 100%, rgba(16,185,129,0.06) 0%, transparent 70%), var(--bg-2); }
-.final h2 { max-width: 16ch; margin: 0 auto 10px; }
-.final .ft { font-size: 1.05rem; color: var(--dim); max-width: 34ch; margin: 0 auto 24px; line-height: 1.6; }
-footer { padding: 36px 0 calc(36px + var(--safe-bottom)); text-align: center; border-top: 1px solid var(--line); }
-footer p { font-size: 0.73rem; color: var(--faint); max-width: 520px; margin: 0 auto 5px; }
-.reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out); }
-.reveal.visible { opacity: 1; transform: translateY(0); }
-::selection { background: rgba(16,185,129,0.25); color: var(--ink); }
-:focus-visible { outline: 2px solid var(--green-strong); outline-offset: 2px; }
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
-  .reveal { opacity: 1; transform: none; }
-  html { scroll-behavior: auto; }
-  }
-@media print {
-  .btn-pulse { animation: none !important; }
-  body { background: #fff; color: #000; }
-  .offer-box { border-color: #000; box-shadow: none; }
+.hero h1{max-width:20ch;margin:0 auto 14px}
+.hero .lede{max-width:44ch;margin:0 auto 20px}
+.story p{font-size:1.08rem;line-height:1.8}
+.story strong{color:var(--ink);font-weight:700}
+.punch{font-family:var(--serif);font-weight:800;font-size:clamp(1.12rem,2.8vw,1.35rem);color:var(--ink);line-height:1.35;max-width:36ch;margin:22px 0}
+.g2{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:600px){.g2{grid-template-columns:1fr 1fr}}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:18px 16px;text-align:left;box-shadow:0 1px 3px rgba(11,61,46,.04)}
+.card h3{margin-bottom:6px;font-size:1.02rem}
+.card p{margin:0;font-size:.95rem}
+.fluxo{display:flex;flex-direction:column;align-items:center;max-width:300px;margin:24px auto 0}
+.fi{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rs);padding:12px 14px;font-size:.95rem;font-weight:600;text-align:center;width:100%}
+.fi.hot{background:linear-gradient(165deg,#fff,var(--soft));border:1.5px solid var(--lineG);color:var(--gd)}
+.fa{color:var(--g);font-weight:800;padding:3px 0;font-size:1.1rem}
+.sbox{background:linear-gradient(165deg,#fff,var(--soft));border:1.5px solid var(--lineG);border-radius:var(--r);padding:26px 20px;box-shadow:0 12px 40px -8px rgba(11,61,46,.14);max-width:540px;margin:0 auto;text-align:left}
+.sbox h3{font-size:clamp(1.08rem,2.6vw,1.25rem);margin-bottom:12px;color:var(--gd)}
+.sbox p{max-width:none}
+.sbox ul{list-style:none;display:grid;gap:11px;margin-top:14px}
+.sbox li{display:flex;gap:10px;font-size:1rem;color:var(--ink);font-weight:500}
+.sbox li::before{content:'→';color:var(--g);font-weight:800;flex-shrink:0}
+.pilares{display:grid;grid-template-columns:1fr;gap:12px;text-align:left}
+@media(min-width:700px){.pilares{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.pilares{grid-template-columns:repeat(5,1fr)}}
+.pilar{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:16px 14px}
+.pilar .n{font-family:var(--serif);font-size:1.3rem;color:var(--g);font-weight:800;margin-bottom:5px}
+.pilar h3{font-size:.95rem;margin-bottom:4px}
+.pilar p{margin:0;font-size:.88rem}
+.ng{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(min-width:560px){.ng{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:860px){.ng{grid-template-columns:repeat(7,1fr)}}
+.nt{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rs);padding:12px 8px;text-align:center}
+.nt .n{font-family:var(--serif);font-size:1.25rem;color:var(--g);font-weight:800}
+.nt h3{font-size:.76rem;margin-top:3px}
+.nt p{font-size:.68rem;color:var(--faint);margin:2px 0 0}
+.compare{display:grid;grid-template-columns:1fr;gap:12px;max-width:560px;margin:0 auto;text-align:left}
+@media(min-width:560px){.compare{grid-template-columns:1fr 1fr}}
+.cbox{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.cbox.ok{border-color:var(--lineG);background:linear-gradient(165deg,#fff,var(--soft))}
+.cbox h3{font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;margin-bottom:10px;color:var(--faint)}
+.cbox.ok h3{color:var(--gd)}
+.cbox ul{list-style:none;display:grid;gap:9px}
+.cbox li{font-size:.95rem;color:var(--ink);font-weight:500;padding-left:14px;position:relative}
+.cbox li::before{content:'·';position:absolute;left:0;color:var(--faint);font-weight:800}
+.cbox.ok li::before{content:'→';color:var(--g)}
+.cl{list-style:none;display:grid;gap:10px;max-width:500px;margin:0 auto;text-align:left}
+.cl li{display:flex;gap:12px;align-items:flex-start;background:var(--bg2);border:1px solid var(--line);border-radius:var(--rs);padding:14px 15px;font-size:.98rem;font-weight:500;color:var(--ink)}
+.cl li::before{content:'✓';color:#fff;background:var(--g);font-weight:800;flex-shrink:0;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.72rem;margin-top:2px}
+.provas{display:grid;gap:12px;max-width:560px;margin:0 auto;text-align:left}
+.prova{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.stars{color:#F59E0B;font-size:.9rem;letter-spacing:.08em;margin-bottom:8px}
+.prova p{margin:0 0 12px;font-size:.98rem;color:var(--ink);max-width:none;line-height:1.55}
+.pmeta{display:flex;align-items:center;gap:10px}
+.pav{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--soft),#d1fae5);color:var(--gd);font-weight:800;font-size:.82rem;display:flex;align-items:center;justify-content:center;border:1px solid var(--lineG)}
+.pnome{font-size:.92rem;font-weight:700}
+.ptag{font-size:.78rem;color:var(--faint)}
+.stack{display:grid;gap:8px;max-width:480px;margin:0 auto}
+.si{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;background:var(--bg2);border:1px solid var(--line);border-radius:var(--rs);padding:13px 14px;font-size:.92rem}
+.si .nm{font-weight:500;color:var(--ink);text-align:left}
+.si .nm small{display:block;color:var(--faint);font-size:.78rem;font-weight:400;margin-top:3px;line-height:1.4}
+.si .pr{font-weight:600;color:var(--dim);white-space:nowrap;padding-top:2px}
+.si.main{background:#fff;border:2px solid var(--g);box-shadow:0 6px 20px -4px var(--glow);padding:15px}
+.si.main .nm{font-weight:700}
+.si.main .pr{color:var(--ink);font-weight:700}
+.badge-m{display:inline-block;font-size:.65rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,var(--gs),var(--gd));padding:3px 8px;border-radius:5px;margin-bottom:5px}
+.si.bn{border-color:var(--lineG);background:linear-gradient(180deg,#fff,var(--soft))}
+.si.bn .pr{color:var(--gd)}
+.badge-b{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:var(--gd);background:rgba(16,185,129,.15);padding:2px 7px;border-radius:4px;margin-bottom:4px}
+.si.tot{border:0;background:none;font-family:var(--serif);font-weight:800;font-size:1.05rem;padding:8px 2px 0}
+.si.tot .pr{text-decoration:line-through;color:var(--faint);font-weight:500}
+.offer{background:var(--bg2);border:2px solid var(--g);border-radius:var(--r);padding:26px 18px 30px;box-shadow:0 20px 56px -12px rgba(5,150,105,.22);max-width:480px;margin:0 auto}
+.tag{display:inline-block;background:linear-gradient(135deg,var(--gs),var(--gd));color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:6px 11px;border-radius:6px;margin-bottom:10px}
+.price{text-align:center;margin:16px 0 4px}
+.price .de{font-size:1rem;color:var(--faint);text-decoration:line-through}
+.price .amt{font-family:var(--serif);font-size:clamp(2.7rem,8.5vw,3.5rem);color:var(--gd);font-weight:800;line-height:1;display:block;margin:4px 0}
+.price .amt sup{font-size:.38em;top:-.85em;margin-right:2px}
+.price .parc{font-size:1rem;font-weight:600;color:var(--ink)}
+.price .term{font-size:.82rem;color:var(--faint);margin-top:3px}
+.urg{display:flex;align-items:center;justify-content:center;gap:6px;background:linear-gradient(135deg,#FEF2F2,#FFF1F2);border:1px solid rgba(220,38,38,.2);border-radius:var(--rs);padding:12px;margin:14px 0 16px;font-size:.95rem;color:var(--dim);font-weight:500}
+.urg .tm{font-weight:800;color:var(--rose);font-size:1.15rem;min-width:3.2em;text-align:center}
+.gar{display:flex;gap:12px;align-items:flex-start;background:var(--soft);border:1px solid var(--lineG);border-radius:var(--rs);padding:14px;margin-bottom:18px;text-align:left}
+.gar svg{width:24px;height:24px;stroke:var(--g);fill:none;stroke-width:1.5;flex-shrink:0;margin-top:2px}
+.gar h3{font-size:.98rem;margin-bottom:2px}
+.gar p{margin:0;font-size:.9rem}
+.resumo{max-width:480px;margin:14px auto 0;background:linear-gradient(165deg,#fff,var(--soft));border:1.5px solid var(--lineG);border-radius:14px;padding:16px;text-align:left}
+.resumo-l{font-size:.75rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--gd);margin:0 0 8px}
+.resumo-t{font-size:1rem;color:var(--ink);line-height:1.55;margin:0 0 12px;max-width:none}
+.resumo-t strong{color:var(--gd)}
+.resumo-f{font-size:.85rem;color:var(--dim);margin:0;padding-top:12px;border-top:1px dashed var(--line);max-width:none}
+.resumo-f strong{color:var(--gd);font-weight:800}
+.faq{display:grid;gap:8px}
+details{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rs)}
+details[open]{border-color:var(--lineG);box-shadow:0 4px 24px -6px rgba(11,61,46,.1)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;font-family:var(--serif);font-size:1rem;font-weight:700;padding:14px 15px;color:var(--ink);user-select:none}
+summary::-webkit-details-marker{display:none}
+summary .pl{width:22px;height:22px;position:relative;flex-shrink:0;background:var(--soft);border-radius:6px}
+summary .pl::before,summary .pl::after{content:'';position:absolute;background:var(--g);top:50%;left:50%;transform:translate(-50%,-50%)}
+summary .pl::before{width:11px;height:2px}
+summary .pl::after{width:2px;height:11px;transition:transform .28s var(--ease)}
+details[open] summary .pl::after{transform:translate(-50%,-50%) rotate(90deg)}
+details p{margin:0;padding:0 15px 14px;font-size:.95rem}
+.final{text-align:center;background:radial-gradient(ellipse 70% 60% at 50% 100%,rgba(16,185,129,.06),transparent 70%),var(--bg2)}
+.final h2{max-width:18ch;margin:0 auto 10px}
+.final .ft{font-size:1.08rem;color:var(--dim);max-width:36ch;margin:0 auto 22px}
+footer{padding:32px 0 calc(32px + var(--safe));text-align:center;border-top:1px solid var(--line)}
+footer p{font-size:.75rem;color:var(--faint);max-width:520px;margin:0 auto 5px}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
+.reveal.on{opacity:1;transform:none}
+.vsl{
+  width:calc(100% - 16px);max-width:380px;margin:10px auto 0;background:var(--bg2);border:1.5px solid var(--lineG);
+  border-radius:16px;box-shadow:0 12px 40px -10px rgba(5,150,105,.18);overflow:hidden;text-align:center;position:relative;z-index:1
 }
-
-@media (max-width: 620px) {
-  
-}
-
-.vsl-play:hover 
-
- 100% { transform: scale(1.55); opacity: 0; } }
-
-@media (max-width: 620px) {
-  
-}
-
-.vsl-play:hover 
-
-  100% { transform: scale(1.55); opacity: 0; }
-}
-
-.hero 
-
-
-.vsl-card {
-  width: calc(100% - 16px);
-  max-width: 380px;
-  margin: 12px auto 0;
-  background: var(--bg-2);
-  border: 1.5px solid var(--line-green);
-  border-radius: 16px;
-  box-shadow: 0 12px 40px -10px rgba(5, 150, 105, 0.18);
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  isolation: isolate;
-}
-.vsl-card-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 11px 14px 9px;
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--green-dark);
-  background: linear-gradient(180deg, var(--bg-soft), #fff);
-  border-bottom: 1px solid var(--line-green);
-}
-.vsl-card-label i {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--rose);
-  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.2);
-  animation: blink 1.4s infinite;
-}
-.vsl-wrap {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  position: relative;
-  background: #0a0a0a;
-  overflow: hidden;
-}
-.vsl-wrap iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  display: block;
-}
-.vsl-play {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  background: radial-gradient(ellipse at center, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.42) 100%);
-  transition: opacity 0.3s var(--ease), visibility 0.3s;
-}
-.vsl-play.is-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
-.vsl-play:focus-visible { outline: 3px solid var(--green-strong); outline-offset: -6px; }
-.vsl-play-icon {
-  position: relative;
-  display: grid;
-  place-items: center;
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: linear-gradient(165deg, var(--green-strong) 0%, var(--green) 45%, var(--green-dark) 100%);
-  box-shadow: 0 10px 28px -4px var(--green-glow), 0 0 0 5px rgba(255,255,255,0.22);
-  transition: transform var(--duration) var(--ease);
-}
-.vsl-play-icon::after {
-  content: '';
-  position: absolute;
-  inset: -6px;
-  border-radius: 50%;
-  border: 2px solid rgba(255,255,255,0.55);
-  animation: vslRing 2s ease-out infinite;
-}
-.vsl-play:hover .vsl-play-icon { transform: scale(1.06); }
-.vsl-play-icon svg { width: 30px; height: 30px; margin-left: 3px; fill: #fff; }
-@keyframes vslRing {
-  0% { transform: scale(1); opacity: 0.9; }
-  100% { transform: scale(1.55); opacity: 0; }
-}
-.hero .cta {
-  margin-top: 28px;
-  position: relative;
-  z-index: 2;
-}
-
-
-.provas { display: grid; grid-template-columns: 1fr; gap: 12px; max-width: 560px; margin: 0 auto; text-align: left; }
-@media (min-width: 640px) { .provas { grid-template-columns: 1fr; gap: 14px; } }
-.prova {
-  background: var(--bg-2);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 18px 16px 16px;
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease), border-color var(--duration) var(--ease);
-  position: relative;
-}
-.prova:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--line-green); }
-.prova-stars { color: #F59E0B; font-size: 0.85rem; letter-spacing: 0.08em; margin-bottom: 8px; line-height: 1; }
-.prova p { margin: 0 0 12px; font-size: 0.92rem; color: var(--ink); line-height: 1.55; max-width: none; }
-.prova-meta { display: flex; align-items: center; gap: 10px; }
-.prova-av {
-  width: 36px; height: 36px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--bg-soft), #d1fae5);
-  color: var(--green-dark); font-weight: 800; font-size: 0.8rem;
-  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-  border: 1px solid var(--line-green);
-}
-.prova-nome { font-size: 0.88rem; font-weight: 700; color: var(--ink); line-height: 1.2; }
-.prova-tag { font-size: 0.75rem; color: var(--faint); font-weight: 500; }
-
-
-.vsl-notice {
-  margin: 10px auto 0;
-  max-width: 380px;
-  padding: 8px 12px;
-  font-size: 0.72rem;
-  line-height: 1.45;
-  color: var(--faint);
-  text-align: center;
-  background: transparent;
-}
-.vsl-notice strong { color: var(--dim); font-weight: 600; }
-
+.vsl-lab{display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px 8px;font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--gd);background:linear-gradient(180deg,var(--soft),#fff);border-bottom:1px solid var(--lineG)}
+.vsl-lab i{width:8px;height:8px;border-radius:50%;background:var(--rose);box-shadow:0 0 0 3px rgba(220,38,38,.2);animation:bl 1.4s infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:.28}}
+.vsl-w{width:100%;aspect-ratio:1/1;position:relative;background:#0a0a0a;overflow:hidden}
+.vsl-w iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vsl-play{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:0;border:0;cursor:pointer;background:radial-gradient(ellipse at center,rgba(0,0,0,.08),rgba(0,0,0,.42));transition:opacity .3s,visibility .3s}
+.vsl-play.hide{opacity:0;visibility:hidden;pointer-events:none}
+.vsl-ico{display:grid;place-items:center;width:72px;height:72px;border-radius:50%;background:linear-gradient(165deg,var(--gs),var(--g) 45%,var(--gd));box-shadow:0 10px 28px -4px var(--glow),0 0 0 5px rgba(255,255,255,.22)}
+.vsl-ico svg{width:30px;height:30px;margin-left:3px;fill:#fff}
+.vsl-n{margin:10px auto 0;max-width:380px;padding:6px 12px;font-size:.75rem;color:var(--faint);text-align:center}
+.hero .cta{margin-top:26px;position:relative;z-index:2}
+.mid-cta{margin-top:28px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-<section class="hero" aria-label="Apresentação">
+
+<!-- HERO: message match do anúncio -->
+<section class="hero">
   <div class="wrap">
-    <h1>A cabeça <span class="hl">não desliga</span> na hora de deitar. E no outro dia o corpo cobra.</h1>
-    <p class="lede">Em <span class="hl">7 noites</span> dá pra reorganizar o ciclo — sem dieta, sem suplemento e sem depender de força de vontade.</p>
-    
-        <div class="vsl-card">
-      <div class="vsl-card-label"><i aria-hidden="true"></i> Assista até o final · 2 min</div>
-      <div class="vsl-wrap">
-        <iframe id="vslPlayer" src="https://player.vimeo.com/video/1232587509?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;controls=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Ouça até o final" allowfullscreen></iframe>
-        <button type="button" class="vsl-play" id="vslPlay" aria-label="Assistir ao vídeo">
-          <span class="vsl-play-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+    <h1>Não dá para aguentar mais um dia vendo no espelho o impacto de <span class="hl">noites mal dormidas</span>.</h1>
+    <p class="lede">Sono picado. Hormônios de reparação em falta. Cérebro pesado. Corpo sob estresse. Em <span class="hl">7 noites</span> dá para regular o ritmo circadiano — e recuperar a disposição, <strong>sem pílulas</strong>.</p>
+
+    <div class="vsl">
+      <div class="vsl-lab"><i aria-hidden="true"></i> Assista até o final · 2 min</div>
+      <div class="vsl-w">
+        <iframe id="vslPlayer" src="https://player.vimeo.com/video/1232587509?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;controls=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Assista até o final" allowfullscreen></iframe>
+        <button type="button" class="vsl-play" id="vslPlay" aria-label="Assistir">
+          <span class="vsl-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
         </button>
       </div>
     </div>
+    <p class="vsl-n">Áudio em português via IA · conteúdo original</p>
 
-        <p class="vsl-notice">Áudio em português via IA · conteúdo original</p>
-<div class="cta">
-      <a class="btn btn-pulse" href="#oferta">QUERO COMEÇAR MINHAS 7 NOITES</a>
-      <p class="micro">Acesso imediato · Garantia de 7 dias · Risco zero</p>
+    <div class="cta">
+      <a class="btn btn-pulse" href="#oferta">QUERO RECUPERAR MINHA DISPOSIÇÃO — R$ 37</a>
+      <p class="micro">Acesso na hora · Garantia de 7 dias · Risco zero</p>
     </div>
   </div>
 </section>
-<section class="story" aria-labelledby="hist-title">
+
+<!-- AGITAÇÃO -->
+<section class="story">
   <div class="wrap reveal">
-    <h2 id="hist-title">Você já sabe como é essa história</h2>
-    <p>Você chega no fim do dia exausta. Deita… e a cabeça <strong>não desliga</strong>.</p>
-    <p>Pensamentos sobem. O celular vira companhia. O corpo pede descanso, mas a mente continua em modo diurno.</p>
-    <p>Quando finalmente dorme, o sono é raso. No outro dia você acorda cansada — como se a noite tivesse <strong>passado em vão</strong>.</p>
-    <p>Aí a tarde aperta. A fome das 17h aparece. A energia cai. E de novo, à noite, a mesma dificuldade de desacelerar.</p>
-    <p>O ciclo recomeça. Ansiedade na hora de deitar. Cansaço de manhã. Sensação quieta de que o esforço de dia <strong>não acompanha o resultado</strong>.</p>
-    <p class="punch">Não é falta de disciplina. É a <span class="hl">noite mandando o sinal errado</span> pro seu corpo.</p>
-    <p style="margin-bottom:0;">Se isso te descreve, o próximo bloco não é teoria. É o que quase ninguém te explica.</p>
+    <h2>O espelho não mente. A noite também não.</h2>
+    <p>Você acorda e o rosto mostra o que a noite não entregou.</p>
+    <p>Inchaço. Peso nos olhos. Sensação de que o corpo não descansou — mesmo tendo “dormido”.</p>
+    <p>De dia, a cabeça fica pesada. A disposição some. O humor oscila. À noite, o ciclo recomeça: sono picado, mente ligada, organismo em alerta.</p>
+    <p class="punch">Isso não é frescura. É o corpo <span class="hl">sem a janela certa</span> para se reparar.</p>
+    <p style="margin-bottom:0">E quanto mais noites assim, mais o estresse biológico se acumula.</p>
   </div>
 </section>
-<section class="bg-w" aria-labelledby="rec-title">
+
+<!-- IDENTIFICAÇÃO -->
+<section class="bgw">
   <div class="wrap center reveal">
-    <h2 id="rec-title">Marque quantas dessas são a sua vida</h2>
-    <div class="g2" style="text-align:left; margin-top:12px;">
-      <div class="card"><h3>Mente ligada na hora de deitar</h3><p>O corpo quer desligar. A cabeça continua em modo diurno — pensamentos, celular, inquietação.</p></div>
-      <div class="card"><h3>Dorme, mas não recupera</h3><p>Acorda cansada, como se a noite tivesse passado em alerta, não em descanso.</p></div>
-      <div class="card"><h3>Energia irregular de dia</h3><p>A tarde aperta. A fome das 17h aparece. O esforço de manhã não segura até o fim.</p></div>
-      <div class="card"><h3>O ciclo se repete</h3><p>Noite difícil → manhã pesada → dia instável → de novo a mesma noite.</p></div>
+    <h2>Isso acontece com você?</h2>
+    <div class="g2" style="margin-top:14px">
+      <div class="card"><h3>O espelho acusa</h3><p>Rosto e corpo mostram noites mal dormidas — mesmo quando você “dormiu o suficiente”.</p></div>
+      <div class="card"><h3>Sono picado</h3><p>Acorda várias vezes. Ou acorda sem a sensação de ter recuperado de verdade.</p></div>
+      <div class="card"><h3>Cérebro pesado</h3><p>Disposição baixa. Humor irregular. Sensação de corpo sob pressão o dia inteiro.</p></div>
+      <div class="card"><h3>Cansada de tentar</h3><p>Já testou horários, chás, conselhos genéricos — e a noite continua sem colaborar.</p></div>
     </div>
-    <p style="margin-top:22px; margin-bottom:0; font-size:0.95rem; max-width:42ch;">Se você marcou <span class="hl">duas ou mais</span>… o problema provavelmente não está na disciplina. Está no sinal que a noite manda.</p>
+    <p style="margin-top:20px;margin-bottom:0;max-width:42ch">Se marcou <span class="hl">duas ou mais</span>, o problema pode não ser disciplina. Pode ser o <strong>ritmo circadiano desalinhado</strong>.</p>
   </div>
 </section>
-<section aria-label="Quebra de padrão">
+
+<!-- REFRAME -->
+<section>
   <div class="wrap center reveal">
-    <p class="punch" style="margin:0 auto 12px; text-align:center;">E se a cabeça não desligar porque a <span class="hl">noite está mandando o sinal errado</span>?</p>
-    <p style="margin:0 auto; font-size:0.95rem; max-width:40ch;">A maioria tenta resolver de dia. Quase ninguém mexe no que acontece antes de deitar.</p>
+    <p class="punch" style="margin:0 auto 12px;text-align:center">E se a solução não for mais uma pílula — e sim <span class="hl">regular o ritmo circadiano</span>?</p>
+    <p style="margin:0 auto;max-width:42ch">O organismo já sabe se reparar. Ele precisa dos sinais certos, na hora certa.</p>
   </div>
 </section>
-<section class="bg-w story" aria-labelledby="exp-title">
+
+<!-- MECANISMO -->
+<section class="bgw story">
   <div class="wrap reveal">
-    <h2 id="exp-title">A maioria olha pro lado errado</h2>
-    <p>Quase todo mundo tenta resolver de dia: mais disciplina, mais controle, mais força de vontade. Como se a noite fosse só “deitar e pronto”.</p>
-    <p>Mas o corpo tem um <span class="hl">relógio interno</span>. E esse relógio responde a sinais — luz, horário, rotina, ambiente.</p>
-    <p>Quando a transição pro sono vira bagunça, o corpo recebe a mensagem errada: <strong>“fica em alerta”</strong> em vez de <strong>“pode desacelerar”</strong>.</p>
-    <p>Resultado? A cabeça não desliga. O sono fica raso. Você acorda cansada. E no outro dia a energia e a fome já começam tortas.</p>
-    <p><strong>Não é falta de caráter. É <span class="hl">sinal errado na hora errada</span>.</strong></p>
-    <p style="margin-bottom:0;">E o caminho pra reorganizar isso é mais direto do que parece.</p>
+    <h2>O que o anúncio não teve tempo de explicar</h2>
+    <p>Quando o sono é picado, o organismo perde a janela em que produz melhor os <strong>hormônios de reparação</strong>.</p>
+    <p>O resultado não fica só na cama. Aparece no rosto, no corpo, na disposição e no humor do dia seguinte.</p>
+    <p>O <span class="hl">ritmo circadiano</span> é o relógio interno que organiza isso: quando desacelerar, quando reparar, quando acordar com mais clareza.</p>
+    <p>Se a entrada na noite está bagunçada — luz errada, rotina irregular, mente ligada — o corpo recebe o recado errado e continua em alerta.</p>
+    <p style="margin-bottom:0"><strong>Não é falta de vontade. É <span class="hl">sinal desalinhado</span>.</strong> E sinal se corrige com método.</p>
   </div>
 </section>
-<section aria-labelledby="mec-title">
+
+<section>
   <div class="wrap center reveal">
-    <h2 id="mec-title">O caminho que quase ninguém mexe</h2>
-    <p class="lede" style="margin-bottom:8px;">Não é fórmula mágica. É a sequência de sinais que o corpo já entende — e que a maioria bagunça na hora de deitar.</p>
-    <div class="fluxo" role="list" aria-label="Sequência do mecanismo">
+    <h2>A sequência que o corpo já entende</h2>
+    <div class="fluxo" role="list">
       <div class="fi" role="listitem">Sinais do dia</div><div class="fa" aria-hidden="true">↓</div>
       <div class="fi hot" role="listitem">Como você entra na noite</div><div class="fa" aria-hidden="true">↓</div>
-      <div class="fi" role="listitem">Relógio interno</div><div class="fa" aria-hidden="true">↓</div>
-      <div class="fi" role="listitem">Preparação pro sono</div><div class="fa" aria-hidden="true">↓</div>
-      <div class="fi" role="listitem">Qualidade da recuperação</div><div class="fa" aria-hidden="true">↓</div>
-      <div class="fi hot" role="listitem">Energia · fome · rotina · hábitos</div>
+      <div class="fi" role="listitem">Ritmo circadiano</div><div class="fa" aria-hidden="true">↓</div>
+      <div class="fi" role="listitem">Janela de reparação</div><div class="fa" aria-hidden="true">↓</div>
+      <div class="fi hot" role="listitem">Vitalidade · humor · energia</div>
     </div>
-    <p style="margin-top:24px; margin-bottom:0; font-size:0.95rem; max-width:42ch; margin-left:auto; margin-right:auto;">Quando essa sequência fica alinhada, a cabeça começa a desligar. A noite recupera. E o dia seguinte para de começar no negativo.</p>
+    <p style="margin-top:22px;margin-bottom:0;max-width:42ch;margin-left:auto;margin-right:auto">Quando essa sequência se alinha, a noite recupera — e o dia seguinte para de começar no negativo.</p>
   </div>
 </section>
-<section class="bg-w" aria-labelledby="sol-title">
+
+<!-- SOLUÇÃO -->
+<section class="bgw">
   <div class="wrap center reveal">
-    <h2 id="sol-title">O que muda quando o sinal da noite fica certo</h2>
-    <p class="lede" style="margin-bottom:20px;">Não é “dormir mais”. É a cabeça <span class="hl">conseguir desligar</span> — e a noite voltar a recuperar de verdade.</p>
-    <div class="solucao-box" style="text-align:left;">
-      <h3>Imagine as próximas noites assim:</h3>
-      <p>Você chega no fim do dia e <strong>já sabe o que fazer</strong>. Não improvisa. Não fica rolando no celular até a cabeça explodir. Tem um ritual curto, claro, que avisa o corpo: agora é hora de desacelerar.</p>
-      <p>A transição pro sono deixa de ser uma luta. O ambiente para de trabalhar contra você. E de manhã, em vez de acordar como se a noite tivesse passado em vão, você sente que <strong>recuperou alguma coisa</strong>.</p>
+    <h2>O que muda nas primeiras noites</h2>
+    <p class="lede" style="margin-bottom:18px">Vitalidade, humor e energia — <span class="hl">sem precisar de pílulas</span>.</p>
+    <div class="sbox">
+      <h3>Imagine assim:</h3>
+      <p>Você chega ao fim do dia e <strong>já sabe o que fazer</strong>. Não improvisa. Tem um roteiro curto que avisa o corpo: agora é hora de desacelerar.</p>
+      <p>A transição para o sono deixa de ser luta. De manhã, em vez de encarar no espelho o peso da noite, você sente que <strong>recuperou alguma coisa</strong>.</p>
       <ul>
-        <li>Menos ansiedade na hora de deitar — a mente começa a desacelerar</li>
-        <li>Sono menos raso e manhã menos pesada</li>
-        <li>Mais estabilidade de energia e menos “quebra” no final da tarde</li>
-        <li>Uma rotina noturna que gruda, sem depender de motivação</li>
-        <li>A sensação de que o corpo finalmente começou a colaborar</li>
+        <li>Menos cérebro pesado ao acordar</li>
+        <li>Noite menos picada e manhã com mais disposição</li>
+        <li>Energia mais estável ao longo do dia</li>
+        <li>Rotina noturna simples, que cabe na vida real</li>
+        <li>Sensação de que o corpo voltou a colaborar</li>
       </ul>
-      <p style="margin-top:16px; margin-bottom:0;"><strong>Não é mudar a vida inteira de uma vez. É reorganizar o sinal da noite — e deixar o resto se ajeitar em cima disso.</strong></p>
+      <p style="margin-top:14px;margin-bottom:0"><strong>Não é mudar a vida inteira. É regular o ritmo — e deixar a disposição se reorganizar.</strong></p>
     </div>
-    <p style="margin-top:22px; margin-bottom:0; font-size:0.95rem; max-width:40ch;">Existe um método simples pra isso. Em <span class="hl">5 passos</span>. Em <span class="hl">7 noites</span>.</p>
+    <div class="cta mid-cta"><a class="btn" href="#oferta">QUERO COMEÇAR MINHAS 7 NOITES</a></div>
   </div>
 </section>
-<section aria-labelledby="pil-title">
-  <div class="wrap-w center reveal">
-    <h2 id="pil-title">O sistema completo — 5 passos, 7 noites</h2>
-    <p class="lede" style="margin-bottom:22px;">Você não precisa virar outra pessoa. Precisa instalar uma sequência clara de sinais pra a cabeça desligar e a noite recuperar.</p>
-    <div class="pilares" style="text-align:left;">
-      <article class="pilar"><div class="n" aria-hidden="true">01</div><h3>Desacelerar</h3><p>O corpo precisa de um recado claro: “agora a pressão cai”. Sem isso, a mente continua em modo diurno mesmo deitada.</p></article>
-      <article class="pilar"><div class="n" aria-hidden="true">02</div><h3>Sinalizar</h3><p>Luz, horário e ambiente viram mensagem pro relógio interno. Quando o sinal chega certo, a transição deixa de ser improvisada.</p></article>
-      <article class="pilar"><div class="n" aria-hidden="true">03</div><h3>Proteger</h3><p>A noite vira zona protegida — sem estímulo residual que mantém o sistema em alerta. Você blinda o que já conquistou.</p></article>
-      <article class="pilar"><div class="n" aria-hidden="true">04</div><h3>Consolidar</h3><p>A sequência se repete até virar automático. Não depende de motivação. Depende de roteiro.</p></article>
-      <article class="pilar"><div class="n" aria-hidden="true">05</div><h3>Sustentar</h3><p>Ajustes pra vida real. Noite ruim não vira abandono. Você sabe exatamente como retomar.</p></article>
+
+<!-- MÉTODO -->
+<section>
+  <div class="wrapw center reveal">
+    <h2>Protocolo Ciclo Circadiano</h2>
+    <p class="lede" style="margin-bottom:20px"><span class="hl">5 passos</span> · <span class="hl">7 noites</span> · sem pílula · sem aparelho caro</p>
+    <div class="pilares">
+      <article class="pilar"><div class="n">01</div><h3>Desacelerar</h3><p>Recado claro ao corpo: a pressão pode cair. Sem isso, a mente continua em modo diurno.</p></article>
+      <article class="pilar"><div class="n">02</div><h3>Sinalizar</h3><p>Luz, horário e ambiente viram mensagem para o relógio interno.</p></article>
+      <article class="pilar"><div class="n">03</div><h3>Proteger</h3><p>A noite vira zona protegida — sem estímulos que mantêm o alerta.</p></article>
+      <article class="pilar"><div class="n">04</div><h3>Consolidar</h3><p>A sequência vira hábito. Não depende de motivação. Depende de roteiro.</p></article>
+      <article class="pilar"><div class="n">05</div><h3>Sustentar</h3><p>Noite ruim não vira abandono. Você sabe exatamente como retomar.</p></article>
     </div>
-    <p style="margin-top:22px; margin-bottom:8px; font-size:0.95rem; max-width:42ch; margin-left:auto; margin-right:auto;">Cada pilar sozinho ajuda. Os cinco em sequência, por 7 noites, <span class="hl">reorganizam o sinal da noite</span>.</p>
-    <div class="cta" style="margin-top:22px;"><a class="btn" href="#oferta">QUERO ESSE MÉTODO NAS MINHAS MÃOS</a></div>
   </div>
 </section>
-<section class="bg-w" aria-labelledby="7n-title">
-  <div class="wrap-w center reveal">
-    <h2 id="7n-title">7 noites pra reorganizar o sinal</h2>
-    <p class="lede" style="margin-bottom:18px;">Não é “resolve em 7 dias”. É <span class="hl">7 noites</span> pra parar de improvisar na hora de deitar e instalar um roteiro que a mente e o corpo entendem.</p>
-    <div class="ng" role="list">
-      <div class="nt" role="listitem"><div class="n">1</div><h3>Observar</h3><p>Ver como tá sua noite</p></div>
+
+<section class="bgw">
+  <div class="wrapw center reveal">
+    <h2>7 noites. Um roteiro claro.</h2>
+    <div class="ng" role="list" style="margin-top:16px">
+      <div class="nt" role="listitem"><div class="n">1</div><h3>Observar</h3><p>Como está sua noite</p></div>
       <div class="nt" role="listitem"><div class="n">2</div><h3>Preparar</h3><p>Ajustar o ambiente</p></div>
       <div class="nt" role="listitem"><div class="n">3</div><h3>Desacelerar</h3><p>Ritual de transição</p></div>
       <div class="nt" role="listitem"><div class="n">4</div><h3>Sinalizar</h3><p>Horário e luz</p></div>
       <div class="nt" role="listitem"><div class="n">5</div><h3>Proteger</h3><p>Blindar o sono</p></div>
-      <div class="nt" role="listitem"><div class="n">6</div><h3>Ajustar</h3><p>Corrigir o que falhou</p></div>
+      <div class="nt" role="listitem"><div class="n">6</div><h3>Ajustar</h3><p>Corrigir falhas</p></div>
       <div class="nt" role="listitem"><div class="n">7</div><h3>Fixar</h3><p>Virar hábito</p></div>
     </div>
-    <p style="margin-top:24px; font-family:var(--serif); font-weight:800; color:var(--ink); font-size:1.1rem;">Você não precisa mudar a vida inteira. Precisa mudar a forma como entra na <span class="hl">próxima noite</span>.</p>
-  </div>
-</section>
-<section aria-labelledby="cmp-title">
-  <div class="wrap center reveal">
-    <h2 id="cmp-title">O que muda entre a primeira e a sétima noite</h2>
-    <p class="lede" style="margin-bottom:20px;">Da mente ligada ao ritual claro — sem promessa milagrosa.</p>
-    <div class="compare">
-      <div class="compare-box"><h3>Dia 1</h3><ul>
-        <li>Deita no automático. Cabeça ligada. Celular até cair o sono.</li>
-        <li>Sono raso. Acorda como se a noite tivesse passado em vão.</li>
-        <li>Energia irregular. Fome das 17h. Frustração quieta.</li>
-        <li>Sem roteiro. Depende de “força de vontade”.</li>
-      </ul></div>
-      <div class="compare-box depois"><h3>Dia 7</h3><ul>
-        <li>Ritual curto e claro. Sinal de desacelerar antes de deitar.</li>
-        <li>Transição mais fácil. Manhã com mais leveza e disposição.</li>
-        <li>Energia mais estável. Menos “quebra” no final da tarde.</li>
-        <li>Sequência instalada. Não depende de motivação.</li>
-      </ul></div>
-    </div>
-    <p style="margin-top:18px; font-size:0.78rem; color:var(--faint); max-width:48ch; margin-left:auto; margin-right:auto;">Resultados variam de pessoa pra pessoa. O método organiza rotina noturna e hábitos de recuperação. Não é programa de emagrecimento e não promete alteração de composição corporal.</p>
-  </div>
-</section>
-<section class="bg-w" aria-labelledby="mao-title">
-  <div class="wrap center reveal">
-    <h2 id="mao-title">O que muda na sua mão</h2>
-    <ul class="cl" style="text-align:left; margin-top:10px;">
-      <li>Enxergar o que mantém a mente ligada na hora de deitar — e cortar na raiz</li>
-      <li>Criar uma transição clara entre “dia ligado” e “hora de desligar”</li>
-      <li>Usar luz, horário e ambiente a seu favor, sem complicação</li>
-      <li>Ter um ritual noturno simples que você consegue repetir</li>
-      <li>Saber o que fazer depois de uma noite ruim, sem abandonar o método</li>
-      <li>Ter manhãs menos pesadas e mais estabilidade no dia seguinte</li>
-    </ul>
-    <p style="margin-top:22px; margin-bottom:0; font-size:0.95rem; max-width:40ch;">Tudo isso entra no Protocolo completo. E agora você vai ver exatamente o que recebe.</p>
+    <p style="margin-top:22px;font-family:var(--serif);font-weight:800;color:var(--ink);font-size:1.12rem">Você não precisa mudar a vida. Precisa mudar a forma como entra na <span class="hl">próxima noite</span>.</p>
   </div>
 </section>
 
-<section class="bg-w" aria-labelledby="prova-title">
+<!-- ANTES / DEPOIS -->
+<section>
   <div class="wrap center reveal">
-    <h2 id="prova-title">Quem fez as 7 noites conta assim</h2>
-    <p class="lede" style="margin-bottom:20px;">Gente real, no celular, falando do que sentiu.</p>
-    <div class="provas">
-      <article class="prova">
-        <div class="prova-stars" aria-label="5 de 5">★★★★★</div>
-        <p>“gente eu deitava e a cabeça nao desligava de jeito nenhum kkk nas primeiras noites ja senti diferença, parei de ficar no celular ate cair dura. hoje acordo bem menos arrasada e a tarde nao quebra igual antes”</p>
-        <div class="prova-meta">
-          <div class="prova-av" aria-hidden="true">CR</div>
-          <div>
-            <div class="prova-nome">Camila R.</div>
-            <div class="prova-tag">Fez o protocolo · 7 noites</div>
-          </div>
-        </div>
-      </article>
-      <article class="prova">
-        <div class="prova-stars" aria-label="5 de 5">★★★★★</div>
-        <p>“eu achava q era so falta de disciplina. quando entendi isso do sinal da noite caiu a ficha. o checklist me ajudou bastante pq eu nunca sabia o q fazer antes de deitar. simples e a mente começou a baixar a bola”</p>
-        <div class="prova-meta">
-          <div class="prova-av" aria-hidden="true">JS</div>
-          <div>
-            <div class="prova-nome">Juliana S.</div>
-            <div class="prova-tag">Fez o protocolo · 7 noites</div>
-          </div>
-        </div>
-      </article>
-      <article class="prova">
-        <div class="prova-stars" aria-label="5 de 5">★★★★★</div>
-        <p>“minha rotina era uma zona total. o guia das 7 noites me deu um caminho sem ficar cobrando perfeição. noite ruim nao virou desculpa pra largar tudo, o plano de resgate me salvou. no outro dia a energia segura mais”</p>
-        <div class="prova-meta">
-          <div class="prova-av" aria-hidden="true">AF</div>
-          <div>
-            <div class="prova-nome">Ana F.</div>
-            <div class="prova-tag">Fez o protocolo · 7 noites</div>
-          </div>
-        </div>
-      </article>
+    <h2>Da 1ª à 7ª noite</h2>
+    <div class="compare" style="margin-top:16px">
+      <div class="cbox"><h3>Dia 1</h3><ul>
+        <li>Deita no automático. Sono picado.</li>
+        <li>Espelho acusa a noite mal dormida.</li>
+        <li>Cérebro pesado. Disposição irregular.</li>
+        <li>Sem roteiro. Só “força de vontade”.</li>
+      </ul></div>
+      <div class="cbox ok"><h3>Dia 7</h3><ul>
+        <li>Ritual curto e claro antes de deitar.</li>
+        <li>Transição mais fácil. Manhã mais leve.</li>
+        <li>Mais estabilidade de energia e humor.</li>
+        <li>Sequência instalada. Sem depender de motivação.</li>
+      </ul></div>
     </div>
-    <p style="margin-top:18px; margin-bottom:0; font-size:0.78rem; color:var(--faint); max-width:48ch; margin-left:auto; margin-right:auto;">Relatos individuais. Resultado varia de pessoa pra pessoa. O método organiza a rotina da noite — não é programa de emagrecimento.</p>
+    <p style="margin-top:16px;font-size:.8rem;color:var(--faint);max-width:48ch;margin-left:auto;margin-right:auto">Resultados variam. O método organiza rotina noturna. Não substitui orientação médica.</p>
   </div>
 </section>
 
-<section id="oferta" style="padding-top:44px; padding-bottom:44px;" aria-labelledby="oferta-title">
+<!-- PROVA SOCIAL 55+ -->
+<section class="bgw">
   <div class="wrap center reveal">
-    <div class="offer-box">
+    <h2>Quem aplicou conta assim</h2>
+    <div class="provas" style="margin-top:16px">
+      <article class="prova">
+        <div class="stars">★★★★★</div>
+        <p>“Eu acordava e o espelho mostrava tudo. Rosto cansado, inchaço. Nas primeiras noites já senti diferença no ritual. Hoje acordo bem mais leve e a disposição segura melhor.”</p>
+        <div class="pmeta"><div class="pav">MR</div><div><div class="pnome">Maria R., 62 anos</div><div class="ptag">7 noites de protocolo</div></div></div>
+      </article>
+      <article class="prova">
+        <div class="stars">★★★★★</div>
+        <p>“Meu sono era muito picado. Achei que era só idade. Quando entendi o ritmo circadiano, fez sentido. O checklist de ambiente ajudou muito. A mente finalmente começou a desacelerar.”</p>
+        <div class="pmeta"><div class="pav">HS</div><div><div class="pnome">Helena S., 58 anos</div><div class="ptag">7 noites de protocolo</div></div></div>
+      </article>
+      <article class="prova">
+        <div class="stars">★★★★★</div>
+        <p>“Já estava cansada de tentar de tudo. As 7 noites me deram um caminho sem cobrar perfeição. Noite ruim não virou desculpa para parar. A energia no outro dia melhorou.”</p>
+        <div class="pmeta"><div class="pav">CT</div><div><div class="pnome">Célia T., 67 anos</div><div class="ptag">7 noites de protocolo</div></div></div>
+      </article>
+    </div>
+    <p style="margin-top:16px;font-size:.8rem;color:var(--faint);max-width:48ch;margin-left:auto;margin-right:auto">Relatos individuais. Resultados variam.</p>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section id="oferta" style="padding-top:40px;padding-bottom:40px">
+  <div class="wrap center reveal">
+    <div class="offer">
       <span class="tag">Condição de lançamento</span>
-      <h2 id="oferta-title" style="font-size:clamp(1.2rem,3.2vw,1.5rem); margin-bottom:6px;">Tudo que você recebe hoje</h2>
-      <p style="margin:0 auto 14px; font-size:0.92rem; color:var(--dim); max-width:36ch;">Método + 7 noites de implementação + 3 ferramentas de suporte. Liberado na hora.</p>
-      <div class="stack" style="text-align:left;">
-        <div class="si main"><span class="nm"><span class="badge-main">Produto principal</span>Protocolo Ciclo Circadiano<small>O método completo: 5 pilares + guia noite a noite das 7 noites. Roteiro claro pra reorganizar o fechamento do dia — sem improviso.</small></span><span class="pr">R$ 97</span></div>
-        <div class="si bn"><span class="nm"><span class="badge-bn">Bônus</span>Checklist de ambiente<small>O que ajustar no quarto e no entorno pra a noite parar de trabalhar contra você — luz, estímulos e preparação do espaço.</small></span><span class="pr">R$ 27</span></div>
-        <div class="si bn"><span class="nm"><span class="badge-bn">Bônus</span>Diário de Sono<small>Registre padrões, veja o que bagunça e o que funciona. Clareza em poucos dias.</small></span><span class="pr">R$ 27</span></div>
-        <div class="si bn"><span class="nm"><span class="badge-bn">Bônus</span>Guia anti-ansiedade noturna<small>Passos práticos pra baixar a mente na hora de deitar — sem enrolação e sem depender de força de vontade.</small></span><span class="pr">R$ 27</span></div>
-        <div class="si tot"><span class="nm">Valor total do kit</span><span class="pr">R$ 178</span></div>
+      <h2 style="font-size:clamp(1.2rem,3vw,1.45rem);margin-bottom:6px">Tudo o que você recebe hoje</h2>
+      <p style="margin:0 auto 12px;font-size:.95rem;max-width:36ch">Método + 7 noites + 3 ferramentas. Liberado na hora.</p>
+      <div class="stack" style="text-align:left">
+        <div class="si main"><span class="nm"><span class="badge-m">Principal</span>Protocolo Ciclo Circadiano<small>5 passos + guia noite a noite. Roteiro para regular o ritmo — sem pílulas.</small></span><span class="pr">R$ 97</span></div>
+        <div class="si bn"><span class="nm"><span class="badge-b">Bônus</span>Checklist de ambiente<small>O que ajustar no quarto para a noite parar de trabalhar contra você.</small></span><span class="pr">R$ 27</span></div>
+        <div class="si bn"><span class="nm"><span class="badge-b">Bônus</span>Diário de Sono<small>Veja o que bagunça e o que funciona. Clareza em poucos dias.</small></span><span class="pr">R$ 27</span></div>
+        <div class="si bn"><span class="nm"><span class="badge-b">Bônus</span>Guia anti-ansiedade noturna<small>Passos para baixar a mente na hora de deitar.</small></span><span class="pr">R$ 27</span></div>
+        <div class="si tot"><span class="nm">Valor total</span><span class="pr">R$ 178</span></div>
       </div>
-      <div class="price-block">
+      <div class="price">
         <div class="de">De R$ 178 por apenas</div>
-        <span class="amt"><sup>R$</sup>37<span style="font-size:0.55em; vertical-align:baseline;">,00</span></span>
-        <div class="parc">ou 2x de R$19,48 </div>
-        <div class="term">Pagamento único · Acesso liberado na hora</div>
+        <span class="amt"><sup>R$</sup>37<span style="font-size:.55em;vertical-align:baseline">,00</span></span>
+        <div class="parc">ou 2x de R$ 19,48</div>
+        <div class="term">Pagamento único · Acesso na hora</div>
       </div>
       <div class="urg" role="status" aria-live="polite">Essa condição some em <span class="tm" id="timer">14:59</span></div>
       <div class="gar">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg>
-        <div><h3>Garantia Risco Zero — 7 dias</h3><p>Você entra, aplica as primeiras noites e testa. Se em até 7 dias achar que não faz sentido, pede o reembolso. 100% do valor. Sem enrolação. O risco fica do nosso lado.</p></div>
+        <div><h3>Garantia 7 dias — risco zero</h3><p>Aplica as primeiras noites. Se não fizer sentido, reembolso integral. Sem enrolação.</p></div>
       </div>
       <div class="cta">
-        <a class="btn btn-pulse" href="https://pay.kiwify.com.br/0zQ9zGy" role="button">SIM — QUERO COMEÇAR MINHAS 7 NOITES POR R$ 37,00</a>
+        <a class="btn btn-pulse" href="https://pay.kiwify.com.br/0zQ9zGy">SIM — QUERO MINHAS 7 NOITES POR R$ 37,00</a>
         <p class="micro">Compra segura · Acesso imediato · Garantia de 7 dias</p>
       </div>
     </div>
     <div class="resumo">
-      <p class="resumo-label">Em resumo</p>
-      <p class="resumo-texto">Um método de <strong>7 noites</strong> pra reorganizar o sinal da noite: a cabeça desliga, o sono recupera e o dia seguinte para de começar no negativo — sem dieta, sem suplemento e sem depender de motivação.</p>
-      <p class="resumo-fecho">Protocolo + 3 ferramentas · acesso na hora · garantia de 7 dias · <strong>R$ 37,00</strong></p>
+      <p class="resumo-l">Em resumo</p>
+      <p class="resumo-t">7 noites para <strong>regular o ritmo circadiano</strong>: a noite recupera, a disposição volta — sem pílulas e sem depender de motivação.</p>
+      <p class="resumo-f">Protocolo + 3 ferramentas · acesso na hora · garantia 7 dias · <strong>R$ 37,00</strong></p>
     </div>
   </div>
 </section>
-<section class="bg-w" aria-labelledby="faq-title">
+
+<!-- FAQ -->
+<section class="bgw">
   <div class="wrap reveal">
-    <h2 id="faq-title" class="center" style="margin-bottom:18px;">Ainda tá na dúvida?</h2>
+    <h2 class="center" style="margin-bottom:16px">Ainda tem dúvida?</h2>
     <div class="faq">
-      <details open><summary>Isso é só um e-book?<span class="pl" aria-hidden="true"></span></summary><p>É digital, mas não é PDF pra ler e esquecer. É um sistema: método completo + guia das 7 noites + 3 ferramentas pra aplicar de verdade.</p></details>
-      <details><summary>Preciso comprar suplemento ou aparelho?<span class="pl" aria-hidden="true"></span></summary><p>Não. O método usa rotina, horário e ambiente — coisas que você já tem em casa.</p></details>
-      <details><summary>Demora muito por noite?<span class="pl" aria-hidden="true"></span></summary><p>Minutos. Foi desenhado pra caber no final do dia, sem bagunçar sua agenda.</p></details>
-      <details><summary>Minha rotina de sono é uma bagunça. Serve pra mim?<span class="pl" aria-hidden="true"></span></summary><p>Serve. Parte do método existe pra organizar isso aos poucos. Não exige perfeição na primeira noite.</p></details>
-      <details><summary>E se eu não gostar?<span class="pl" aria-hidden="true"></span></summary><p>Garantia de 7 dias. Não curtiu, pede reembolso. 100% do valor. Sem enrolação.</p></details>
+      <details open><summary>Isso é só um e-book?<span class="pl"></span></summary><p>É um sistema digital: método + guia das 7 noites + 3 ferramentas para aplicar de verdade.</p></details>
+      <details><summary>Preciso de remédio ou suplemento?<span class="pl"></span></summary><p>Não. O método usa rotina, horário e ambiente. Sem pílulas.</p></details>
+      <details><summary>Demora muito por noite?<span class="pl"></span></summary><p>Minutos. Cabe no final do dia, sem bagunçar sua rotina.</p></details>
+      <details><summary>Serve na minha idade?<span class="pl"></span></summary><p>Sim. Organiza sinais da rotina noturna — para quem sente sono picado, disposição baixa e cansaço ao acordar.</p></details>
+      <details><summary>E se eu não gostar?<span class="pl"></span></summary><p>Garantia de 7 dias. Reembolso de 100%. Sem enrolação.</p></details>
     </div>
   </div>
 </section>
-<section class="final" aria-labelledby="final-title">
+
+<!-- FECHO -->
+<section class="final">
   <div class="wrap reveal">
-    <h2 id="final-title">A próxima noite pode ser o começo.</h2>
-    <p class="ft">5 passos. 7 noites. Um método pra a cabeça desligar, a noite recuperar e o dia seguinte parar de começar no negativo.</p>
+    <h2>A próxima noite pode ser o começo.</h2>
+    <p class="ft">Regule o ritmo circadiano. Pare de carregar noites mal dormidas no rosto, no corpo e no humor.</p>
     <div class="cta">
-      <a class="btn btn-pulse" href="https://pay.kiwify.com.br/0zQ9zGy">GARANTIR MEU ACESSO POR R$ 37,00</a>
-      <p class="micro">Condição de lançamento · Acesso na hora · Garantia de 7 dias</p>
+      <a class="btn btn-pulse" href="https://pay.kiwify.com.br/0zQ9zGy">GARANTIR ACESSO POR R$ 37,00</a>
+      <p class="micro">Acesso na hora · Garantia de 7 dias · Risco zero</p>
     </div>
   </div>
 </section>
+
 <footer>
-  <p>Material educacional sobre hábitos de sono, ritmo circadiano e rotina. Não substitui orientação médica, nutricional ou psicológica. Não é programa de emagrecimento e não promete resultados específicos de composição corporal. Resultados variam.</p>
+  <p>Material educacional sobre hábitos de sono e ritmo circadiano. Não substitui orientação médica. Não é programa de emagrecimento. Resultados variam.</p>
   <p>© 2026 Protocolo Ciclo Circadiano. Todos os direitos reservados.</p>
 </footer>
+
 <script>
 (function(){
   'use strict';
-  try {
-    var k = 'pcc_deadline', s = localStorage.getItem(k), d = s ? parseInt(s, 10) : 0;
-    if (!d || d < Date.now()) { d = Date.now() + 15 * 60 * 1000; localStorage.setItem(k, String(d)); }
-    var el = document.getElementById('timer');
-    function tick() {
-      var diff = Math.max(0, d - Date.now()), m = Math.floor(diff / 60000), sec = Math.floor((diff % 60000) / 1000);
-      if (el) el.textContent = (m < 10 ? '0' : '') + m + ':' + (sec < 10 ? '0' : '') + sec;
-      if (diff <= 0) { d = Date.now() + 15 * 60 * 1000; try { localStorage.setItem(k, String(d)); } catch (e) {} }
+  try{
+    var k='pcc_deadline',s=localStorage.getItem(k),d=s?parseInt(s,10):0;
+    if(!d||d<Date.now()){d=Date.now()+15*60*1000;localStorage.setItem(k,String(d))}
+    var el=document.getElementById('timer');
+    function tick(){
+      var diff=Math.max(0,d-Date.now()),m=Math.floor(diff/60000),sec=Math.floor((diff%60000)/1000);
+      if(el)el.textContent=(m<10?'0':'')+m+':'+(sec<10?'0':'')+sec;
+      if(diff<=0){d=Date.now()+15*60*1000;try{localStorage.setItem(k,String(d))}catch(e){}}
     }
-    tick(); setInterval(tick, 1000);
-  } catch (e) {}
-  var reveals = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-    }, { threshold: 0.1, rootMargin: '0px 0px -36px 0px' });
-    reveals.forEach(function(r) { io.observe(r); });
-  } else { reveals.forEach(function(r) { r.classList.add('visible'); }); }
-  var cardGroups = document.querySelectorAll('.g2, .pilares, .ng');
-  if ('IntersectionObserver' in window) {
-    var cio = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) {
-        if (!e.isIntersecting) return;
-        Array.prototype.forEach.call(e.target.children, function(kid, i) {
-          kid.style.transitionDelay = (i * 0.05) + 's';
-          kid.style.opacity = '1';
-          kid.style.transform = 'none';
-        });
-        cio.unobserve(e.target);
-      });
-    }, { threshold: 0.08 });
-    cardGroups.forEach(function(g) {
-      Array.prototype.forEach.call(g.children, function(c) {
-        c.style.opacity = '0'; c.style.transform = 'translateY(12px)';
-        c.style.transition = 'opacity 0.45s cubic-bezier(0.16,1,0.3,1), transform 0.45s cubic-bezier(0.16,1,0.3,1)';
-      });
-      cio.observe(g);
-    });
-  }
+    tick();setInterval(tick,1000);
+  }catch(e){}
+  var rs=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
+    rs.forEach(function(r){io.observe(r)});
+  }else rs.forEach(function(r){r.classList.add('on')});
 })();
 </script>
-
 <script src="https://player.vimeo.com/api/player.js"></script>
 <script>
-(function () {
+(function(){
   'use strict';
-  var frame = document.getElementById('vslPlayer');
-  var cue = document.getElementById('vslPlay');
-  if (!frame || !cue) return;
-  function fallback() {
-    cue.style.display = 'none';
-    frame.src = frame.src.replace('&controls=0', '').replace('controls=0&', '').replace('controls=0', '');
-  }
-  if (!(window.Vimeo && window.Vimeo.Player)) { fallback(); return; }
-  var player;
-  try { player = new window.Vimeo.Player(frame); } catch (e) { fallback(); return; }
-  cue.addEventListener('click', function () {
-    var p = player.play();
-    if (p && p.catch) p.catch(function () {});
-  });
-  player.on('play', function () { cue.classList.add('is-hidden'); });
-  player.on('pause', function () { cue.classList.remove('is-hidden'); });
-  player.on('ended', function () { cue.classList.remove('is-hidden'); });
+  var f=document.getElementById('vslPlayer'),c=document.getElementById('vslPlay');
+  if(!f||!c)return;
+  function fb(){c.style.display='none';f.src=f.src.replace('&controls=0','').replace('controls=0&','').replace('controls=0','')}
+  if(!(window.Vimeo&&window.Vimeo.Player)){fb();return}
+  var p;try{p=new window.Vimeo.Player(f)}catch(e){fb();return}
+  c.addEventListener('click',function(){var x=p.play();if(x&&x.catch)x.catch(function(){})});
+  p.on('play',function(){c.classList.add('hide')});
+  p.on('pause',function(){c.classList.remove('hide')});
+  p.on('ended',function(){c.classList.remove('hide')});
 })();
 </script>
-
 </body>
 </html>
