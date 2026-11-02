@@ -1,491 +1,539 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1981315135910431');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1981315135910431&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#059669">
-<meta name="description" content="Protocolo Ciclo Circadiano — 7 noites para regular o ritmo do sono. Mais disposição, sem pílulas.">
-<title>Protocolo Ciclo Circadiano — Recupere sua disposição</title>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Protocolo Apagão Noturno</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#F4F6F5;--bg2:#fff;--soft:#E8F5EF;--line:rgba(11,61,46,.08);--lineG:rgba(5,150,105,.28);
-  --g:#059669;--gs:#10B981;--gd:#047857;--glow:rgba(16,185,129,.35);
-  --ink:#0C1F17;--dim:#3D5249;--faint:#7A9088;--rose:#DC2626;
-  --serif:'Plus Jakarta Sans',system-ui,sans-serif;--sans:Inter,system-ui,-apple-system,sans-serif;
-  --r:16px;--rs:12px;--ease:cubic-bezier(.22,1,.36,1);--safe:env(safe-area-inset-bottom,0px);
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:inherit;text-decoration:none}
-button,a.btn{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
-.wrap{max-width:640px;margin:0 auto;padding:0 20px}
-.wrapw{max-width:900px;margin:0 auto;padding:0 20px}
-h1,h2,h3{font-family:var(--serif);font-weight:800;line-height:1.28;letter-spacing:-.02em;color:var(--ink);text-wrap:balance}
-h1{font-size:clamp(1.48rem,4.6vw,2.3rem)}
-h2{font-size:clamp(1.25rem,3.5vw,1.8rem);margin-bottom:12px}
-h3{font-size:1.05rem}
-p{color:var(--dim);font-size:1.05rem;margin-bottom:.95rem;max-width:54ch}
-.lede{font-size:clamp(1rem,2.3vw,1.12rem);color:var(--dim);line-height:1.65}
-.center{text-align:center}
-.center h2,.center p,.center .lede{margin-left:auto;margin-right:auto}
-.bgw{background:var(--bg2)}
-section{padding:48px 0}
-@media(min-width:768px){section{padding:64px 0}}
-.hl{color:var(--gd);font-weight:700;background:linear-gradient(180deg,transparent 62%,rgba(16,185,129,.2) 62%);padding:0 2px;border-radius:2px}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;width:100%;max-width:440px;
-  background:linear-gradient(165deg,var(--gs) 0%,var(--g) 45%,var(--gd) 100%);
-  color:#fff;font-weight:800;font-size:clamp(.95rem,2.3vw,1.08rem);padding:18px 22px;border-radius:14px;border:0;cursor:pointer;
-  box-shadow:0 8px 28px -4px var(--glow);text-align:center;letter-spacing:.01em;
-  transition:transform .3s var(--ease),box-shadow .3s var(--ease);
-}
-.btn:hover{transform:translateY(-2px);box-shadow:0 14px 36px -4px rgba(5,150,105,.48)}
-.btn:active{transform:scale(.98)}
-.btn-pulse{animation:bp 2.6s ease-in-out infinite}
-@keyframes bp{0%,100%{box-shadow:0 8px 28px -4px var(--glow)}50%{box-shadow:0 8px 42px -2px rgba(16,185,129,.55)}}
-.cta{display:flex;flex-direction:column;align-items:center;gap:10px}
-.micro{font-size:.8rem;color:var(--faint);font-weight:500;text-align:center}
-.hero{
-  text-align:center;padding:32px 0 44px;
-  background:radial-gradient(ellipse 80% 50% at 50% -10%,rgba(16,185,129,.11),transparent 60%),linear-gradient(180deg,#fff,var(--bg));
-}
-.hero h1{max-width:20ch;margin:0 auto 14px}
-.hero .lede{max-width:44ch;margin:0 auto 20px}
-.story p{font-size:1.08rem;line-height:1.8}
-.story strong{color:var(--ink);font-weight:700}
-.punch{font-family:var(--serif);font-weight:800;font-size:clamp(1.12rem,2.8vw,1.35rem);color:var(--ink);line-height:1.35;max-width:36ch;margin:22px 0}
-.g2{display:grid;grid-template-columns:1fr;gap:12px}
-@media(min-width:600px){.g2{grid-template-columns:1fr 1fr}}
-.card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:18px 16px;text-align:left;box-shadow:0 1px 3px rgba(11,61,46,.04)}
-.card h3{margin-bottom:6px;font-size:1.02rem}
-.card p{margin:0;font-size:.95rem}
-.fluxo{display:flex;flex-direction:column;align-items:center;max-width:300px;margin:24px auto 0}
-.fi{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rs);padding:12px 14px;font-size:.95rem;font-weight:600;text-align:center;width:100%}
-.fi.hot{background:linear-gradient(165deg,#fff,var(--soft));border:1.5px solid var(--lineG);color:var(--gd)}
-.fa{color:var(--g);font-weight:800;padding:3px 0;font-size:1.1rem}
-.sbox{background:linear-gradient(165deg,#fff,var(--soft));border:1.5px solid var(--lineG);border-radius:var(--r);padding:26px 20px;box-shadow:0 12px 40px -8px rgba(11,61,46,.14);max-width:540px;margin:0 auto;text-align:left}
-.sbox h3{font-size:clamp(1.08rem,2.6vw,1.25rem);margin-bottom:12px;color:var(--gd)}
-.sbox p{max-width:none}
-.sbox ul{list-style:none;display:grid;gap:11px;margin-top:14px}
-.sbox li{display:flex;gap:10px;font-size:1rem;color:var(--ink);font-weight:500}
-.sbox li::before{content:'→';color:var(--g);font-weight:800;flex-shrink:0}
-.pilares{display:grid;grid-template-columns:1fr;gap:12px;text-align:left}
-@media(min-width:700px){.pilares{grid-template-columns:1fr 1fr}}
-@media(min-width:900px){.pilares{grid-template-columns:repeat(5,1fr)}}
-.pilar{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:16px 14px}
-.pilar .n{font-family:var(--serif);font-size:1.3rem;color:var(--g);font-weight:800;margin-bottom:5px}
-.pilar h3{font-size:.95rem;margin-bottom:4px}
-.pilar p{margin:0;font-size:.88rem}
-.ng{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-@media(min-width:560px){.ng{grid-template-columns:repeat(4,1fr)}}
-@media(min-width:860px){.ng{grid-template-columns:repeat(7,1fr)}}
-.nt{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rs);padding:12px 8px;text-align:center}
-.nt .n{font-family:var(--serif);font-size:1.25rem;color:var(--g);font-weight:800}
-.nt h3{font-size:.76rem;margin-top:3px}
-.nt p{font-size:.68rem;color:var(--faint);margin:2px 0 0}
-.compare{display:grid;grid-template-columns:1fr;gap:12px;max-width:560px;margin:0 auto;text-align:left}
-@media(min-width:560px){.compare{grid-template-columns:1fr 1fr}}
-.cbox{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:16px}
-.cbox.ok{border-color:var(--lineG);background:linear-gradient(165deg,#fff,var(--soft))}
-.cbox h3{font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;margin-bottom:10px;color:var(--faint)}
-.cbox.ok h3{color:var(--gd)}
-.cbox ul{list-style:none;display:grid;gap:9px}
-.cbox li{font-size:.95rem;color:var(--ink);font-weight:500;padding-left:14px;position:relative}
-.cbox li::before{content:'·';position:absolute;left:0;color:var(--faint);font-weight:800}
-.cbox.ok li::before{content:'→';color:var(--g)}
-.cl{list-style:none;display:grid;gap:10px;max-width:500px;margin:0 auto;text-align:left}
-.cl li{display:flex;gap:12px;align-items:flex-start;background:var(--bg2);border:1px solid var(--line);border-radius:var(--rs);padding:14px 15px;font-size:.98rem;font-weight:500;color:var(--ink)}
-.cl li::before{content:'✓';color:#fff;background:var(--g);font-weight:800;flex-shrink:0;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.72rem;margin-top:2px}
-.provas{display:grid;gap:12px;max-width:560px;margin:0 auto;text-align:left}
-.prova{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:16px}
-.stars{color:#F59E0B;font-size:.9rem;letter-spacing:.08em;margin-bottom:8px}
-.prova p{margin:0 0 12px;font-size:.98rem;color:var(--ink);max-width:none;line-height:1.55}
-.pmeta{display:flex;align-items:center;gap:10px}
-.pav{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--soft),#d1fae5);color:var(--gd);font-weight:800;font-size:.82rem;display:flex;align-items:center;justify-content:center;border:1px solid var(--lineG)}
-.pnome{font-size:.92rem;font-weight:700}
-.ptag{font-size:.78rem;color:var(--faint)}
-.stack{display:grid;gap:8px;max-width:480px;margin:0 auto}
-.si{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;background:var(--bg2);border:1px solid var(--line);border-radius:var(--rs);padding:13px 14px;font-size:.92rem}
-.si .nm{font-weight:500;color:var(--ink);text-align:left}
-.si .nm small{display:block;color:var(--faint);font-size:.78rem;font-weight:400;margin-top:3px;line-height:1.4}
-.si .pr{font-weight:600;color:var(--dim);white-space:nowrap;padding-top:2px}
-.si.main{background:#fff;border:2px solid var(--g);box-shadow:0 6px 20px -4px var(--glow);padding:15px}
-.si.main .nm{font-weight:700}
-.si.main .pr{color:var(--ink);font-weight:700}
-.badge-m{display:inline-block;font-size:.65rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,var(--gs),var(--gd));padding:3px 8px;border-radius:5px;margin-bottom:5px}
-.si.bn{border-color:var(--lineG);background:linear-gradient(180deg,#fff,var(--soft))}
-.si.bn .pr{color:var(--gd)}
-.badge-b{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:var(--gd);background:rgba(16,185,129,.15);padding:2px 7px;border-radius:4px;margin-bottom:4px}
-.si.tot{border:0;background:none;font-family:var(--serif);font-weight:800;font-size:1.05rem;padding:8px 2px 0}
-.si.tot .pr{text-decoration:line-through;color:var(--faint);font-weight:500}
-.offer{background:var(--bg2);border:2px solid var(--g);border-radius:var(--r);padding:26px 18px 30px;box-shadow:0 20px 56px -12px rgba(5,150,105,.22);max-width:480px;margin:0 auto}
-.tag{display:inline-block;background:linear-gradient(135deg,var(--gs),var(--gd));color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:6px 11px;border-radius:6px;margin-bottom:10px}
-.price{text-align:center;margin:16px 0 4px}
-.price .de{font-size:1rem;color:var(--faint);text-decoration:line-through}
-.price .amt{font-family:var(--serif);font-size:clamp(2.7rem,8.5vw,3.5rem);color:var(--gd);font-weight:800;line-height:1;display:block;margin:4px 0}
-.price .amt sup{font-size:.38em;top:-.85em;margin-right:2px}
-.price .parc{font-size:1rem;font-weight:600;color:var(--ink)}
-.price .term{font-size:.82rem;color:var(--faint);margin-top:3px}
-.urg{display:flex;align-items:center;justify-content:center;gap:6px;background:linear-gradient(135deg,#FEF2F2,#FFF1F2);border:1px solid rgba(220,38,38,.2);border-radius:var(--rs);padding:12px;margin:14px 0 16px;font-size:.95rem;color:var(--dim);font-weight:500}
-.urg .tm{font-weight:800;color:var(--rose);font-size:1.15rem;min-width:3.2em;text-align:center}
-.gar{display:flex;gap:12px;align-items:flex-start;background:var(--soft);border:1px solid var(--lineG);border-radius:var(--rs);padding:14px;margin-bottom:18px;text-align:left}
-.gar svg{width:24px;height:24px;stroke:var(--g);fill:none;stroke-width:1.5;flex-shrink:0;margin-top:2px}
-.gar h3{font-size:.98rem;margin-bottom:2px}
-.gar p{margin:0;font-size:.9rem}
-.resumo{max-width:480px;margin:14px auto 0;background:linear-gradient(165deg,#fff,var(--soft));border:1.5px solid var(--lineG);border-radius:14px;padding:16px;text-align:left}
-.resumo-l{font-size:.75rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--gd);margin:0 0 8px}
-.resumo-t{font-size:1rem;color:var(--ink);line-height:1.55;margin:0 0 12px;max-width:none}
-.resumo-t strong{color:var(--gd)}
-.resumo-f{font-size:.85rem;color:var(--dim);margin:0;padding-top:12px;border-top:1px dashed var(--line);max-width:none}
-.resumo-f strong{color:var(--gd);font-weight:800}
-.faq{display:grid;gap:8px}
-details{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rs)}
-details[open]{border-color:var(--lineG);box-shadow:0 4px 24px -6px rgba(11,61,46,.1)}
-summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;font-family:var(--serif);font-size:1rem;font-weight:700;padding:14px 15px;color:var(--ink);user-select:none}
-summary::-webkit-details-marker{display:none}
-summary .pl{width:22px;height:22px;position:relative;flex-shrink:0;background:var(--soft);border-radius:6px}
-summary .pl::before,summary .pl::after{content:'';position:absolute;background:var(--g);top:50%;left:50%;transform:translate(-50%,-50%)}
-summary .pl::before{width:11px;height:2px}
-summary .pl::after{width:2px;height:11px;transition:transform .28s var(--ease)}
-details[open] summary .pl::after{transform:translate(-50%,-50%) rotate(90deg)}
-details p{margin:0;padding:0 15px 14px;font-size:.95rem}
-.final{text-align:center;background:radial-gradient(ellipse 70% 60% at 50% 100%,rgba(16,185,129,.06),transparent 70%),var(--bg2)}
-.final h2{max-width:18ch;margin:0 auto 10px}
-.final .ft{font-size:1.08rem;color:var(--dim);max-width:36ch;margin:0 auto 22px}
-footer{padding:32px 0 calc(32px + var(--safe));text-align:center;border-top:1px solid var(--line)}
-footer p{font-size:.75rem;color:var(--faint);max-width:520px;margin:0 auto 5px}
-.reveal{opacity:0;transform:translateY(16px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
-.reveal.on{opacity:1;transform:none}
-.vsl{
-  width:calc(100% - 16px);max-width:380px;margin:10px auto 0;background:var(--bg2);border:1.5px solid var(--lineG);
-  border-radius:16px;box-shadow:0 12px 40px -10px rgba(5,150,105,.18);overflow:hidden;text-align:center;position:relative;z-index:1
-}
-.vsl-lab{display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px 8px;font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--gd);background:linear-gradient(180deg,var(--soft),#fff);border-bottom:1px solid var(--lineG)}
-.vsl-lab i{width:8px;height:8px;border-radius:50%;background:var(--rose);box-shadow:0 0 0 3px rgba(220,38,38,.2);animation:bl 1.4s infinite}
-@keyframes bl{0%,100%{opacity:1}50%{opacity:.28}}
-.vsl-w{width:100%;aspect-ratio:1/1;position:relative;background:#0a0a0a;overflow:hidden}
-.vsl-w iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.vsl-play{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:0;border:0;cursor:pointer;background:radial-gradient(ellipse at center,rgba(0,0,0,.08),rgba(0,0,0,.42));transition:opacity .3s,visibility .3s}
-.vsl-play.hide{opacity:0;visibility:hidden;pointer-events:none}
-.vsl-ico{display:grid;place-items:center;width:72px;height:72px;border-radius:50%;background:linear-gradient(165deg,var(--gs),var(--g) 45%,var(--gd));box-shadow:0 10px 28px -4px var(--glow),0 0 0 5px rgba(255,255,255,.22)}
-.vsl-ico svg{width:30px;height:30px;margin-left:3px;fill:#fff}
-.vsl-n{margin:10px auto 0;max-width:380px;padding:6px 12px;font-size:.75rem;color:var(--faint);text-align:center}
-.hero .cta{margin-top:26px;position:relative;z-index:2}
-.mid-cta{margin-top:28px}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
-</style>
-</head>
-<body>
+  /* Conceito: tundra à noite, tratada como objeto de luxo. Preto glacial, linhas topográficas, luz fria nos fundos.
+     Uma única cor quente (areia champanhe) reservada para o que é ação e valor. Serifa editorial nos títulos. */
+  :root {
+    --bg: #060D12;
+    --bg-2: #09141B;
+    --bg-3: #0C1B24;
+    --glass: rgba(190,225,235,0.04);
+    --glass-2: rgba(190,225,235,0.07);
+    --hair: rgba(190,225,235,0.13);
+    --hair-2: rgba(190,225,235,0.24);
+    --ink: #F1EEE6;
+    --body: #AEBBC2;
+    --muted: #75868F;
+    --glacier: #9FD3DF;
+    --glacier-deep: #2B7C86;
+    --sand: #E8CF9A;
+    --sand-2: #C9A45C;
+    --sand-3: #8F6F2E;
+    --on-sand: #1A1305;
+    --rose: #D98A80;
+    --serif: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+    --sans: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--body);
+    font-family: var(--sans); font-size: 1.0625rem; line-height: 1.75;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  h1, h2, h3 { font-family: var(--serif); color: var(--ink); margin: 0; text-wrap: balance; font-optical-sizing: auto; }
+  h1 { font-weight: 500; font-size: clamp(2.05rem, 7vw, 3.6rem); line-height: 1.06; letter-spacing: -0.025em; }
+  h2 { font-weight: 500; font-size: clamp(1.7rem, 5vw, 2.6rem); line-height: 1.1; letter-spacing: -0.02em; }
+  h3 { font-weight: 600; font-size: 1.2rem; line-height: 1.25; letter-spacing: -0.01em; }
+  p { margin: 0 0 1.15rem; max-width: 62ch; }
+  strong { color: var(--ink); font-weight: 600; }
+  a { color: inherit; }
+  .hl { font-style: italic; color: var(--sand); font-weight: 400; }
+  .center { text-align: center; }
+  .center p { margin-left: auto; margin-right: auto; }
 
-<!-- HERO: message match do anúncio -->
+  .eyebrow { display: inline-flex; align-items: center; gap: 12px; font-family: var(--sans); font-weight: 600; font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--glacier); margin-bottom: 20px; }
+  .eyebrow::before, .eyebrow::after { content: ''; width: 28px; height: 1px; background: linear-gradient(90deg, transparent, var(--glacier)); }
+  .eyebrow::after { background: linear-gradient(270deg, transparent, var(--glacier)); }
+  .eyebrow.left::before { display: none; }
+  .eyebrow.left::after { width: 44px; background: linear-gradient(90deg, var(--glacier), transparent); }
+
+  .wrap {
+    max-width: 860px; margin: 0 auto; padding-block: 88px;
+    padding-left: max(20px, env(safe-area-inset-left, 0px));
+    padding-right: max(20px, env(safe-area-inset-right, 0px));
+    position: relative; z-index: 1;
+  }
+  @media (max-width: 640px) { .wrap { padding-block: 60px; } }
+  section { position: relative; }
+  .alt { background: linear-gradient(180deg, var(--bg-2), var(--bg)); }
+  .alt, .dark { border-top: 1px solid var(--hair); }
+  .dark { background: radial-gradient(760px 340px at 50% 0%, rgba(43,124,134,0.26), transparent 72%), linear-gradient(180deg, var(--bg-3), var(--bg)); }
+
+  /* linhas topográficas */
+  .hero::before, .dark::before, .offer::before {
+    content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 800%22 preserveAspectRatio=%22xMidYMid slice%22%3E%3Cg fill=%22none%22 stroke=%22%239FD3DF%22 stroke-width=%221%22 stroke-opacity=%220.55%22%3E%3Cpath d=%22M311.1,230.0 L314.2,232.0 L316.3,234.1 L317.3,236.3 L317.0,238.4 L315.5,240.4 L313.1,242.2 L310.2,243.7 L306.9,245.0 L303.7,246.2 L300.7,247.4 L298.1,248.5 L295.7,249.7 L293.4,250.8 L291.1,251.9 L288.7,252.9 L286.0,253.7 L283.1,254.3 L280.1,254.6 L277.1,254.7 L274.1,254.8 L271.4,254.9 L269.0,255.2 L266.7,255.8 L264.6,256.7 L262.6,257.8 L260.4,258.9 L258.0,260.0 L255.5,260.8 L252.8,261.2 L250.0,261.1 L247.3,260.5 L244.7,259.6 L242.4,258.5 L240.2,257.5 L238.0,256.6 L235.7,256.1 L233.2,256.0 L230.3,256.2 L227.0,256.7 L223.4,257.3 L219.6,257.8 L215.7,258.0 L212.0,257.8 L208.5,257.3 L205.5,256.4 L202.9,255.1 L200.6,253.7 L198.5,252.2 L196.6,250.6 L194.7,248.9 L192.9,247.3 L191.3,245.5 L190.0,243.6 L189.5,241.7 L189.7,239.6 L190.9,237.4 L193.1,235.3 L196.1,233.4 L199.5,231.6 L203.1,230.0 L206.3,228.6 L208.9,227.4 L210.6,226.3 L211.4,225.1 L211.2,223.8 L210.4,222.4 L209.3,220.7 L208.2,219.0 L207.5,217.2 L207.2,215.4 L207.5,213.6 L208.3,212.0 L209.5,210.6 L210.9,209.1 L212.3,207.7 L213.8,206.2 L215.2,204.5 L216.6,202.8 L218.2,201.0 L220.1,199.3 L222.4,197.9 L225.0,196.8 L228.0,196.1 L231.3,195.8 L234.6,196.0 L237.9,196.3 L241.1,196.8 L244.2,197.1 L247.1,197.3 L250.0,197.1 L253.0,196.6 L256.0,196.0 L259.3,195.3 L262.6,194.9 L265.9,194.8 L269.1,195.2 L271.9,196.2 L274.2,197.8 L276.0,199.7 L277.4,201.9 L278.4,204.1 L279.2,206.2 L279.9,208.1 L280.8,209.7 L281.9,211.1 L283.2,212.3 L284.5,213.4 L285.9,214.5 L287.2,215.7 L288.2,216.9 L289.1,218.2 L289.9,219.5 L290.9,220.7 L292.2,221.9 L294.0,223.0 L296.6,224.1 L299.8,225.3 L303.5,226.7 L307.4,228.2Z%22/%3E%3Cpath d=%22M366.1,230.0 L371.3,233.8 L374.5,237.8 L375.5,241.8 L374.2,245.6 L370.7,249.2 L365.7,252.3 L359.7,255.0 L353.4,257.3 L347.3,259.4 L341.9,261.4 L337.0,263.5 L332.8,265.6 L328.8,267.8 L324.8,269.9 L320.5,271.8 L315.8,273.3 L310.6,274.4 L305.2,275.0 L299.8,275.4 L294.5,275.7 L289.6,276.1 L285.2,276.8 L281.1,278.0 L277.2,279.7 L273.4,281.7 L269.3,283.8 L264.9,285.7 L260.1,287.0 L255.1,287.5 L250.0,287.2 L245.0,286.1 L240.4,284.4 L236.0,282.4 L231.9,280.6 L227.7,279.2 L223.4,278.6 L218.5,278.6 L212.9,279.4 L206.6,280.5 L199.6,281.7 L192.3,282.6 L185.0,283.0 L178.1,282.6 L171.8,281.5 L166.3,279.6 L161.7,277.1 L157.7,274.3 L154.2,271.2 L151.0,268.1 L147.9,264.9 L145.0,261.7 L142.5,258.4 L140.8,254.8 L140.3,251.1 L141.3,247.3 L144.0,243.4 L148.3,239.5 L153.8,236.0 L160.0,232.8 L166.3,230.0 L171.7,227.6 L175.8,225.4 L178.2,223.3 L178.7,221.0 L177.7,218.5 L175.7,215.7 L173.2,212.5 L170.9,209.1 L169.3,205.6 L168.8,202.2 L169.5,199.0 L171.1,196.0 L173.5,193.3 L176.3,190.7 L179.2,188.1 L182.1,185.3 L184.9,182.4 L187.8,179.2 L190.9,176.1 L194.6,173.1 L198.9,170.6 L203.9,168.6 L209.5,167.5 L215.5,167.1 L221.7,167.3 L227.8,168.0 L233.6,168.7 L239.2,169.2 L244.6,169.3 L250.0,168.8 L255.5,167.8 L261.2,166.6 L267.2,165.5 L273.4,164.8 L279.5,164.9 L285.1,166.0 L290.1,168.1 L294.2,171.2 L297.3,175.0 L299.5,179.2 L301.1,183.3 L302.5,187.2 L303.8,190.6 L305.5,193.5 L307.6,195.9 L310.2,197.9 L313.0,199.8 L315.8,201.7 L318.5,203.6 L320.9,205.7 L323.0,208.0 L325.1,210.2 L327.4,212.4 L330.3,214.5 L334.3,216.6 L339.4,218.7 L345.6,221.0 L352.5,223.6 L359.6,226.6Z%22/%3E%3Cpath d=%22M423.4,230.0 L430.1,235.6 L433.7,241.4 L434.0,247.3 L430.8,252.8 L424.8,257.8 L416.6,262.1 L407.3,265.8 L397.8,269.0 L388.9,272.0 L381.1,274.8 L374.3,277.8 L368.4,281.0 L363.0,284.2 L357.5,287.4 L351.6,290.2 L345.0,292.5 L337.7,294.2 L330.1,295.3 L322.3,296.0 L314.8,296.6 L307.9,297.3 L301.5,298.6 L295.6,300.4 L290.0,303.0 L284.3,305.9 L278.3,308.8 L271.8,311.4 L264.7,313.1 L257.4,313.7 L250.0,313.0 L242.8,311.3 L236.0,308.8 L229.7,306.1 L223.6,303.7 L217.4,302.1 L210.8,301.5 L203.3,302.1 L194.8,303.5 L185.2,305.4 L174.7,307.3 L163.7,308.7 L152.9,309.2 L142.8,308.4 L133.8,306.5 L126.1,303.4 L119.7,299.5 L114.4,295.1 L109.8,290.4 L105.7,285.6 L101.8,280.7 L98.3,275.8 L95.5,270.8 L93.8,265.5 L93.7,260.1 L95.8,254.5 L100.2,248.9 L106.6,243.5 L114.7,238.4 L123.4,233.9 L131.8,230.0 L138.9,226.5 L143.7,223.4 L146.0,220.2 L145.6,216.9 L143.1,213.0 L139.3,208.7 L135.1,203.9 L131.4,198.7 L129.1,193.5 L128.5,188.4 L129.8,183.7 L132.5,179.4 L136.4,175.5 L140.8,171.7 L145.4,168.0 L149.9,164.1 L154.2,159.9 L158.7,155.5 L163.5,151.1 L169.0,146.9 L175.5,143.3 L182.9,140.7 L191.1,139.1 L199.9,138.6 L208.8,139.0 L217.7,139.8 L226.1,140.7 L234.3,141.2 L242.1,141.1 L250.0,140.2 L258.1,138.7 L266.5,136.9 L275.3,135.4 L284.2,134.7 L292.9,135.2 L300.9,137.2 L307.8,140.7 L313.4,145.6 L317.5,151.5 L320.5,157.7 L322.6,163.8 L324.3,169.4 L326.3,174.1 L328.9,178.1 L332.3,181.2 L336.4,183.9 L341.0,186.3 L345.7,188.8 L350.2,191.4 L354.3,194.3 L358.1,197.3 L361.9,200.5 L366.0,203.6 L371.1,206.7 L377.5,209.8 L385.4,212.9 L394.6,216.4 L404.7,220.4 L414.6,224.9Z%22/%3E%3Cpath d=%22M482.5,230.0 L489.9,237.5 L493.2,245.1 L492.0,252.7 L486.4,259.8 L477.2,266.1 L465.5,271.5 L452.7,276.1 L440.1,280.1 L428.5,283.9 L418.5,287.6 L410.1,291.6 L402.9,295.8 L396.3,300.2 L389.6,304.5 L382.2,308.3 L373.9,311.5 L364.6,313.9 L354.8,315.5 L344.9,316.6 L335.3,317.5 L326.2,318.7 L318.0,320.5 L310.3,323.1 L302.9,326.4 L295.3,330.2 L287.3,333.9 L278.6,337.1 L269.3,339.0 L259.7,339.6 L250.0,338.5 L240.6,336.2 L231.7,333.0 L223.3,329.7 L215.2,327.0 L206.9,325.4 L197.8,325.2 L187.5,326.5 L175.8,328.8 L162.6,331.6 L148.4,334.3 L133.8,336.1 L119.5,336.5 L106.3,335.2 L94.8,332.2 L85.1,327.7 L77.3,322.1 L71.0,315.9 L65.8,309.3 L61.2,302.7 L57.0,296.0 L53.4,289.4 L50.6,282.6 L49.2,275.7 L50.0,268.5 L53.4,261.2 L59.5,254.0 L68.1,247.1 L78.3,240.7 L89.2,235.0 L99.1,230.0 L107.1,225.6 L111.9,221.4 L113.3,217.2 L111.4,212.5 L106.9,207.3 L100.9,201.3 L94.8,194.7 L89.8,187.7 L86.9,180.7 L86.4,174.0 L88.5,167.9 L92.7,162.3 L98.3,157.2 L104.6,152.4 L111.1,147.7 L117.3,142.7 L123.4,137.3 L129.5,131.7 L136.1,126.0 L143.6,120.7 L152.2,116.2 L162.0,112.9 L172.9,111.0 L184.4,110.3 L196.1,110.7 L207.6,111.7 L218.6,112.7 L229.3,113.1 L239.6,112.7 L250.0,111.3 L260.7,109.3 L271.8,107.0 L283.3,105.3 L294.9,104.8 L306.1,105.9 L316.3,109.2 L324.9,114.4 L331.7,121.3 L336.7,129.2 L340.1,137.5 L342.6,145.5 L344.8,152.6 L347.6,158.6 L351.3,163.3 L356.2,167.1 L362.2,170.1 L369.0,172.9 L376.0,175.8 L382.8,178.9 L389.1,182.4 L395.0,186.2 L400.8,190.2 L407.2,194.2 L414.6,198.3 L423.7,202.4 L434.5,206.8 L446.7,211.5 L459.6,216.9 L472.0,223.1Z%22/%3E%3Cpath d=%22M542.8,230.0 L550.2,239.3 L552.3,248.8 L548.9,258.1 L540.3,266.6 L527.5,274.1 L512.1,280.5 L495.7,285.9 L480.0,290.7 L466.0,295.2 L454.2,299.9 L444.5,304.8 L436.4,310.2 L428.9,315.8 L421.2,321.3 L412.5,326.3 L402.6,330.4 L391.5,333.6 L379.6,335.7 L367.5,337.2 L355.8,338.5 L344.7,340.2 L334.5,342.5 L325.0,345.8 L315.8,349.9 L306.3,354.5 L296.3,359.0 L285.4,362.6 L273.9,364.8 L262.0,365.2 L250.0,363.7 L238.4,360.8 L227.4,357.1 L217.0,353.5 L206.7,350.7 L196.0,349.4 L184.3,349.9 L170.9,352.1 L155.7,355.5 L138.8,359.3 L120.8,362.6 L102.4,364.7 L84.8,364.8 L68.7,362.7 L55.0,358.4 L43.8,352.2 L35.0,344.7 L28.2,336.4 L22.8,327.8 L18.2,319.2 L14.1,310.7 L10.6,302.3 L8.2,293.8 L7.4,285.2 L9.2,276.4 L13.9,267.5 L21.8,258.7 L32.3,250.4 L44.4,242.8 L56.7,236.0 L67.6,230.0 L75.6,224.6 L79.7,219.4 L79.6,214.0 L75.5,208.0 L68.5,201.2 L60.1,193.4 L52.1,185.0 L45.9,176.1 L42.6,167.4 L42.6,159.1 L46.0,151.5 L51.9,144.7 L59.6,138.6 L68.0,132.9 L76.5,127.2 L84.6,121.2 L92.5,114.7 L100.3,107.9 L108.7,101.1 L118.2,94.7 L129.0,89.3 L141.3,85.3 L154.7,82.9 L168.9,82.1 L183.3,82.5 L197.5,83.5 L211.1,84.5 L224.2,84.7 L237.1,83.9 L250.0,82.1 L263.3,79.6 L277.1,77.1 L291.3,75.4 L305.5,75.3 L319.0,77.4 L331.1,82.1 L341.2,89.2 L349.0,98.2 L354.6,108.4 L358.4,118.8 L361.2,128.5 L364.1,136.9 L367.8,143.8 L372.9,149.1 L379.8,153.1 L388.1,156.3 L397.5,159.2 L407.2,162.3 L416.7,165.9 L425.6,169.9 L434.0,174.4 L442.3,179.3 L451.1,184.3 L461.1,189.3 L472.9,194.6 L486.6,200.2 L501.6,206.4 L517.0,213.4 L531.3,221.3Z%22/%3E%3Cpath d=%22M603.5,230.0 L610.1,241.2 L610.4,252.4 L604.1,263.2 L592.0,273.1 L575.3,281.7 L556.1,288.9 L536.3,295.1 L517.7,300.6 L501.6,306.0 L488.4,311.6 L477.9,317.7 L469.1,324.4 L461.1,331.3 L452.6,338.1 L442.8,344.3 L431.4,349.4 L418.5,353.3 L404.5,356.0 L390.2,358.0 L376.3,359.7 L363.3,361.7 L351.2,364.7 L339.8,368.6 L328.7,373.5 L317.3,378.9 L305.2,383.9 L292.2,388.0 L278.4,390.3 L264.2,390.5 L250.0,388.8 L236.3,385.5 L223.1,381.4 L210.5,377.6 L198.0,375.0 L184.7,374.3 L170.1,375.8 L153.4,379.1 L134.6,383.6 L113.8,388.4 L91.9,392.3 L69.8,394.4 L49.0,394.0 L30.4,390.7 L14.8,384.8 L2.4,376.7 L-6.8,367.0 L-13.6,356.5 L-18.8,345.7 L-23.0,335.1 L-26.7,324.7 L-29.6,314.4 L-31.5,304.3 L-31.4,294.0 L-28.7,283.7 L-22.6,273.3 L-13.3,263.2 L-1.2,253.6 L12.2,244.8 L25.4,237.0 L36.5,230.0 L43.9,223.6 L46.5,217.3 L44.1,210.7 L37.4,203.2 L27.6,194.7 L16.8,185.1 L6.9,174.7 L-0.2,164.0 L-3.6,153.4 L-2.6,143.6 L2.4,134.7 L10.4,126.9 L20.4,119.8 L31.2,113.3 L41.9,106.7 L52.0,99.7 L61.6,92.2 L71.2,84.2 L81.4,76.2 L92.8,68.7 L105.9,62.4 L120.6,57.7 L136.6,54.9 L153.5,54.0 L170.6,54.3 L187.3,55.3 L203.5,56.1 L219.2,56.1 L234.5,55.0 L250.0,52.8 L265.9,49.9 L282.4,47.3 L299.2,45.8 L315.9,46.4 L331.5,49.8 L345.3,56.2 L356.6,65.4 L365.2,76.7 L371.2,89.0 L375.4,101.3 L378.6,112.6 L382.2,122.1 L387.2,129.6 L394.2,135.1 L403.4,139.1 L414.5,142.2 L427.0,145.1 L439.9,148.2 L452.5,152.1 L464.4,156.7 L475.6,161.9 L486.5,167.6 L497.9,173.6 L510.6,179.8 L525.1,186.3 L541.3,193.3 L558.8,201.0 L576.1,209.7 L591.7,219.4Z%22/%3E%3Cpath d=%22M664.0,230.0 L669.1,243.0 L666.9,256.0 L657.2,268.2 L641.1,279.3 L620.4,288.8 L597.4,296.9 L574.4,303.8 L553.4,310.0 L535.6,316.2 L521.5,322.9 L510.5,330.3 L501.6,338.3 L493.2,346.7 L484.1,354.9 L473.3,362.3 L460.4,368.5 L445.6,373.1 L429.5,376.4 L413.0,378.8 L397.0,380.9 L381.9,383.4 L367.8,386.8 L354.6,391.4 L341.6,397.0 L328.3,403.1 L314.1,408.7 L298.9,413.1 L282.9,415.6 L266.4,415.8 L250.0,413.8 L234.1,410.2 L218.8,406.0 L203.9,402.4 L188.9,400.3 L172.9,400.4 L155.1,403.0 L135.0,407.6 L112.3,413.3 L87.5,419.0 L61.7,423.3 L36.1,425.2 L12.3,423.9 L-8.5,419.1 L-25.4,411.3 L-38.4,400.9 L-47.6,388.8 L-54.0,375.9 L-58.5,362.8 L-61.9,350.0 L-64.8,337.7 L-67.1,325.7 L-68.3,314.0 L-67.4,302.2 L-63.7,290.4 L-56.6,278.7 L-46.0,267.3 L-33.0,256.6 L-18.7,246.7 L-5.3,237.9 L5.2,230.0 L11.2,222.6 L11.7,215.2 L6.5,207.1 L-3.3,198.1 L-15.9,187.8 L-29.2,176.2 L-40.7,163.9 L-48.5,151.3 L-51.4,139.0 L-49.0,127.7 L-42.0,117.6 L-31.4,108.8 L-18.8,101.0 L-5.5,93.7 L7.5,86.3 L19.6,78.3 L31.0,69.7 L42.3,60.6 L54.2,51.4 L67.6,42.8 L82.8,35.5 L99.8,30.1 L118.5,26.9 L138.0,25.7 L157.7,26.0 L177.1,26.9 L195.9,27.5 L214.1,27.3 L232.0,25.9 L250.0,23.4 L268.5,20.3 L287.6,17.8 L307.0,16.8 L325.9,18.4 L343.4,23.3 L358.7,31.7 L371.1,43.1 L380.2,56.7 L386.6,71.1 L391.1,85.2 L394.9,97.7 L399.6,108.0 L406.1,115.7 L415.4,121.2 L427.5,124.8 L442.0,127.6 L458.0,130.2 L474.5,133.3 L490.6,137.4 L505.7,142.5 L519.9,148.5 L533.6,155.2 L547.6,162.3 L562.9,169.8 L579.8,177.6 L598.4,186.1 L617.7,195.5 L636.5,205.9 L652.6,217.5Z%22/%3E%3Cpath d=%22M723.6,230.0 L726.5,244.8 L721.1,259.3 L707.7,273.0 L687.5,285.1 L662.7,295.5 L636.1,304.3 L610.2,311.9 L587.2,319.0 L568.4,326.1 L553.8,333.9 L542.8,342.7 L534.0,352.3 L525.5,362.2 L515.9,371.9 L504.1,380.6 L489.7,387.7 L472.9,393.1 L454.6,396.9 L435.9,399.6 L417.6,402.0 L400.4,404.9 L384.4,408.8 L369.2,414.1 L354.4,420.4 L339.1,427.1 L322.9,433.3 L305.6,438.2 L287.4,440.8 L268.7,441.0 L250.0,438.9 L231.8,435.3 L214.3,431.2 L197.1,428.0 L179.5,426.7 L160.5,427.9 L139.4,431.8 L115.5,437.7 L88.8,444.5 L60.0,450.9 L30.4,455.4 L1.6,456.7 L-24.8,454.2 L-47.3,447.6 L-65.2,437.4 L-78.1,424.4 L-86.8,409.7 L-92.3,394.2 L-95.7,378.8 L-98.1,364.0 L-100.1,349.8 L-101.6,336.2 L-102.1,322.9 L-100.6,309.8 L-96.2,296.7 L-88.3,283.7 L-77.1,271.2 L-63.5,259.4 L-49.2,248.6 L-36.3,238.9 L-27.0,230.0 L-23.1,221.5 L-25.4,212.8 L-33.7,203.4 L-46.7,192.6 L-62.3,180.4 L-77.8,166.9 L-90.5,152.5 L-98.5,138.1 L-100.4,124.2 L-96.2,111.5 L-86.7,100.4 L-73.3,90.8 L-57.8,82.3 L-41.9,74.3 L-26.7,66.1 L-12.6,57.2 L0.5,47.4 L13.4,37.1 L27.1,26.6 L42.3,16.8 L59.6,8.6 L79.1,2.5 L100.2,-1.2 L122.4,-2.7 L144.9,-2.5 L166.9,-1.7 L188.2,-1.2 L208.9,-1.5 L229.4,-3.2 L250.0,-5.9 L271.1,-8.9 L292.8,-11.2 L314.5,-11.3 L335.5,-8.4 L354.8,-1.7 L371.3,8.7 L384.5,22.4 L394.1,38.2 L400.8,54.6 L405.7,70.2 L410.4,83.7 L416.4,94.3 L425.0,101.9 L437.1,106.9 L452.6,109.9 L471.0,112.1 L491.0,114.3 L511.5,117.4 L531.4,121.7 L549.9,127.4 L567.2,134.2 L583.6,142.0 L600.1,150.3 L617.7,159.2 L636.7,168.6 L657.1,178.7 L677.9,189.8 L697.3,202.1 L713.3,215.6Z%22/%3E%3Cpath d=%22M781.6,230.0 L781.7,246.5 L772.8,262.6 L755.2,277.4 L730.8,290.6 L702.2,301.8 L672.3,311.3 L644.0,319.6 L619.5,327.5 L600.1,335.7 L585.7,344.8 L575.1,355.1 L566.6,366.3 L558.3,377.9 L548.2,389.1 L535.3,399.1 L519.2,407.2 L500.4,413.2 L479.8,417.4 L458.7,420.4 L438.1,423.1 L418.8,426.3 L400.8,430.7 L383.8,436.5 L367.1,443.5 L349.9,451.0 L331.7,457.8 L312.3,463.1 L291.9,466.0 L270.9,466.4 L250.0,464.3 L229.6,460.9 L209.7,457.2 L189.9,454.7 L169.5,454.4 L147.4,456.9 L122.7,462.2 L94.9,469.4 L64.2,477.3 L31.5,484.1 L-1.7,488.4 L-33.6,488.8 L-62.1,484.6 L-85.8,475.8 L-103.9,462.9 L-116.4,447.1 L-124.0,429.6 L-128.2,411.5 L-130.2,393.7 L-131.4,376.8 L-132.4,360.8 L-133.2,345.7 L-133.2,331.1 L-131.3,316.7 L-126.5,302.5 L-118.4,288.5 L-107.0,275.0 L-93.5,262.2 L-79.8,250.5 L-68.2,239.9 L-60.8,230.0 L-59.5,220.4 L-65.0,210.4 L-76.8,199.3 L-93.1,186.8 L-111.5,172.6 L-128.9,157.0 L-142.5,140.7 L-150.0,124.5 L-150.5,109.1 L-143.9,95.2 L-131.4,83.2 L-114.9,72.9 L-96.4,63.8 L-77.8,55.1 L-60.4,46.1 L-44.5,36.2 L-29.7,25.3 L-15.3,13.6 L-0.1,1.8 L16.9,-9.2 L36.3,-18.5 L58.2,-25.3 L81.9,-29.5 L106.8,-31.2 L131.9,-31.2 L156.6,-30.5 L180.5,-29.9 L203.8,-30.4 L226.8,-32.2 L250.0,-34.9 L273.7,-37.6 L297.8,-39.2 L321.7,-38.3 L344.7,-33.9 L365.4,-25.3 L383.0,-12.6 L396.8,3.4 L406.9,21.2 L413.9,39.3 L419.5,56.1 L425.2,70.1 L433.0,80.7 L444.3,87.8 L459.7,92.0 L479.3,94.1 L502.0,95.6 L526.5,97.3 L551.3,100.3 L575.1,104.9 L597.1,111.2 L617.3,119.1 L636.4,128.1 L655.2,137.8 L674.6,148.2 L695.3,159.3 L717.0,171.2 L738.5,184.2 L758.0,198.4 L773.1,213.8Z%22/%3E%3Cpath d=%22M837.4,230.0 L834.3,248.1 L821.5,265.6 L799.8,281.6 L771.3,295.7 L738.9,307.6 L706.2,317.8 L676.1,326.9 L650.8,335.7 L631.4,345.1 L617.5,355.7 L607.7,367.6 L599.8,380.6 L591.6,393.9 L581.0,406.6 L566.9,417.8 L549.1,426.8 L528.0,433.4 L505.0,438.0 L481.4,441.1 L458.5,444.0 L437.0,447.5 L417.0,452.3 L398.2,458.8 L379.7,466.5 L360.6,474.7 L340.5,482.3 L319.0,488.1 L296.4,491.5 L273.2,492.1 L250.0,490.4 L227.2,487.4 L204.9,484.4 L182.4,482.8 L159.0,483.7 L133.5,487.6 L105.1,494.3 L73.3,502.7 L38.6,511.4 L2.0,518.4 L-34.5,522.0 L-69.0,521.0 L-99.1,514.8 L-123.5,503.3 L-141.3,487.5 L-152.7,468.6 L-158.8,448.1 L-161.2,427.3 L-161.7,407.3 L-161.6,388.4 L-161.8,370.9 L-162.1,354.4 L-161.8,338.7 L-159.9,323.2 L-155.3,308.0 L-147.4,293.1 L-136.5,278.7 L-123.8,265.1 L-111.3,252.5 L-101.6,240.9 L-96.8,230.0 L-98.6,219.2 L-107.6,207.7 L-122.9,195.0 L-142.5,180.6 L-163.4,164.4 L-182.3,146.8 L-196.1,128.5 L-202.7,110.6 L-201.0,93.8 L-191.6,78.9 L-175.8,66.1 L-156.0,55.2 L-134.4,45.5 L-113.2,36.2 L-93.6,26.4 L-76.0,15.4 L-59.9,3.2 L-44.1,-9.9 L-27.4,-23.1 L-8.6,-35.4 L12.9,-45.8 L37.1,-53.4 L63.4,-58.0 L91.0,-60.0 L118.9,-60.0 L146.3,-59.2 L172.8,-58.7 L198.7,-59.1 L224.3,-60.7 L250.0,-63.2 L276.1,-65.5 L302.5,-66.2 L328.6,-64.0 L353.2,-57.8 L375.3,-47.2 L393.8,-32.2 L408.1,-14.1 L418.6,5.6 L426.2,25.1 L432.6,42.6 L439.9,56.8 L450.0,66.9 L464.4,73.1 L483.8,76.1 L507.9,77.2 L535.4,77.7 L564.8,79.0 L594.1,81.9 L621.9,86.9 L647.3,94.1 L670.3,103.1 L691.6,113.5 L712.3,124.8 L733.2,137.0 L755.0,149.8 L777.3,163.6 L798.9,178.5 L817.7,194.6 L831.4,211.9Z%22/%3E%3Cpath d=%22M890.7,230.0 L884.0,249.7 L867.1,268.4 L841.2,285.5 L808.8,300.4 L773.3,313.1 L738.2,324.0 L706.8,333.9 L681.3,343.8 L662.5,354.5 L649.6,366.7 L640.9,380.4 L633.8,395.2 L625.7,410.3 L614.5,424.5 L599.0,436.8 L579.1,446.6 L555.6,453.7 L530.0,458.4 L503.8,461.6 L478.5,464.6 L454.9,468.3 L433.1,473.7 L412.5,480.8 L392.2,489.3 L371.4,498.4 L349.3,506.8 L325.7,513.3 L301.0,517.3 L275.5,518.5 L250.0,517.3 L224.8,514.9 L199.8,512.8 L174.5,512.3 L147.9,514.6 L118.9,519.9 L86.6,528.0 L50.8,537.5 L12.1,546.6 L-28.1,553.4 L-67.6,556.0 L-104.2,553.2 L-135.4,544.4 L-159.8,529.9 L-176.7,510.8 L-186.5,488.7 L-190.8,465.2 L-191.3,441.7 L-190.1,419.5 L-188.8,398.9 L-188.2,379.9 L-188.3,362.3 L-188.3,345.6 L-186.9,329.4 L-183.0,313.4 L-176.0,297.6 L-166.2,282.4 L-154.9,268.0 L-144.4,254.6 L-137.1,242.0 L-135.3,230.0 L-140.6,217.9 L-153.3,204.9 L-172.2,190.4 L-194.8,174.0 L-217.8,155.7 L-237.6,136.1 L-251.0,116.0 L-256.0,96.5 L-251.7,78.5 L-239.0,62.7 L-219.6,49.3 L-196.3,37.9 L-171.7,27.6 L-148.0,17.7 L-126.5,6.9 L-107.4,-5.2 L-90.1,-18.9 L-73.1,-33.5 L-55.0,-48.3 L-34.5,-62.0 L-10.9,-73.4 L15.8,-81.8 L44.8,-86.8 L75.1,-88.9 L105.8,-88.9 L136.0,-87.9 L165.2,-87.2 L193.7,-87.4 L221.8,-88.7 L250.0,-90.7 L278.5,-92.2 L307.1,-91.9 L335.0,-88.2 L361.2,-80.1 L384.5,-67.4 L403.7,-50.3 L418.5,-30.2 L429.4,-8.8 L437.7,11.7 L445.4,29.5 L454.6,43.3 L467.7,52.5 L485.9,57.4 L509.8,59.0 L538.9,58.8 L571.7,58.3 L606.1,59.1 L640.0,62.1 L671.7,67.7 L700.3,75.9 L725.8,86.3 L749.0,98.3 L770.9,111.5 L792.8,125.5 L815.1,140.3 L837.4,156.0 L858.4,172.9 L876.0,191.0 L887.5,210.2Z%22/%3E%3Cpath d=%22M941.0,230.0 L930.5,251.1 L909.6,271.1 L879.7,289.1 L843.7,304.8 L805.5,318.2 L768.7,329.9 L736.7,340.7 L711.6,351.8 L693.8,364.0 L682.4,377.9 L674.9,393.5 L668.6,410.2 L660.5,427.0 L648.5,442.6 L631.4,456.0 L609.3,466.4 L583.1,473.8 L554.7,478.5 L525.9,481.8 L498.3,484.8 L472.5,488.8 L448.9,494.7 L426.6,502.6 L404.7,512.1 L382.1,522.1 L358.2,531.5 L332.6,539.0 L305.7,543.8 L277.9,545.7 L250.0,545.3 L222.2,543.8 L194.5,542.7 L166.2,543.5 L136.2,547.2 L103.5,554.0 L67.3,563.2 L27.5,573.5 L-15.0,582.7 L-58.6,588.9 L-100.7,590.0 L-138.8,584.8 L-170.5,573.0 L-194.3,555.1 L-209.7,532.6 L-217.6,507.1 L-219.6,480.6 L-218.0,454.6 L-215.2,430.3 L-212.9,408.2 L-212.1,388.1 L-212.5,369.6 L-213.2,352.2 L-213.0,335.3 L-210.4,318.6 L-204.9,302.2 L-196.8,286.3 L-187.6,271.1 L-179.5,256.8 L-175.2,243.2 L-176.8,230.0 L-185.7,216.5 L-202.1,201.8 L-224.4,185.5 L-249.6,167.1 L-274.3,146.8 L-294.4,125.2 L-306.8,103.3 L-309.5,82.4 L-302.1,63.3 L-285.7,46.7 L-262.6,32.8 L-235.7,20.9 L-208.1,10.1 L-182.1,-0.6 L-159.0,-12.4 L-138.7,-25.8 L-120.3,-41.0 L-102.3,-57.4 L-82.9,-73.8 L-60.6,-88.9 L-34.9,-101.4 L-5.8,-110.5 L26.0,-115.8 L59.2,-117.9 L92.8,-117.7 L125.8,-116.4 L157.7,-115.2 L188.8,-115.0 L219.4,-115.8 L250.0,-117.1 L280.7,-117.7 L311.4,-116.0 L341.1,-110.7 L368.6,-100.7 L392.8,-85.9 L412.7,-66.8 L428.1,-44.9 L439.6,-22.4 L448.9,-1.3 L458.2,16.3 L470.0,29.2 L486.5,37.1 L509.2,40.4 L538.2,40.3 L572.8,38.7 L611.1,37.3 L650.7,37.7 L689.1,40.9 L724.5,47.4 L756.0,56.9 L783.5,68.9 L807.9,82.8 L830.6,97.9 L852.7,114.0 L874.8,130.8 L896.5,148.6 L916.4,167.5 L932.1,187.5 L941.1,208.5Z%22/%3E%3Cpath d=%22M988.2,230.0 L973.8,252.5 L948.9,273.5 L915.4,292.4 L876.4,308.9 L835.9,323.0 L798.2,335.5 L766.3,347.4 L742.1,359.8 L725.9,373.7 L716.1,389.5 L710.0,407.0 L704.4,425.6 L696.2,444.1 L683.1,461.1 L664.1,475.4 L639.3,486.2 L610.3,493.7 L579.0,498.4 L547.6,501.5 L517.5,504.6 L489.8,508.9 L464.4,515.4 L440.6,524.2 L417.1,534.8 L392.9,546.1 L367.2,556.7 L339.6,565.4 L310.5,571.2 L280.4,574.0 L250.0,574.6 L219.6,574.2 L188.9,574.3 L157.4,576.5 L123.9,581.5 L87.4,589.6 L47.2,599.8 L3.5,610.5 L-42.6,619.4 L-89.1,624.4 L-133.3,623.4 L-172.4,615.4 L-204.0,600.3 L-226.6,578.8 L-240.1,552.5 L-245.5,523.7 L-245.1,494.2 L-241.5,465.9 L-237.3,439.8 L-234.4,416.4 L-233.7,395.5 L-235.0,376.4 L-237.2,358.5 L-238.7,341.2 L-238.1,324.0 L-234.8,307.0 L-229.1,290.3 L-222.5,274.3 L-217.3,259.1 L-216.2,244.5 L-221.4,230.0 L-234.1,215.0 L-254.0,198.6 L-279.4,180.3 L-306.8,159.9 L-332.4,137.5 L-352.2,114.0 L-363.0,90.6 L-362.9,68.3 L-351.9,48.3 L-331.5,31.1 L-304.5,16.6 L-274.2,4.3 L-243.8,-7.0 L-215.8,-18.5 L-191.3,-31.5 L-170.0,-46.4 L-150.9,-63.4 L-131.9,-81.5 L-111.2,-99.6 L-87.3,-116.2 L-59.3,-129.8 L-27.6,-139.4 L7.1,-145.0 L43.3,-146.9 L79.9,-146.2 L115.7,-144.4 L150.4,-142.6 L184.1,-141.7 L217.1,-141.8 L250.0,-142.2 L282.9,-141.6 L315.4,-138.5 L346.6,-131.5 L375.4,-119.6 L400.5,-102.8 L421.0,-81.9 L437.0,-58.7 L449.4,-35.4 L460.1,-14.3 L471.5,2.7 L486.4,14.3 L507.0,20.4 L534.6,21.7 L569.3,19.9 L609.8,16.8 L653.8,14.6 L698.5,14.8 L741.3,18.5 L780.1,26.0 L813.9,37.1 L842.8,51.0 L867.9,67.0 L890.6,84.3 L912.3,102.5 L933.6,121.5 L954.1,141.3 L972.2,162.2 L985.7,184.2 L991.7,207.0Z%22/%3E%3Cpath d=%22M1032.1,230.0 L1014.0,253.7 L985.4,275.8 L948.6,295.6 L907.1,312.8 L865.2,327.7 L827.1,341.1 L795.8,354.2 L773.2,368.0 L758.8,383.6 L750.9,401.4 L746.2,421.0 L741.2,441.5 L732.6,461.6 L718.0,479.7 L696.7,494.7 L669.2,505.9 L637.1,513.3 L602.8,517.8 L568.6,520.8 L536.3,523.9 L506.8,528.6 L479.8,535.9 L454.6,545.8 L429.7,557.8 L404.0,570.6 L376.5,582.6 L346.9,592.6 L315.6,599.7 L283.1,603.8 L250.0,605.5 L216.7,606.3 L183.0,607.7 L148.1,611.2 L111.0,617.5 L70.7,626.6 L26.6,637.5 L-20.9,648.1 L-70.3,656.3 L-119.3,659.5 L-165.0,656.0 L-204.5,644.8 L-235.3,625.9 L-256.2,600.5 L-267.3,570.5 L-270.2,538.3 L-267.3,506.0 L-261.8,475.6 L-256.5,448.1 L-253.5,423.8 L-253.6,402.3 L-256.5,382.9 L-260.8,364.8 L-264.8,347.1 L-266.9,329.5 L-266.4,312.0 L-263.6,294.7 L-260.0,277.9 L-258.1,261.6 L-260.5,245.9 L-269.3,230.0 L-285.6,213.4 L-308.9,195.2 L-336.8,174.9 L-365.9,152.4 L-391.9,128.1 L-410.6,102.8 L-419.1,77.8 L-415.7,54.4 L-400.7,33.5 L-376.2,15.8 L-345.2,0.9 L-311.7,-11.8 L-278.8,-23.8 L-249.1,-36.3 L-223.5,-50.6 L-201.6,-67.2 L-181.9,-86.1 L-162.1,-106.1 L-140.2,-126.0 L-114.4,-144.0 L-84.0,-158.5 L-49.5,-168.6 L-11.8,-174.2 L27.6,-175.7 L67.2,-174.3 L105.9,-171.7 L143.3,-169.1 L179.5,-167.3 L214.9,-166.4 L250.0,-165.7 L284.8,-163.9 L319.0,-159.3 L351.7,-150.6 L381.6,-136.9 L407.5,-118.3 L428.7,-96.0 L445.5,-71.8 L459.1,-48.3 L471.5,-27.6 L485.7,-11.9 L504.3,-2.0 L529.6,1.9 L562.8,1.1 L603.5,-2.6 L650.1,-7.1 L699.8,-10.0 L749.6,-9.7 L796.4,-5.2 L838.0,3.7 L873.5,16.7 L903.1,32.8 L928.1,51.1 L950.1,70.7 L970.8,91.2 L990.6,112.4 L1009.4,134.3 L1025.4,157.2 L1036.2,181.0 L1039.1,205.5Z%22/%3E%3Cpath d=%22M1072.8,230.0 L1051.2,254.9 L1019.3,277.9 L979.8,298.5 L936.4,316.5 L893.7,332.2 L855.9,346.7 L825.9,361.0 L805.2,376.5 L793.0,394.0 L787.0,413.7 L783.6,435.4 L778.9,457.7 L769.5,479.3 L753.2,498.5 L729.2,514.0 L698.6,525.2 L663.3,532.4 L625.9,536.6 L589.1,539.5 L554.7,542.8 L523.5,548.0 L495.2,556.3 L468.7,567.6 L442.6,581.2 L415.4,595.7 L386.1,609.5 L354.5,621.2 L320.9,629.7 L285.8,635.1 L250.0,638.1 L213.7,640.1 L176.8,642.8 L138.4,647.5 L97.6,654.9 L53.4,664.8 L5.5,675.9 L-45.4,686.0 L-97.7,692.8 L-148.8,693.9 L-195.5,687.3 L-234.8,672.4 L-264.3,649.4 L-282.9,620.0 L-291.3,586.3 L-291.4,550.8 L-286.2,516.1 L-279.1,483.9 L-273.2,455.3 L-270.7,430.4 L-272.4,408.7 L-277.6,389.3 L-284.9,371.1 L-292.1,353.3 L-297.5,335.4 L-300.3,317.4 L-300.8,299.4 L-300.6,281.7 L-302.1,264.4 L-308.0,247.3 L-320.4,230.0 L-340.1,211.7 L-366.2,191.6 L-396.3,169.3 L-426.3,144.8 L-452.0,118.5 L-469.1,91.5 L-474.7,65.1 L-467.6,40.7 L-448.3,19.1 L-419.5,0.9 L-384.8,-14.3 L-348.2,-27.6 L-313.2,-40.3 L-282.2,-54.0 L-255.9,-69.8 L-233.7,-88.3 L-213.5,-109.2 L-193.0,-131.3 L-169.7,-152.9 L-141.9,-172.2 L-109.0,-187.6 L-71.5,-197.9 L-30.6,-203.2 L12.0,-204.0 L54.8,-201.7 L96.5,-198.0 L136.6,-194.3 L175.3,-191.4 L212.9,-189.4 L250.0,-187.5 L286.6,-184.3 L322.4,-178.3 L356.4,-167.9 L387.3,-152.7 L414.0,-132.7 L436.1,-109.3 L453.9,-84.7 L468.9,-61.4 L483.7,-41.8 L501.1,-27.7 L524.0,-20.0 L554.6,-18.5 L593.8,-21.6 L640.9,-27.3 L693.7,-33.0 L749.2,-36.3 L803.6,-35.7 L853.9,-30.0 L897.7,-19.3 L934.2,-4.1 L963.7,14.5 L987.9,35.3 L1008.6,57.4 L1027.5,80.3 L1045.4,103.7 L1062.0,127.7 L1075.5,152.5 L1083.5,178.1 L1083.3,204.1Z%22/%3E%3Cpath d=%22M1110.4,230.0 L1085.7,256.0 L1051.1,279.9 L1009.4,301.3 L964.9,320.0 L922.0,336.7 L885.1,352.3 L856.9,368.1 L838.4,385.3 L828.6,404.7 L824.5,426.5 L822.1,450.2 L817.4,474.3 L806.8,497.2 L788.2,517.2 L761.3,533.0 L727.3,544.2 L688.7,551.0 L648.3,554.9 L609.0,557.6 L572.7,561.2 L540.0,567.2 L510.5,576.8 L483.0,589.7 L455.8,605.3 L427.2,621.9 L396.2,637.7 L362.6,651.1 L326.5,661.3 L288.8,668.2 L250.0,672.5 L210.6,675.8 L170.3,679.6 L128.3,685.3 L83.7,693.5 L35.8,703.8 L-15.7,714.6 L-69.9,723.8 L-124.7,728.7 L-177.3,726.9 L-224.3,716.8 L-262.8,697.9 L-290.4,670.8 L-306.5,637.2 L-312.0,599.8 L-309.3,561.4 L-301.9,524.5 L-293.7,490.9 L-287.9,461.6 L-286.7,436.5 L-290.7,415.0 L-299.2,395.8 L-310.1,377.8 L-321.2,359.9 L-330.5,341.8 L-337.1,323.2 L-341.2,304.5 L-344.5,285.8 L-349.5,267.3 L-358.9,248.9 L-374.6,230.0 L-397.3,209.9 L-425.8,187.9 L-457.3,163.6 L-487.7,137.1 L-512.4,108.9 L-527.2,80.4 L-529.4,52.7 L-518.2,27.3 L-494.6,5.2 L-461.6,-13.5 L-423.3,-29.1 L-384.0,-43.0 L-347.3,-56.6 L-315.3,-71.6 L-288.7,-89.2 L-266.3,-109.8 L-245.8,-132.9 L-224.5,-157.0 L-199.8,-180.4 L-169.8,-200.9 L-134.2,-216.8 L-93.5,-227.2 L-49.1,-231.8 L-3.1,-231.6 L42.9,-228.1 L87.5,-223.1 L130.3,-218.0 L171.3,-213.9 L211.0,-210.6 L250.0,-207.5 L288.3,-203.0 L325.5,-195.6 L360.6,-183.8 L392.5,-167.2 L420.1,-146.2 L443.2,-122.3 L462.3,-97.8 L479.3,-75.2 L496.9,-57.2 L518.2,-45.3 L546.0,-40.1 L582.5,-41.2 L628.1,-46.7 L681.7,-54.1 L740.8,-60.8 L801.6,-64.3 L860.4,-62.9 L913.5,-55.7 L958.7,-42.7 L995.3,-25.0 L1024.0,-3.7 L1046.5,19.8 L1065.2,44.6 L1081.8,69.8 L1097.3,95.5 L1111.4,121.5 L1122.2,148.1 L1127.4,175.4 L1124.1,202.9Z%22/%3E%3Cpath d=%22M1026.5,640.0 L1025.1,641.4 L1023.2,642.7 L1021.0,643.8 L1018.6,644.9 L1016.3,645.8 L1014.4,646.6 L1013.0,647.5 L1012.0,648.5 L1011.6,649.5 L1011.4,650.7 L1011.3,652.0 L1011.0,653.4 L1010.4,654.6 L1009.4,655.7 L1007.9,656.5 L1006.0,657.1 L1003.9,657.5 L1001.7,657.7 L999.5,657.8 L997.5,658.0 L995.8,658.4 L994.2,658.9 L992.7,659.6 L991.2,660.5 L989.7,661.4 L988.0,662.3 L986.2,663.1 L984.2,663.7 L982.1,664.1 L980.0,664.3 L977.8,664.5 L975.6,664.8 L973.3,665.1 L970.8,665.5 L968.2,666.1 L965.4,666.6 L962.4,667.1 L959.5,667.3 L956.7,667.1 L954.2,666.5 L952.2,665.4 L950.8,663.9 L950.0,662.0 L949.7,659.9 L950.0,657.8 L950.4,655.8 L950.8,654.0 L951.1,652.4 L951.2,651.1 L950.9,650.0 L950.3,649.0 L949.6,648.0 L949.0,647.1 L948.4,646.1 L947.9,645.1 L947.6,644.1 L947.3,643.1 L947.0,642.1 L946.4,641.0 L945.5,640.0 L944.2,638.9 L942.7,637.7 L941.0,636.3 L939.4,634.9 L938.1,633.3 L937.4,631.8 L937.3,630.3 L938.0,628.9 L939.4,627.7 L941.3,626.7 L943.4,625.9 L945.5,625.2 L947.5,624.4 L949.2,623.6 L950.6,622.6 L951.8,621.4 L952.9,620.2 L954.1,618.8 L955.4,617.6 L957.0,616.4 L959.0,615.6 L961.3,615.0 L963.7,614.8 L966.2,614.9 L968.7,615.1 L971.2,615.4 L973.5,615.7 L975.7,615.9 L977.9,616.1 L980.0,616.3 L982.1,616.6 L984.1,617.0 L986.0,617.7 L987.7,618.6 L989.2,619.7 L990.4,621.0 L991.5,622.3 L992.4,623.5 L993.4,624.4 L994.7,624.9 L996.3,625.1 L998.4,625.0 L1000.9,624.7 L1003.9,624.2 L1007.2,623.9 L1010.6,623.7 L1013.8,623.8 L1016.7,624.2 L1019.1,625.0 L1021.0,626.0 L1022.5,627.2 L1023.6,628.5 L1024.6,629.9 L1025.4,631.3 L1026.2,632.7 L1026.8,634.1 L1027.3,635.6 L1027.5,637.0 L1027.3,638.5Z%22/%3E%3Cpath d=%22M1079.9,640.0 L1076.7,643.0 L1072.6,645.8 L1067.8,648.2 L1062.9,650.4 L1058.4,652.4 L1054.6,654.4 L1052.0,656.4 L1050.4,658.6 L1049.7,661.1 L1049.6,663.8 L1049.4,666.7 L1048.8,669.6 L1047.3,672.3 L1044.8,674.6 L1041.3,676.3 L1037.0,677.5 L1032.1,678.2 L1027.2,678.5 L1022.5,678.8 L1018.3,679.3 L1014.5,680.2 L1011.2,681.5 L1008.1,683.3 L1004.9,685.4 L1001.6,687.7 L997.9,689.8 L993.8,691.7 L989.4,693.1 L984.8,694.1 L980.0,694.8 L975.1,695.3 L970.1,695.9 L964.9,696.6 L959.3,697.6 L953.5,698.7 L947.3,699.7 L940.9,700.4 L934.6,700.4 L928.7,699.6 L923.7,697.8 L919.8,695.0 L917.2,691.2 L915.9,686.9 L915.9,682.2 L916.6,677.6 L917.7,673.2 L918.6,669.4 L919.1,666.2 L918.8,663.6 L917.7,661.3 L916.0,659.3 L914.0,657.4 L911.9,655.5 L910.1,653.5 L908.7,651.3 L907.6,649.1 L906.6,646.9 L905.4,644.6 L903.9,642.4 L901.7,640.0 L898.8,637.5 L895.4,634.7 L891.8,631.7 L888.6,628.5 L886.2,625.1 L885.1,621.7 L885.6,618.5 L887.6,615.6 L891.0,613.1 L895.3,611.0 L900.0,609.2 L904.7,607.6 L908.9,605.9 L912.4,603.9 L915.3,601.7 L917.7,599.0 L920.0,596.1 L922.5,593.1 L925.5,590.3 L929.2,587.9 L933.6,586.1 L938.7,585.0 L944.2,584.7 L949.8,585.0 L955.4,585.7 L960.8,586.5 L965.9,587.4 L970.8,588.1 L975.5,588.6 L980.0,589.2 L984.4,589.9 L988.7,590.9 L992.7,592.3 L996.4,594.3 L999.6,596.7 L1002.3,599.2 L1004.8,601.8 L1007.1,604.0 L1009.6,605.5 L1012.8,606.4 L1016.8,606.4 L1021.9,605.8 L1028.1,604.8 L1035.1,603.7 L1042.6,602.9 L1050.1,602.6 L1057.1,603.0 L1063.2,604.2 L1068.2,606.1 L1072.0,608.5 L1074.8,611.4 L1076.8,614.5 L1078.3,617.6 L1079.6,620.8 L1080.8,624.0 L1081.9,627.2 L1082.6,630.4 L1082.7,633.6 L1081.8,636.8Z%22/%3E%3Cpath d=%22M1130.5,640.0 L1125.7,644.5 L1119.5,648.7 L1112.5,652.4 L1105.5,655.8 L1099.2,658.9 L1094.2,662.0 L1090.8,665.2 L1089.0,668.8 L1088.4,672.7 L1088.4,677.1 L1088.2,681.7 L1087.1,686.1 L1084.5,690.2 L1080.3,693.5 L1074.5,696.0 L1067.5,697.6 L1059.9,698.5 L1052.3,698.9 L1045.1,699.4 L1038.8,700.3 L1033.2,701.9 L1028.3,704.3 L1023.6,707.4 L1018.9,711.0 L1013.8,714.8 L1008.1,718.4 L1001.8,721.4 L994.9,723.8 L987.6,725.6 L980.0,726.8 L972.2,727.7 L964.3,728.6 L956.0,729.7 L947.4,730.9 L938.3,732.3 L928.8,733.4 L919.1,734.0 L909.8,733.5 L901.3,731.6 L894.2,728.1 L888.9,723.1 L885.7,716.9 L884.5,709.9 L884.9,702.6 L886.3,695.5 L888.0,689.1 L889.2,683.6 L889.4,679.0 L888.2,675.3 L885.8,672.2 L882.3,669.5 L878.4,666.8 L874.4,664.0 L870.9,661.0 L868.0,657.8 L865.7,654.4 L863.6,650.9 L861.5,647.4 L858.7,643.8 L855.1,640.0 L850.7,636.0 L845.6,631.6 L840.5,626.9 L836.1,621.9 L833.2,616.7 L832.2,611.6 L833.7,606.7 L837.4,602.4 L843.1,598.6 L849.9,595.5 L857.3,592.8 L864.3,590.2 L870.5,587.5 L875.6,584.3 L879.7,580.6 L883.2,576.3 L886.6,571.6 L890.4,566.9 L895.1,562.6 L901.1,559.0 L908.2,556.5 L916.3,555.2 L924.9,555.0 L933.8,555.8 L942.5,557.1 L950.8,558.7 L958.7,560.2 L966.1,561.5 L973.2,562.6 L980.0,563.6 L986.7,564.7 L993.1,566.3 L999.1,568.5 L1004.6,571.3 L1009.5,574.7 L1013.9,578.2 L1017.8,581.6 L1021.8,584.4 L1026.3,586.1 L1031.9,586.8 L1038.9,586.3 L1047.6,584.9 L1057.8,583.1 L1069.2,581.3 L1081.0,580.1 L1092.6,579.9 L1103.2,580.9 L1112.2,583.1 L1119.2,586.4 L1124.3,590.6 L1127.7,595.4 L1130.0,600.4 L1131.5,605.5 L1132.8,610.6 L1134.0,615.5 L1135.1,620.5 L1135.7,625.4 L1135.4,630.3 L1133.8,635.2Z%22/%3E%3Cpath d=%22M1178.8,640.0 L1172.4,646.0 L1164.4,651.5 L1155.6,656.5 L1146.9,661.0 L1139.3,665.3 L1133.5,669.6 L1129.8,674.1 L1128.1,679.1 L1127.8,684.6 L1128.0,690.6 L1127.6,696.8 L1125.7,702.7 L1121.8,708.0 L1115.5,712.3 L1107.2,715.3 L1097.4,717.3 L1087.0,718.3 L1076.8,718.9 L1067.4,719.7 L1059.1,721.2 L1052.0,723.7 L1045.6,727.4 L1039.6,732.1 L1033.4,737.5 L1026.6,743.0 L1018.8,748.2 L1010.1,752.7 L1000.6,756.1 L990.5,758.6 L980.0,760.3 L969.3,761.5 L958.3,762.6 L946.9,763.9 L935.1,765.2 L922.8,766.6 L910.1,767.5 L897.5,767.4 L885.5,765.8 L874.8,762.4 L866.1,756.9 L860.0,749.5 L856.6,740.6 L855.8,730.9 L856.8,721.1 L858.9,711.7 L861.0,703.5 L862.1,696.6 L861.5,691.0 L858.8,686.6 L854.3,683.0 L848.4,679.7 L841.9,676.4 L835.6,672.9 L829.9,668.9 L825.2,664.6 L821.5,660.0 L818.3,655.2 L815.0,650.3 L811.1,645.2 L806.2,640.0 L800.3,634.4 L793.9,628.4 L787.6,621.9 L782.5,615.1 L779.4,608.2 L779.1,601.3 L782.0,595.0 L787.7,589.3 L795.8,584.4 L805.3,580.2 L815.1,576.6 L824.3,573.0 L832.2,569.1 L838.6,564.5 L843.7,559.2 L848.1,553.2 L852.5,546.7 L857.8,540.3 L864.4,534.5 L872.8,530.0 L882.8,527.0 L894.1,525.7 L906.1,525.9 L918.3,527.5 L930.1,529.7 L941.4,532.3 L951.8,534.6 L961.7,536.5 L971.0,538.1 L980.0,539.5 L988.8,541.0 L997.2,543.0 L1005.2,545.8 L1012.5,549.3 L1019.2,553.3 L1025.2,557.5 L1031.0,561.3 L1037.0,564.1 L1043.9,565.7 L1052.4,565.7 L1062.9,564.3 L1075.6,562.0 L1090.2,559.3 L1106.2,557.0 L1122.4,555.6 L1137.9,555.7 L1151.6,557.6 L1162.9,561.3 L1171.3,566.4 L1177.0,572.6 L1180.4,579.5 L1182.3,586.6 L1183.4,593.7 L1184.3,600.7 L1185.2,607.4 L1186.0,614.1 L1186.3,620.6 L1185.5,627.2 L1183.2,633.7Z%22/%3E%3Cpath d=%22M1224.9,640.0 L1217.3,647.4 L1207.9,654.2 L1197.6,660.4 L1187.7,666.2 L1179.2,671.6 L1173.0,677.2 L1169.4,683.1 L1168.0,689.6 L1168.0,696.8 L1168.2,704.4 L1167.4,712.1 L1164.5,719.4 L1158.8,725.8 L1150.3,730.8 L1139.2,734.4 L1126.6,736.5 L1113.5,737.7 L1100.8,738.5 L1089.3,739.8 L1079.4,742.1 L1071.0,745.8 L1063.5,751.1 L1056.3,757.8 L1048.6,765.2 L1040.0,772.7 L1030.1,779.7 L1018.9,785.6 L1006.6,790.1 L993.6,793.3 L980.0,795.3 L966.1,796.7 L952.0,797.8 L937.5,798.9 L922.6,800.0 L907.2,801.0 L891.6,801.2 L876.3,800.1 L862.0,797.0 L849.6,791.7 L839.9,783.8 L833.3,773.8 L830.2,762.2 L829.9,749.9 L831.6,737.6 L834.2,726.4 L836.3,716.7 L836.7,708.8 L834.6,702.6 L829.7,697.8 L822.4,693.9 L813.5,690.3 L803.9,686.5 L794.7,682.1 L786.7,677.2 L780.1,671.7 L774.8,665.8 L770.4,659.7 L766.1,653.3 L761.1,646.8 L755.1,640.0 L748.1,632.8 L740.6,625.1 L733.6,616.9 L728.2,608.3 L725.5,599.6 L726.2,591.1 L730.8,583.3 L738.8,576.4 L749.4,570.4 L761.4,565.2 L773.4,560.5 L784.4,555.8 L793.7,550.6 L801.1,544.6 L807.0,537.5 L812.3,529.6 L817.8,521.3 L824.7,513.3 L833.5,506.3 L844.5,501.0 L857.7,497.8 L872.4,496.8 L887.9,497.8 L903.5,500.4 L918.4,503.8 L932.4,507.4 L945.4,510.6 L957.5,513.2 L969.0,515.2 L980.0,516.9 L990.7,518.7 L1001.1,520.9 L1011.0,523.9 L1020.3,527.7 L1028.8,532.1 L1036.8,536.4 L1044.7,540.2 L1053.1,542.7 L1062.9,543.6 L1074.8,542.7 L1089.2,540.3 L1106.3,537.0 L1125.5,533.5 L1146.0,530.7 L1166.4,529.5 L1185.4,530.4 L1201.8,533.6 L1214.6,539.0 L1223.7,546.2 L1229.3,554.7 L1232.1,563.9 L1233.1,573.2 L1233.3,582.4 L1233.5,591.2 L1233.9,599.7 L1234.4,608.0 L1234.4,616.1 L1233.3,624.2 L1230.3,632.2Z%22/%3E%3Cpath d=%22M1269.4,640.0 L1260.9,648.7 L1250.4,656.8 L1239.1,664.3 L1228.3,671.3 L1219.3,678.0 L1213.0,684.9 L1209.6,692.2 L1208.5,700.3 L1208.8,709.1 L1208.9,718.3 L1207.4,727.5 L1203.2,736.1 L1195.5,743.4 L1184.4,749.1 L1170.6,752.9 L1155.1,755.3 L1139.4,756.6 L1124.5,757.9 L1111.3,759.8 L1100.1,763.2 L1090.6,768.6 L1082.1,775.9 L1073.8,784.7 L1064.7,794.5 L1054.2,804.2 L1042.1,813.0 L1028.2,820.3 L1012.9,825.8 L996.8,829.4 L980.0,831.6 L962.9,832.9 L945.7,833.6 L928.1,834.3 L910.1,834.8 L891.9,834.9 L873.6,834.1 L855.9,831.5 L839.8,826.6 L826.1,819.0 L815.7,808.6 L809.2,795.9 L806.4,781.6 L806.7,766.8 L809.0,752.5 L811.7,739.7 L813.3,729.0 L812.3,720.5 L807.9,714.1 L800.1,709.2 L789.4,705.2 L776.8,701.4 L763.7,697.1 L751.4,692.0 L740.8,686.1 L732.3,679.3 L725.6,672.0 L720.2,664.4 L715.0,656.5 L709.2,648.4 L702.4,640.0 L694.6,631.1 L686.5,621.7 L679.0,611.8 L673.7,601.4 L671.7,591.0 L673.8,581.0 L680.2,571.8 L690.5,563.6 L703.6,556.5 L717.9,550.3 L731.9,544.5 L744.5,538.6 L754.9,532.0 L763.0,524.2 L769.6,515.3 L775.7,505.6 L782.5,495.5 L791.2,486.0 L802.5,478.0 L816.6,472.3 L833.1,469.2 L851.5,468.9 L870.6,471.1 L889.5,474.9 L907.5,479.6 L924.2,484.3 L939.5,488.5 L953.7,491.6 L967.1,493.9 L980.0,495.6 L992.6,497.3 L1004.9,499.5 L1016.8,502.4 L1028.0,506.2 L1038.6,510.4 L1048.8,514.5 L1059.1,517.8 L1070.4,519.7 L1083.5,519.6 L1099.2,517.6 L1118.0,514.1 L1139.7,509.8 L1163.6,505.7 L1188.4,502.8 L1212.7,502.1 L1234.6,504.1 L1252.9,509.0 L1266.6,516.6 L1275.6,526.2 L1280.4,537.2 L1282.0,548.8 L1281.7,560.4 L1280.7,571.6 L1280.0,582.2 L1279.9,592.4 L1280.2,602.2 L1280.2,611.8 L1278.9,621.4 L1275.5,630.8Z%22/%3E%3Cpath d=%22M1312.9,640.0 L1303.7,650.1 L1292.4,659.5 L1280.4,668.2 L1269.1,676.4 L1259.9,684.4 L1253.6,692.7 L1250.4,701.5 L1249.7,711.2 L1250.0,721.5 L1249.8,732.3 L1247.4,742.9 L1241.5,752.6 L1231.6,760.7 L1217.8,766.9 L1201.2,771.1 L1183.0,773.6 L1164.9,775.3 L1148.1,777.1 L1133.5,780.1 L1121.3,785.0 L1111.0,792.3 L1101.7,802.0 L1092.3,813.4 L1081.8,825.6 L1069.3,837.6 L1054.7,848.2 L1038.0,856.8 L1019.6,863.0 L1000.1,866.9 L980.0,868.9 L959.7,869.6 L939.3,869.7 L918.7,869.5 L897.9,869.0 L877.0,867.9 L856.3,865.5 L836.7,861.2 L819.1,854.1 L804.6,844.0 L793.9,831.0 L787.5,815.6 L785.2,798.9 L786.1,781.9 L788.6,766.0 L790.9,752.1 L791.2,740.7 L788.0,732.1 L780.7,725.8 L769.1,721.2 L754.3,717.2 L737.6,713.2 L720.7,708.4 L705.2,702.5 L692.1,695.4 L681.8,687.4 L674.0,678.5 L667.8,669.3 L662.1,659.8 L655.9,650.1 L648.7,640.0 L640.4,629.5 L631.8,618.3 L624.4,606.6 L619.4,594.6 L618.3,582.6 L621.9,571.1 L630.4,560.5 L642.9,551.1 L658.2,542.8 L674.6,535.5 L690.3,528.5 L704.1,521.2 L715.4,513.0 L724.2,503.5 L731.5,492.7 L738.6,481.1 L746.9,469.4 L757.7,458.7 L771.7,450.0 L789.2,444.1 L809.4,441.6 L831.5,442.4 L854.3,445.9 L876.5,451.3 L897.4,457.4 L916.6,463.2 L934.0,468.1 L950.1,471.6 L965.3,473.9 L980.0,475.3 L994.5,476.6 L1008.7,478.3 L1022.6,480.7 L1036.0,484.0 L1048.9,487.7 L1061.6,491.2 L1074.8,493.7 L1089.3,494.5 L1106.1,493.3 L1126.0,490.2 L1149.3,485.5 L1175.6,480.4 L1204.1,476.0 L1233.0,473.5 L1260.5,473.8 L1284.8,477.4 L1304.2,484.4 L1318.0,494.5 L1326.2,506.8 L1329.5,520.4 L1329.4,534.5 L1327.5,548.3 L1325.2,561.5 L1323.8,573.8 L1323.4,585.5 L1323.7,596.7 L1323.9,607.7 L1322.7,618.7 L1319.2,629.5Z%22/%3E%3Cpath d=%22M1355.7,640.0 L1346.2,651.4 L1334.4,662.1 L1321.9,672.1 L1310.3,681.6 L1301.0,691.0 L1294.9,700.6 L1291.9,711.0 L1291.3,722.1 L1291.6,734.1 L1290.7,746.3 L1287.0,758.2 L1279.2,768.8 L1266.9,777.7 L1250.4,784.3 L1231.0,788.8 L1210.4,791.6 L1190.2,793.8 L1171.9,796.5 L1156.3,800.9 L1143.4,807.7 L1132.5,817.4 L1122.5,829.7 L1112.1,843.9 L1100.0,858.8 L1085.3,873.0 L1068.0,885.4 L1048.2,895.0 L1026.4,901.6 L1003.5,905.4 L980.0,906.7 L956.4,906.5 L932.9,905.5 L909.5,903.9 L886.0,902.0 L862.8,899.3 L840.1,895.1 L818.9,888.6 L800.2,879.3 L785.1,866.7 L774.4,851.1 L768.3,833.2 L766.4,814.2 L767.5,795.5 L769.7,778.4 L771.0,763.9 L769.3,752.4 L763.2,744.1 L752.0,738.2 L736.0,733.9 L716.5,730.1 L695.4,725.9 L674.6,720.6 L655.9,713.7 L640.6,705.4 L628.9,695.7 L620.4,685.3 L613.9,674.4 L608.1,663.2 L601.8,651.7 L594.3,640.0 L585.8,627.8 L577.2,614.9 L569.9,601.5 L565.5,587.8 L565.5,574.2 L570.7,561.2 L581.1,549.3 L595.8,538.6 L613.1,529.2 L631.3,520.7 L648.5,512.4 L663.3,503.6 L675.2,493.7 L684.6,482.4 L692.7,469.7 L700.9,456.3 L711.0,443.2 L724.4,431.5 L741.6,422.5 L762.7,416.9 L786.9,415.4 L812.9,417.5 L839.2,422.7 L864.7,429.7 L888.3,437.2 L909.7,444.0 L929.1,449.4 L946.8,452.9 L963.6,454.8 L980.0,455.5 L996.3,456.0 L1012.5,456.7 L1028.6,458.3 L1044.3,460.7 L1059.8,463.5 L1075.4,466.0 L1091.8,467.4 L1109.9,467.1 L1130.8,464.6 L1155.1,460.3 L1183.0,454.8 L1213.9,449.2 L1246.6,444.9 L1279.2,443.1 L1309.4,444.8 L1335.1,450.5 L1354.9,460.1 L1367.9,473.0 L1374.6,488.2 L1375.9,504.5 L1373.8,521.1 L1370.2,537.1 L1366.8,552.0 L1364.7,565.9 L1364.4,579.0 L1365.1,591.5 L1365.9,603.8 L1365.3,616.0 L1362.1,628.1Z%22/%3E%3Cpath d=%22M1398.5,640.0 L1388.9,652.7 L1376.8,664.7 L1363.9,676.0 L1352.0,686.9 L1342.6,697.6 L1336.6,708.7 L1333.8,720.5 L1333.2,733.2 L1333.1,746.6 L1331.3,760.2 L1326.1,773.2 L1316.3,784.8 L1301.5,794.3 L1282.4,801.3 L1260.4,806.2 L1237.6,809.5 L1215.7,812.5 L1196.3,816.4 L1180.0,822.5 L1166.8,831.7 L1155.5,844.1 L1144.9,859.4 L1133.2,876.6 L1119.3,894.1 L1102.3,910.5 L1082.0,924.3 L1058.8,934.7 L1033.4,941.3 L1006.9,944.3 L980.0,944.6 L953.2,943.0 L926.7,940.3 L900.6,937.0 L874.8,933.3 L849.5,928.7 L825.2,922.4 L802.7,913.7 L783.2,901.9 L767.8,886.8 L757.1,868.8 L751.2,848.8 L749.5,828.0 L750.4,808.1 L751.7,790.2 L751.2,775.6 L746.7,764.5 L736.8,756.7 L721.1,751.5 L700.1,747.7 L675.7,744.1 L649.9,739.7 L625.3,733.6 L603.8,725.6 L586.6,715.8 L573.9,704.5 L565.2,692.3 L558.8,679.5 L553.3,666.6 L547.2,653.4 L539.9,640.0 L531.5,626.1 L522.9,611.5 L515.9,596.4 L512.2,581.1 L513.3,565.9 L520.0,551.4 L532.2,538.1 L548.8,526.2 L568.0,515.6 L587.7,505.8 L606.0,496.1 L621.7,485.7 L634.2,474.1 L644.3,460.9 L653.3,446.4 L663.0,431.4 L675.4,417.1 L691.6,404.8 L712.4,395.8 L737.5,391.1 L765.7,390.8 L795.6,394.6 L825.5,401.6 L854.0,410.2 L880.1,419.0 L903.5,426.6 L924.4,432.1 L943.7,435.2 L962.0,436.2 L980.0,435.8 L998.1,434.9 L1016.5,434.3 L1034.9,434.5 L1053.3,435.6 L1071.7,437.2 L1090.5,438.5 L1110.4,438.7 L1132.4,437.1 L1157.6,433.5 L1186.4,428.2 L1218.8,422.1 L1254.1,416.4 L1290.7,412.6 L1326.2,412.1 L1358.3,415.8 L1384.8,424.0 L1404.1,436.5 L1415.7,452.4 L1420.2,470.6 L1419.2,489.7 L1414.9,508.7 L1409.7,526.6 L1405.3,543.2 L1403.2,558.5 L1403.3,572.8 L1405.0,586.5 L1406.8,599.9 L1407.2,613.4 L1404.7,626.8Z%22/%3E%3Cpath d=%22M1441.7,640.0 L1432.1,654.0 L1419.8,667.4 L1406.5,680.0 L1394.3,692.2 L1384.8,704.3 L1378.7,716.8 L1375.8,730.0 L1375.0,744.2 L1374.3,759.0 L1371.4,773.9 L1364.6,788.0 L1352.6,800.4 L1335.3,810.5 L1313.7,818.1 L1289.5,823.4 L1264.9,827.5 L1241.8,831.6 L1221.7,837.1 L1205.2,845.5 L1191.7,857.3 L1180.2,872.8 L1168.8,891.3 L1155.9,911.5 L1139.9,931.6 L1120.1,949.9 L1096.5,964.8 L1069.6,975.3 L1040.5,981.4 L1010.4,983.2 L980.0,981.8 L950.1,978.3 L920.8,973.5 L892.3,968.2 L864.4,962.3 L837.3,955.6 L811.6,947.1 L788.2,936.1 L768.1,922.0 L752.4,904.7 L741.7,884.6 L735.9,862.7 L734.0,840.7 L734.1,819.9 L733.9,802.0 L730.8,787.6 L722.7,777.3 L708.3,770.4 L687.3,766.0 L661.0,762.8 L631.3,759.3 L601.0,754.4 L572.8,747.4 L548.9,738.1 L530.4,726.6 L517.4,713.4 L509.0,699.3 L503.3,684.7 L498.4,670.0 L492.9,655.1 L485.9,640.0 L477.6,624.4 L469.2,608.2 L462.5,591.4 L459.4,574.4 L461.5,557.7 L469.6,541.7 L483.5,527.1 L501.8,513.8 L522.6,501.9 L543.7,490.7 L563.0,479.5 L579.3,467.5 L592.5,454.1 L603.4,439.1 L613.7,422.9 L625.3,406.6 L640.3,391.4 L659.9,378.9 L684.6,370.4 L713.8,366.8 L746.3,368.2 L780.1,373.9 L813.3,382.7 L844.5,392.9 L872.7,402.8 L897.8,410.7 L920.1,415.9 L940.6,418.1 L960.3,417.6 L980.0,415.4 L1000.1,412.6 L1020.8,410.2 L1041.8,408.8 L1063.1,408.3 L1084.7,408.5 L1107.0,408.4 L1130.7,407.3 L1156.9,404.6 L1186.3,400.0 L1219.6,394.0 L1256.5,387.7 L1295.8,382.4 L1335.6,379.8 L1373.5,381.0 L1406.7,387.1 L1433.0,398.3 L1451.1,413.9 L1460.6,433.1 L1462.6,454.3 L1459.1,476.1 L1452.7,497.3 L1446.0,517.0 L1441.2,535.1 L1439.4,551.5 L1440.7,566.9 L1443.9,581.6 L1447.3,596.1 L1449.0,610.8 L1447.4,625.5Z%22/%3E%3Cpath d=%22M1485.6,640.0 L1476.0,655.4 L1463.3,670.1 L1449.6,684.1 L1437.0,697.6 L1427.1,711.0 L1420.8,724.9 L1417.7,739.6 L1416.5,755.2 L1414.9,771.3 L1410.9,787.4 L1402.3,802.5 L1388.2,815.7 L1368.6,826.5 L1344.8,834.7 L1318.8,840.8 L1292.8,845.9 L1268.9,851.4 L1248.5,859.0 L1232.0,869.9 L1218.6,884.9 L1206.8,903.7 L1194.5,925.5 L1179.9,948.7 L1161.6,971.1 L1138.7,990.9 L1111.4,1006.3 L1080.6,1016.6 L1047.6,1021.4 L1013.7,1021.4 L980.0,1017.8 L947.1,1011.8 L915.3,1004.6 L884.6,996.9 L854.9,988.7 L826.4,979.7 L799.6,969.1 L775.4,955.9 L754.8,939.7 L738.9,920.4 L728.0,898.6 L721.9,875.5 L719.3,852.6 L718.0,831.7 L715.5,814.1 L709.1,800.6 L696.6,791.2 L676.9,785.4 L650.3,782.0 L618.3,779.2 L583.4,775.7 L548.9,770.2 L517.6,762.0 L491.8,751.1 L472.7,737.7 L460.0,722.6 L452.4,706.5 L447.8,689.9 L444.0,673.4 L439.2,656.8 L432.6,640.0 L424.4,622.7 L416.1,604.9 L409.6,586.5 L407.0,567.8 L410.0,549.5 L419.3,532.0 L434.6,515.9 L454.5,501.4 L476.7,488.0 L498.9,475.4 L519.2,462.7 L536.3,449.0 L550.3,433.8 L562.3,417.1 L574.2,399.5 L588.2,382.1 L606.2,366.5 L629.6,354.2 L658.5,346.6 L692.1,344.5 L728.7,347.7 L766.2,355.5 L802.6,366.1 L836.2,377.7 L866.1,388.1 L892.5,396.0 L915.9,400.2 L937.6,400.8 L958.6,398.3 L980.0,393.8 L1002.2,388.7 L1025.4,384.0 L1049.3,380.6 L1073.8,378.4 L1098.9,377.0 L1125.0,375.6 L1152.7,373.4 L1183.1,369.7 L1216.9,364.4 L1254.5,358.2 L1295.4,352.2 L1338.2,347.8 L1380.7,346.8 L1420.1,350.3 L1453.6,359.3 L1479.1,373.7 L1495.2,392.8 L1502.2,415.2 L1501.4,439.4 L1495.3,463.7 L1487.1,486.9 L1479.5,508.2 L1474.9,527.4 L1474.1,544.9 L1477.1,561.1 L1482.4,576.7 L1487.9,592.3 L1491.3,608.2 L1490.8,624.1Z%22/%3E%3Cpath d=%22M1530.4,640.0 L1520.6,656.8 L1507.4,672.9 L1493.0,688.2 L1479.7,702.9 L1469.3,717.7 L1462.6,732.9 L1459.1,749.0 L1457.3,765.9 L1455.0,783.4 L1449.6,800.7 L1439.3,816.8 L1423.3,830.9 L1401.7,842.4 L1376.1,851.4 L1348.6,858.5 L1321.8,864.9 L1297.5,872.4 L1277.2,882.4 L1260.9,896.3 L1247.6,914.6 L1235.3,937.0 L1222.0,962.1 L1205.4,988.0 L1184.2,1012.4 L1157.8,1033.2 L1126.5,1048.6 L1091.6,1057.7 L1054.6,1060.7 L1017.0,1058.3 L980.0,1051.9 L944.4,1043.0 L910.3,1033.0 L877.7,1022.7 L846.5,1012.2 L816.8,1001.0 L789.0,988.3 L764.1,973.3 L743.1,955.3 L726.8,934.5 L715.5,911.5 L708.7,887.6 L704.8,864.5 L701.4,843.9 L695.8,827.1 L685.2,814.7 L667.6,806.7 L642.2,802.1 L609.6,799.5 L571.9,797.1 L532.0,793.3 L493.6,786.9 L459.8,777.2 L433.0,764.4 L414.0,749.0 L402.3,731.7 L396.2,713.5 L393.1,695.1 L390.5,676.7 L386.5,658.4 L380.2,640.0 L372.0,621.1 L363.5,601.6 L357.0,581.5 L354.6,561.2 L358.3,541.3 L368.7,522.3 L385.3,504.7 L406.6,488.7 L430.1,474.0 L453.5,459.9 L474.7,445.5 L492.8,430.2 L507.9,413.4 L521.4,395.3 L535.3,376.5 L552.1,358.4 L573.7,342.7 L601.2,331.0 L634.5,324.7 L672.5,324.3 L713.1,329.6 L754.1,339.4 L793.2,351.6 L828.8,364.2 L860.1,374.8 L887.4,381.8 L911.7,384.5 L934.4,382.8 L956.8,377.6 L980.0,370.3 L1004.6,362.4 L1030.5,355.2 L1057.6,349.5 L1085.6,345.5 L1114.5,342.6 L1144.5,340.1 L1176.3,336.9 L1210.9,332.6 L1249.0,327.2 L1290.6,321.2 L1335.1,315.9 L1380.8,313.1 L1425.2,314.2 L1465.4,320.5 L1498.5,332.8 L1522.3,350.6 L1536.0,373.2 L1540.1,398.8 L1536.5,425.8 L1528.1,452.5 L1518.5,477.4 L1510.6,500.0 L1506.8,520.2 L1507.9,538.4 L1513.3,555.3 L1521.3,571.8 L1529.1,588.5 L1534.4,605.5 L1535.1,622.8Z%22/%3E%3Cpath d=%22M1576.1,640.0 L1565.9,658.2 L1551.9,675.6 L1536.5,692.2 L1522.3,708.3 L1511.2,724.3 L1503.9,740.9 L1499.9,758.3 L1497.5,776.5 L1494.3,795.3 L1487.7,813.7 L1476.0,830.9 L1458.3,845.9 L1435.1,858.4 L1408.1,868.4 L1379.6,876.8 L1352.3,885.0 L1328.1,894.8 L1308.2,907.7 L1292.2,924.9 L1278.8,946.7 L1265.9,972.5 L1251.1,1000.8 L1232.1,1029.1 L1207.6,1055.0 L1177.2,1076.1 L1141.7,1090.7 L1102.4,1098.1 L1061.3,1098.5 L1020.1,1093.0 L980.0,1083.4 L941.9,1071.3 L905.8,1058.4 L871.6,1045.4 L839.2,1032.6 L808.4,1019.4 L779.9,1005.0 L754.3,988.4 L732.7,969.2 L715.8,947.3 L703.6,923.7 L695.5,899.6 L689.7,876.8 L683.5,857.0 L674.0,841.4 L658.5,830.5 L635.3,823.9 L603.8,820.5 L565.1,818.6 L521.8,816.3 L477.4,811.9 L435.8,804.3 L400.3,792.9 L373.2,778.0 L355.1,760.3 L345.0,740.8 L340.8,720.5 L339.5,700.1 L338.2,680.0 L334.9,660.0 L328.7,640.0 L320.2,619.5 L311.3,598.4 L304.4,576.6 L302.1,554.6 L306.3,533.0 L317.5,512.4 L335.4,493.4 L358.0,475.9 L382.8,459.7 L407.4,444.1 L429.8,428.3 L449.1,411.4 L465.7,393.2 L481.1,373.8 L497.6,354.1 L517.6,335.7 L543.1,320.3 L574.9,309.6 L612.8,304.9 L655.1,306.5 L699.6,313.9 L743.7,325.5 L785.0,339.0 L822.1,352.0 L854.4,362.1 L882.3,367.7 L907.3,368.0 L930.9,363.3 L954.8,354.8 L980.0,344.2 L1007.1,333.1 L1036.2,323.2 L1066.8,315.3 L1098.5,309.6 L1131.3,305.4 L1165.3,302.0 L1201.3,298.3 L1240.0,293.9 L1282.1,288.7 L1327.3,283.5 L1374.9,279.6 L1422.9,278.8 L1468.5,282.5 L1508.7,292.1 L1540.6,307.8 L1562.3,329.3 L1573.2,355.3 L1574.3,384.1 L1568.0,413.7 L1557.7,442.3 L1547.3,468.7 L1539.9,492.3 L1537.7,513.1 L1541.4,531.9 L1549.9,549.5 L1561.0,566.8 L1571.6,584.5 L1578.8,602.7 L1580.6,621.3Z%22/%3E%3C/g%3E%3C/svg%3E"); background-size: cover; background-position: center; background-repeat: no-repeat;
+  }
+  .hero::before { opacity: 0.32; -webkit-mask-image: linear-gradient(180deg, #000 30%, transparent 100%); mask-image: linear-gradient(180deg, #000 30%, transparent 100%); }
+  .dark::before { opacity: 0.4; }
+  .offer::before { opacity: 0.3; -webkit-mask-image: radial-gradient(ellipse at center, #000 20%, transparent 75%); mask-image: radial-gradient(ellipse at center, #000 20%, transparent 75%); }
+
+  /* botão */
+  .cta {
+    display: flex; align-items: center; justify-content: center; text-align: center; gap: 10px;
+    width: 100%; max-width: 540px; margin: 0 auto;
+    background: linear-gradient(180deg, #F2DDAF 0%, var(--sand) 38%, var(--sand-2) 100%);
+    color: var(--on-sand); font-family: var(--sans); font-weight: 800; font-size: clamp(0.95rem, 3.4vw, 1.1rem);
+    line-height: 1.25; text-transform: uppercase; letter-spacing: 0.06em;
+    padding: 22px 26px; border-radius: 999px; text-decoration: none; border: 0; cursor: pointer;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.55), 0 1px 0 var(--sand-3), 0 18px 40px -14px rgba(232,207,154,0.55);
+    animation: glow 2.6s ease-in-out infinite;
+    transition: filter .2s ease, transform .15s ease;
+  }
+  .cta:hover { filter: brightness(1.06); }
+  .cta:active { transform: translateY(2px); }
+  .cta:focus-visible { outline: 2px solid var(--glacier); outline-offset: 4px; }
+  @keyframes glow { 0%, 100% { box-shadow: inset 0 1px 0 rgba(255,255,255,0.55), 0 1px 0 var(--sand-3), 0 18px 40px -14px rgba(232,207,154,0.45); } 50% { box-shadow: inset 0 1px 0 rgba(255,255,255,0.55), 0 1px 0 var(--sand-3), 0 18px 54px -8px rgba(232,207,154,0.8); } }
+  .cta-block { display: flex; flex-direction: column; align-items: center; gap: 16px; width: 100%; }
+  .micro { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 20px; font-size: 0.84rem; color: var(--muted); margin: 0; max-width: none; letter-spacing: 0.02em; }
+  .micro span { display: inline-flex; align-items: center; gap: 7px; }
+  .micro svg { color: var(--glacier); flex-shrink: 0; }
+
+  /* topo */
+  .topbar { background: var(--bg); border-bottom: 1px solid var(--hair); color: var(--sand); text-align: center; font-weight: 600; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; padding: 13px max(14px, env(safe-area-inset-right, 0px)) 13px max(14px, env(safe-area-inset-left, 0px)); line-height: 1.5; }
+
+  /* ---------- 1 + 2 ---------- */
+  .hero { overflow: hidden;
+    background:
+      radial-gradient(900px 460px at 14% -6%, rgba(43,124,134,0.42), transparent 70%),
+      radial-gradient(700px 360px at 92% 4%, rgba(159,211,223,0.16), transparent 70%),
+      radial-gradient(600px 300px at 50% 100%, rgba(232,207,154,0.07), transparent 70%),
+      var(--bg);
+  }
+  .hero .wrap { padding-block: 56px 80px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .pre { display: inline-flex; align-items: center; gap: 10px; border: 1px solid var(--hair-2); background: var(--glass); border-radius: 999px; color: var(--glacier); font-weight: 600; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 10px 18px; margin-bottom: 28px; line-height: 1.4; }
+  .pre::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--sand); box-shadow: 0 0 12px var(--sand); flex-shrink: 0; }
+  .hero h1 { max-width: 17ch; margin-bottom: 24px; }
+  .hero .sub { font-size: clamp(1.02rem, 2.8vw, 1.2rem); max-width: 48ch; margin: 0 auto 40px; }
+
+  .player-wrap { width: 100%; max-width: 660px; margin-bottom: 40px; position: relative; }
+  .player-wrap::before { content: ''; position: absolute; inset: -1px; border-radius: 19px; background: linear-gradient(160deg, rgba(232,207,154,0.6), rgba(159,211,223,0.18) 40%, rgba(159,211,223,0.05) 70%, rgba(232,207,154,0.35)); z-index: 0; }
+  .player { position: relative; z-index: 1; width: 100%; aspect-ratio: 16 / 9; border-radius: 18px; overflow: hidden; cursor: pointer; background: #000; box-shadow: 0 50px 90px -30px rgba(43,124,134,0.6); }
+  .poster { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: #050B10; }
+  .poster svg.bg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .play { position: relative; z-index: 2; width: 84px; height: 84px; border-radius: 50%; background: linear-gradient(180deg, #F2DDAF, var(--sand-2)); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); animation: ring 2.4s ease-out infinite; }
+  .play svg { margin-left: 5px; }
+  @keyframes ring { 0% { box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 0 0 rgba(232,207,154,0.5); } 70% { box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 0 28px rgba(232,207,154,0); } 100% { box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 0 0 rgba(232,207,154,0); } }
+  .sound { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; background: linear-gradient(0deg, rgba(5,11,16,0.92), rgba(5,11,16,0)); color: var(--ink); font-weight: 600; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.16em; padding: 34px 16px 16px; display: flex; align-items: center; justify-content: center; gap: 10px; text-align: center; line-height: 1.4; }
+  .sound svg { flex-shrink: 0; color: var(--sand); }
+  .player[data-playing="true"] .poster { display: none; }
+  .embed { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; padding: 20px; color: #9AA4B8; font-size: 0.85rem; }
+  .player[data-playing="true"] .embed { display: flex; }
+
+  /* ---------- 3 ---------- */
+  .lead h2 { margin-bottom: 26px; }
+  .lead .lede { font-size: 1.18rem; color: var(--ink); }
+  .checks { list-style: none; margin: 36px 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--hair); }
+  .checks li { display: grid; grid-template-columns: 28px 1fr; gap: 16px; align-items: start; padding: 20px 4px; border-bottom: 1px solid var(--hair); color: var(--ink); font-family: var(--serif); font-size: 1.18rem; line-height: 1.4; }
+  .checks svg { margin-top: 3px; }
+  .callout { position: relative; padding: 6px 0 6px 26px; margin-top: 12px; }
+  .callout::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, var(--sand), transparent); }
+  .callout p { margin: 0; color: var(--ink); font-size: 1.12rem; max-width: none; }
+
+  /* ---------- 4 ---------- */
+  .story .head { display: flex; align-items: center; gap: 18px; margin-bottom: 36px; }
+  .avatar { flex-shrink: 0; width: 66px; height: 66px; border-radius: 50%; background: radial-gradient(circle at 30% 25%, var(--bg-3), var(--bg)); color: var(--sand); border: 1px solid var(--sand-2); box-shadow: 0 0 0 5px rgba(232,207,154,0.07); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 1.35rem; }
+  .story .name { font-family: var(--serif); font-weight: 500; color: var(--ink); font-size: 1.3rem; line-height: 1.2; }
+  .story .role { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; margin-top: 4px; }
+  .story h2 { margin-bottom: 28px; }
+  .bubble { position: relative; font-family: var(--serif); font-style: italic; font-weight: 400; color: var(--ink); font-size: clamp(1.4rem, 4.6vw, 2rem); line-height: 1.25; letter-spacing: -0.01em; padding: 8px 0 8px 30px; margin: 0 0 36px; max-width: none; border-left: 1px solid var(--sand-2); }
+  .bubble span { color: var(--sand); }
+  .story p { font-size: 1.1rem; }
+
+  /* ---------- 5 ---------- */
+  .pitch h2 { margin-bottom: 22px; }
+  .pitch .lede { font-size: 1.15rem; max-width: 50ch; margin: 0 auto 48px; }
+  .dial { width: 100%; max-width: 236px; margin: 0 auto 48px; filter: drop-shadow(0 0 40px rgba(159,211,223,0.22)); }
+  .dial svg { display: block; width: 100%; height: auto; }
+  .dial .ring { fill: none; stroke: rgba(159,211,223,0.3); stroke-width: 1; }
+  .dial .ring2 { fill: none; stroke: rgba(232,207,154,0.6); stroke-width: 1; stroke-dasharray: 1 5; }
+  .dial .tick { stroke: var(--sand); stroke-width: 2.5; stroke-linecap: round; }
+  .dial .num { fill: var(--ink); font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 72px; text-anchor: middle; }
+  .dial .cap { fill: #8FA6B2; font-family: var(--sans); font-weight: 600; font-size: 8.5px; letter-spacing: 3px; text-anchor: middle; text-transform: uppercase; }
+  .steps { display: grid; gap: 14px; text-align: left; margin-bottom: 52px; }
+  .step { display: grid; grid-template-columns: 56px 1fr; gap: 20px; align-items: center; background: var(--glass); border: 1px solid var(--hair); border-radius: 16px; padding: 22px 24px; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+  .step .n { width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--sand-2); color: var(--sand); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 1.6rem; box-shadow: inset 0 0 18px rgba(232,207,154,0.1); }
+  .step h3 { margin-bottom: 4px; }
+  .step p { margin: 0; font-size: 0.98rem; }
+  .benefits { list-style: none; margin: 0 auto; padding: 0; display: grid; gap: 14px; text-align: left; max-width: 500px; }
+  .benefits li { display: grid; grid-template-columns: 24px 1fr; gap: 14px; color: var(--ink); font-weight: 500; }
+  .benefits svg { margin-top: 3px; color: var(--sand); }
+
+  /* ---------- 6 ---------- */
+  .proof h2 { margin-bottom: 26px; }
+  .proof .cols { display: grid; gap: 20px; margin-top: 40px; }
+  @media (min-width: 780px) { .proof .cols { grid-template-columns: 1fr 1fr; } }
+  .box { background: var(--glass); border: 1px solid var(--hair); border-radius: 16px; padding: 30px; }
+  .box h3 { margin-bottom: 18px; }
+  .box ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .box li { display: grid; grid-template-columns: 24px 1fr; gap: 12px; color: var(--ink); font-weight: 500; }
+  .box li svg { margin-top: 3px; }
+  .box p { font-size: 0.98rem; }
+  .box p:last-child { margin-bottom: 0; }
+  .reports { margin-top: 28px; display: grid; gap: 16px; }
+  @media (min-width: 760px) { .reports { grid-template-columns: repeat(3, 1fr); } }
+  .report { background: var(--glass); border: 1px solid var(--hair); border-radius: 16px; padding: 24px; }
+  .report .stars { color: var(--sand); letter-spacing: 3px; margin-bottom: 10px; }
+  .report p { color: var(--ink); font-family: var(--serif); font-style: italic; margin: 0 0 12px; }
+  .report span { font-size: 0.8rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+
+  /* ---------- 7 ---------- */
+  .offer { background: radial-gradient(800px 420px at 50% 20%, rgba(43,124,134,0.22), transparent 70%), var(--bg); border-top: 1px solid var(--hair); }
+  .offer .wrap { max-width: 640px; }
+  .offer h2 { margin-bottom: 12px; }
+  .offer .intro { margin-bottom: 40px; }
+  .card { position: relative; background: linear-gradient(180deg, rgba(190,225,235,0.07), rgba(190,225,235,0.02)); border-radius: 22px; padding: 1px; box-shadow: 0 50px 100px -40px rgba(0,0,0,0.9); }
+  .card::before { content: ''; position: absolute; inset: 0; border-radius: 22px; padding: 1px; background: linear-gradient(170deg, rgba(232,207,154,0.85), rgba(159,211,223,0.2) 35%, rgba(159,211,223,0.08) 65%, rgba(232,207,154,0.5)); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; }
+  .card .inner { background: linear-gradient(180deg, #0B1820, #08121A); border-radius: 21px; overflow: hidden; }
+  .ribbon { text-align: center; font-weight: 700; font-size: 0.72rem; letter-spacing: 0.26em; text-transform: uppercase; color: var(--on-sand); background: linear-gradient(180deg, #F2DDAF, var(--sand-2)); padding: 13px; }
+  .card .in { padding: 12px 28px 34px; }
+  .pieces { list-style: none; margin: 0 0 12px; padding: 0; }
+  .pieces li { display: grid; grid-template-columns: 28px 1fr; gap: 16px; padding: 22px 0; border-bottom: 1px solid var(--hair); }
+  .pieces li:last-child { border-bottom: 0; }
+  .pieces svg { margin-top: 2px; color: var(--sand); }
+  .pieces h3 { font-size: 1.15rem; margin-bottom: 6px; }
+  .pieces p { margin: 0; font-size: 0.95rem; }
+  .pieces .gift { display: inline-block; border: 1px solid var(--sand-2); color: var(--sand); font-family: var(--sans); font-weight: 700; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; margin-left: 10px; vertical-align: 3px; }
+  .pricebox { text-align: center; padding: 32px 16px 34px; margin: 14px 0 30px; border-top: 1px solid var(--hair); border-bottom: 1px solid var(--hair); }
+  .pricebox .lbl { font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.22em; color: var(--glacier); margin: 0 0 10px; max-width: none; }
+  .pricebox .price { font-family: var(--serif); font-weight: 400; font-size: clamp(4rem, 18vw, 6.2rem); line-height: 1; color: var(--sand); margin: 0; font-variant-numeric: lining-nums tabular-nums; letter-spacing: -0.04em; max-width: none; text-shadow: 0 0 50px rgba(232,207,154,0.3); }
+  .pricebox .price small { font-family: var(--sans); font-size: 0.26em; font-weight: 600; margin-right: 10px; letter-spacing: 0.1em; vertical-align: 0.9em; color: var(--body); }
+  .pricebox .per { margin: 12px 0 0; font-size: 0.95rem; max-width: none; }
+  .secure { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 4px 0 0; font-size: 0.82rem; color: var(--muted); max-width: none; letter-spacing: 0.03em; }
+
+  /* ---------- 8 ---------- */
+  .deal .grid { display: grid; gap: 32px; align-items: center; }
+  @media (min-width: 720px) { .deal .grid { grid-template-columns: 200px 1fr; gap: 56px; } }
+  .seal { width: 180px; max-width: 100%; margin: 0 auto; filter: drop-shadow(0 0 40px rgba(232,207,154,0.22)); }
+  .seal svg { display: block; width: 100%; height: auto; }
+  .deal h2 { margin-bottom: 16px; }
+  .deal p { margin-bottom: 0; }
+  .urgency { margin-top: 48px; border: 1px solid rgba(232,207,154,0.4); background: linear-gradient(90deg, rgba(232,207,154,0.09), rgba(232,207,154,0.02)); border-radius: 14px; padding: 20px 24px; }
+  .urgency p { margin: 0; color: var(--ink); max-width: none; }
+  .warn { margin-top: 14px; border: 1px solid var(--hair); background: var(--glass); border-radius: 14px; padding: 20px 24px; font-size: 0.93rem; }
+  .warn p { margin: 0; max-width: none; }
+  .closing { margin-top: 64px; text-align: center; }
+  .closing .choices { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(1.5rem, 5vw, 2.1rem); color: var(--ink); line-height: 1.2; max-width: 22ch; margin: 0 auto 32px; letter-spacing: -0.015em; }
+
+  /* ---------- 9 ---------- */
+  .qa .wrap { max-width: 740px; }
+  .qa h2 { margin-bottom: 36px; text-align: center; }
+  details { border-top: 1px solid var(--hair); }
+  details:last-of-type { border-bottom: 1px solid var(--hair); }
+  summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 4px; font-family: var(--serif); font-weight: 500; font-size: 1.2rem; color: var(--ink); line-height: 1.3; }
+  summary::-webkit-details-marker { display: none; }
+  summary:focus-visible { outline: 2px solid var(--glacier); outline-offset: 2px; }
+  .pm { flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--hair-2); position: relative; transition: border-color .2s; }
+  details[open] .pm { border-color: var(--sand-2); }
+  .pm::before, .pm::after { content: ''; position: absolute; background: var(--sand); top: 50%; left: 50%; transform: translate(-50%, -50%); }
+  .pm::before { width: 10px; height: 1.5px; }
+  .pm::after { width: 1.5px; height: 10px; transition: transform .2s ease; }
+  details[open] .pm::after { transform: translate(-50%, -50%) rotate(90deg); }
+  details p { margin: 0; padding: 0 4px 26px; max-width: none; }
+
+  footer { background: #04090D; color: var(--muted); text-align: center; border-top: 1px solid var(--hair); }
+  footer .wrap { padding-block: 44px 120px; max-width: 700px; }
+  footer p { font-size: 0.78rem; margin: 0 auto 8px; color: var(--muted); }
+
+  /* barra fixa */
+  .dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+    padding-top: 12px; padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+    background: rgba(6,13,18,0.82); backdrop-filter: blur(16px) saturate(1.2); -webkit-backdrop-filter: blur(16px) saturate(1.2);
+    border-top: 1px solid var(--hair-2);
+    display: flex; align-items: center; justify-content: center; gap: 18px;
+    transform: translateY(110%); transition: transform 0.28s ease; }
+  .dock.on { transform: translateY(0); }
+  .dock .p { font-family: var(--serif); font-weight: 400; font-size: 1.7rem; color: var(--sand); line-height: 1; white-space: nowrap; letter-spacing: -0.02em; }
+  .dock .cta { width: auto; max-width: 320px; margin: 0; padding: 15px 24px; font-size: 0.78rem; animation: none; box-shadow: inset 0 1px 0 rgba(255,255,255,0.55), 0 8px 24px -10px rgba(232,207,154,0.6); }
+  @media (max-width: 420px) { .dock .p { font-size: 1.35rem; } .dock .cta { padding: 14px 16px; font-size: 0.7rem; } }
+
+  ::selection { background: var(--sand); color: var(--on-sand); }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+</style>
+
+<div class="topbar">Atenção: assista ao vídeo até o final e veja o ritual de 7 minutos</div>
+
+<!-- ===== 1. HEADLINE + 2. VSL ===== -->
 <section class="hero">
   <div class="wrap">
-    <h1>Não dá para aguentar mais um dia vendo no espelho o impacto de <span class="hl">noites mal dormidas</span>.</h1>
-    <p class="lede">Sono picado. Hormônios de reparação em falta. Cérebro pesado. Corpo sob estresse. Em <span class="hl">7 noites</span> dá para regular o ritmo circadiano — e recuperar a disposição, <strong>sem pílulas</strong>.</p>
+    <span class="pre">Se a sua cabeça acende na hora de deitar, leia isto</span>
+    <h1>Descubra o <span class="hl">ritual de 7 minutos</span> que dá ao corpo o <span class="hl">comando para apagar</span> a mente</h1>
+    <p class="sub">Sem chá, sem remédio, sem meditação e sem depender de força de vontade. Assista ao vídeo e veja como a Gabriella chegou nele.</p>
 
-    <div class="vsl">
-      <div class="vsl-lab"><i aria-hidden="true"></i> Assista até o final · 2 min</div>
-      <div class="vsl-w">
-        <iframe id="vslPlayer" src="https://player.vimeo.com/video/1232587509?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;controls=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Assista até o final" allowfullscreen></iframe>
-        <button type="button" class="vsl-play" id="vslPlay" aria-label="Assistir">
-          <span class="vsl-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-        </button>
+    <div class="player-wrap">
+      <div class="player" id="vsl" data-playing="false" role="button" tabindex="0" aria-label="Reproduzir apresentação em vídeo">
+        <div class="poster">
+          <svg class="bg" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A2230"/><stop offset="0.6" stop-color="#0B1A24"/><stop offset="1" stop-color="#050B10"/></linearGradient>
+              <radialGradient id="aur" cx="0.3" cy="0.1" r="0.7"><stop offset="0" stop-color="#2B7C86" stop-opacity="0.55"/><stop offset="1" stop-color="#2B7C86" stop-opacity="0"/></radialGradient>
+              <radialGradient id="moon" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F1EEE6" stop-opacity="0.9"/><stop offset="0.35" stop-color="#E8CF9A" stop-opacity="0.35"/><stop offset="1" stop-color="#E8CF9A" stop-opacity="0"/></radialGradient>
+            </defs>
+            <rect width="640" height="360" fill="url(#sky)"/>
+            <rect width="640" height="360" fill="url(#aur)"/>
+            <circle cx="492" cy="96" r="70" fill="url(#moon)"/>
+            <circle cx="492" cy="96" r="13" fill="#F1EEE6" fill-opacity="0.92"/>
+            <g fill="#F1EEE6"><circle cx="70" cy="50" r="1.2" fill-opacity="0.7"/><circle cx="150" cy="104" r="1" fill-opacity="0.5"/><circle cx="238" cy="38" r="1.3" fill-opacity="0.7"/><circle cx="330" cy="86" r="1" fill-opacity="0.5"/><circle cx="395" cy="40" r="1.2" fill-opacity="0.6"/><circle cx="580" cy="150" r="1" fill-opacity="0.5"/><circle cx="40" cy="150" r="1" fill-opacity="0.4"/></g>
+            <path d="M0,238 L70,190 L130,222 L220,166 L300,222 L380,184 L470,226 L560,180 L640,214 L640,360 L0,360 Z" fill="#0D2230"/>
+            <path d="M0,266 L90,236 L170,262 L270,218 L360,262 L450,230 L550,264 L640,238 L640,360 L0,360 Z" fill="#091822"/>
+            <path d="M0,300 C120,284 230,314 350,298 C470,282 560,310 640,296 L640,360 L0,360 Z" fill="#E8F3F8" fill-opacity="0.07"/>
+          </svg>
+          <div class="play"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5v14l12-7z" fill="#1A1305"/></svg></div>
+          <div class="sound">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            Sua apresentação começou. Clique para ativar o som
+          </div>
+        </div>
+        <div class="embed"><!-- Insira aqui o iframe/script do player de VSL (VTurb, Panda Video, Vimeo, YouTube) -->Vídeo em reprodução...</div>
       </div>
     </div>
-    <p class="vsl-n">Áudio em português via IA · conteúdo original</p>
 
-    <div class="cta">
-      <a class="btn btn-pulse" href="#oferta">QUERO RECUPERAR MINHA DISPOSIÇÃO — R$ 37</a>
-      <p class="micro">Acesso na hora · Garantia de 7 dias · Risco zero</p>
+    <div class="cta-block">
+      <a class="cta" href="#oferta">Quero apagar a mente e dormir em paz</a>
+      <p class="micro">
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Acesso imediato</span>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>7 dias de garantia</span>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Funciona no celular</span>
+      </p>
     </div>
   </div>
 </section>
 
-<!-- AGITAÇÃO -->
+<!-- ===== 3. LEAD ===== -->
+<section class="lead alt">
+  <div class="wrap">
+    <span class="eyebrow left">O problema</span>
+    <h2>O corpo está destruído. <span class="hl">A cabeça não.</span></h2>
+    <p class="lede" style="margin-top:20px">Você deita, apaga a luz e o filme começa: a conversa de hoje, a conta de amanhã, a lista que ficou pela metade. Você olha o relógio. Se eu dormir agora, ainda dá cinco horas. Depois quatro. Depois três.</p>
+    <p>Quando o despertador toca, você já acorda devendo: energia, paciência, humor. A noite seguinte chega e tudo se repete. Você se reconhece nisto?</p>
+    <ul class="checks">
+      <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D98A80" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"/></svg>Já tentou relaxar e ficou ainda mais acordada?</li>
+      <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D98A80" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"/></svg>Já fez a conta das horas de sono que ainda sobram?</li>
+      <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D98A80" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"/></svg>Já começou o dia no café, prometendo que hoje à noite seria diferente?</li>
+    </ul>
+    <div class="callout"><p><strong>E se o problema nunca foi a sua força de vontade?</strong> Continue lendo: a próxima parte explica por que tudo o que você tentou não funcionou.</p></div>
+  </div>
+</section>
+
+<!-- ===== 4. HISTÓRIA ===== -->
 <section class="story">
-  <div class="wrap reveal">
-    <h2>O espelho não mente. A noite também não.</h2>
-    <p>Você acorda e o rosto mostra o que a noite não entregou.</p>
-    <p>Inchaço. Peso nos olhos. Sensação de que o corpo não descansou — mesmo tendo “dormido”.</p>
-    <p>De dia, a cabeça fica pesada. A disposição some. O humor oscila. À noite, o ciclo recomeça: sono picado, mente ligada, organismo em alerta.</p>
-    <p class="punch">Isso não é frescura. É o corpo <span class="hl">sem a janela certa</span> para se reparar.</p>
-    <p style="margin-bottom:0">E quanto mais noites assim, mais o estresse biológico se acumula.</p>
-  </div>
-</section>
-
-<!-- IDENTIFICAÇÃO -->
-<section class="bgw">
-  <div class="wrap center reveal">
-    <h2>Isso acontece com você?</h2>
-    <div class="g2" style="margin-top:14px">
-      <div class="card"><h3>O espelho acusa</h3><p>Rosto e corpo mostram noites mal dormidas — mesmo quando você “dormiu o suficiente”.</p></div>
-      <div class="card"><h3>Sono picado</h3><p>Acorda várias vezes. Ou acorda sem a sensação de ter recuperado de verdade.</p></div>
-      <div class="card"><h3>Cérebro pesado</h3><p>Disposição baixa. Humor irregular. Sensação de corpo sob pressão o dia inteiro.</p></div>
-      <div class="card"><h3>Cansada de tentar</h3><p>Já testou horários, chás, conselhos genéricos — e a noite continua sem colaborar.</p></div>
+  <div class="wrap">
+    <div class="head">
+      <div class="avatar" aria-hidden="true">GS</div>
+      <div><div class="name">Gabriella Sampaio</div><div class="role">Quase dois anos de noites perdidas</div></div>
     </div>
-    <p style="margin-top:20px;margin-bottom:0;max-width:42ch">Se marcou <span class="hl">duas ou mais</span>, o problema pode não ser disciplina. Pode ser o <strong>ritmo circadiano desalinhado</strong>.</p>
+    <span class="eyebrow left">Minha história</span>
+    <h2>A pergunta que me fez <span class="hl">mudar tudo</span></h2>
+    <p class="bubble" style="margin-top:24px"><span>"</span>Você está bem? Parece que nem dormiu.<span>"</span></p>
+    <p>Foi o que uma pessoa me perguntou no meio de uma conversa importante, depois que eu perdi o fio da meada e não lembrava o que tinha acabado de ouvir.</p>
+    <p>Eu tinha passado quase dois anos assim. Deitava cedo e ficava acordada repassando o dia. Tentei chá, aplicativo de meditação, música de chuva. Quanto mais eu tentava relaxar, mais acordada eu ficava, e ainda me irritava comigo por não conseguir.</p>
+    <p>Naquele dia eu decidi que não passaria mais uma noite assim. Foi quando entendi o que eu fazia de errado: tentava convencer a minha mente a desligar. <strong>Mente não se convence. Mente se comanda.</strong></p>
+    <p>Parei de pedir para a cabeça relaxar e passei a dar ordens ao corpo: uma sequência curta, na ordem certa, sem depender de vontade. Quando o corpo obedece, a mente vai atrás. Testei, ajustei, e hoje a rotina leva 7 minutos, do deitar ao apagar.</p>
   </div>
 </section>
 
-<!-- REFRAME -->
-<section>
-  <div class="wrap center reveal">
-    <p class="punch" style="margin:0 auto 12px;text-align:center">E se a solução não for mais uma pílula — e sim <span class="hl">regular o ritmo circadiano</span>?</p>
-    <p style="margin:0 auto;max-width:42ch">O organismo já sabe se reparar. Ele precisa dos sinais certos, na hora certa.</p>
-  </div>
-</section>
+<!-- ===== 5. PITCH ===== -->
+<section class="pitch dark center">
+  <div class="wrap">
+    <span class="eyebrow">Apresentando</span>
+    <h2>Protocolo <span class="hl">Apagão Noturno</span></h2>
+    <p class="lede" style="margin-top:18px">Uma sequência de 7 minutos para fazer deitada, no escuro, sem precisar pensar em nada. Você segue os comandos e deixa o corpo conduzir.</p>
 
-<!-- MECANISMO -->
-<section class="bgw story">
-  <div class="wrap reveal">
-    <h2>O que o anúncio não teve tempo de explicar</h2>
-    <p>Quando o sono é picado, o organismo perde a janela em que produz melhor os <strong>hormônios de reparação</strong>.</p>
-    <p>O resultado não fica só na cama. Aparece no rosto, no corpo, na disposição e no humor do dia seguinte.</p>
-    <p>O <span class="hl">ritmo circadiano</span> é o relógio interno que organiza isso: quando desacelerar, quando reparar, quando acordar com mais clareza.</p>
-    <p>Se a entrada na noite está bagunçada — luz errada, rotina irregular, mente ligada — o corpo recebe o recado errado e continua em alerta.</p>
-    <p style="margin-bottom:0"><strong>Não é falta de vontade. É <span class="hl">sinal desalinhado</span>.</strong> E sinal se corrige com método.</p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap center reveal">
-    <h2>A sequência que o corpo já entende</h2>
-    <div class="fluxo" role="list">
-      <div class="fi" role="listitem">Sinais do dia</div><div class="fa" aria-hidden="true">↓</div>
-      <div class="fi hot" role="listitem">Como você entra na noite</div><div class="fa" aria-hidden="true">↓</div>
-      <div class="fi" role="listitem">Ritmo circadiano</div><div class="fa" aria-hidden="true">↓</div>
-      <div class="fi" role="listitem">Janela de reparação</div><div class="fa" aria-hidden="true">↓</div>
-      <div class="fi hot" role="listitem">Vitalidade · humor · energia</div>
+    <div class="dial" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <circle class="ring" cx="100" cy="100" r="92"/>
+        <circle class="ring2" cx="100" cy="100" r="56"/>
+        <line class="tick" x1="100" y1="20" x2="100" y2="34"/>
+        <line class="tick" x1="162.5" y1="50.1" x2="151.6" y2="58.9"/>
+        <line class="tick" x1="178" y1="117.8" x2="164.3" y2="114.7"/>
+        <line class="tick" x1="134.7" y1="172.1" x2="128.6" y2="159.5"/>
+        <line class="tick" x1="65.3" y1="172.1" x2="71.4" y2="159.5"/>
+        <line class="tick" x1="22" y1="117.8" x2="35.7" y2="114.7"/>
+        <line class="tick" x1="37.5" y1="50.1" x2="48.4" y2="58.9"/>
+        <text class="num" x="100" y="112">7</text>
+        <text class="cap" x="100" y="134">minutos</text>
+      </svg>
     </div>
-    <p style="margin-top:22px;margin-bottom:0;max-width:42ch;margin-left:auto;margin-right:auto">Quando essa sequência se alinha, a noite recupera — e o dia seguinte para de começar no negativo.</p>
-  </div>
-</section>
 
-<!-- SOLUÇÃO -->
-<section class="bgw">
-  <div class="wrap center reveal">
-    <h2>O que muda nas primeiras noites</h2>
-    <p class="lede" style="margin-bottom:18px">Vitalidade, humor e energia — <span class="hl">sem precisar de pílulas</span>.</p>
-    <div class="sbox">
-      <h3>Imagine assim:</h3>
-      <p>Você chega ao fim do dia e <strong>já sabe o que fazer</strong>. Não improvisa. Tem um roteiro curto que avisa o corpo: agora é hora de desacelerar.</p>
-      <p>A transição para o sono deixa de ser luta. De manhã, em vez de encarar no espelho o peso da noite, você sente que <strong>recuperou alguma coisa</strong>.</p>
-      <ul>
-        <li>Menos cérebro pesado ao acordar</li>
-        <li>Noite menos picada e manhã com mais disposição</li>
-        <li>Energia mais estável ao longo do dia</li>
-        <li>Rotina noturna simples, que cabe na vida real</li>
-        <li>Sensação de que o corpo voltou a colaborar</li>
-      </ul>
-      <p style="margin-top:14px;margin-bottom:0"><strong>Não é mudar a vida inteira. É regular o ritmo — e deixar a disposição se reorganizar.</strong></p>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><h3>Comando para o corpo</h3><p>Dá ao corpo o sinal de que o dia acabou, antes de pedir qualquer coisa à mente.</p></div></div>
+      <div class="step"><div class="n">2</div><div><h3>Comando para a respiração</h3><p>Conduz o ritmo da respiração por uma sequência simples, sem contar nem se esforçar.</p></div></div>
+      <div class="step"><div class="n">3</div><div><h3>Comando para a mente</h3><p>Só depois das duas primeiras etapas, na ordem exata em que funciona.</p></div></div>
     </div>
-    <div class="cta mid-cta"><a class="btn" href="#oferta">QUERO COMEÇAR MINHAS 7 NOITES</a></div>
+
+    <ul class="benefits">
+      <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Um ritual curto, que cabe no fim do dia</li>
+      <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Passo a passo para seguir deitada, no escuro</li>
+      <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Plano de 7 noites para criar o hábito sem esforço</li>
+      <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Sem chá, sem remédio, sem meditação</li>
+    </ul>
   </div>
 </section>
 
-<!-- MÉTODO -->
-<section>
-  <div class="wrapw center reveal">
-    <h2>Protocolo Ciclo Circadiano</h2>
-    <p class="lede" style="margin-bottom:20px"><span class="hl">5 passos</span> · <span class="hl">7 noites</span> · sem pílula · sem aparelho caro</p>
-    <div class="pilares">
-      <article class="pilar"><div class="n">01</div><h3>Desacelerar</h3><p>Recado claro ao corpo: a pressão pode cair. Sem isso, a mente continua em modo diurno.</p></article>
-      <article class="pilar"><div class="n">02</div><h3>Sinalizar</h3><p>Luz, horário e ambiente viram mensagem para o relógio interno.</p></article>
-      <article class="pilar"><div class="n">03</div><h3>Proteger</h3><p>A noite vira zona protegida — sem estímulos que mantêm o alerta.</p></article>
-      <article class="pilar"><div class="n">04</div><h3>Consolidar</h3><p>A sequência vira hábito. Não depende de motivação. Depende de roteiro.</p></article>
-      <article class="pilar"><div class="n">05</div><h3>Sustentar</h3><p>Noite ruim não vira abandono. Você sabe exatamente como retomar.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="bgw">
-  <div class="wrapw center reveal">
-    <h2>7 noites. Um roteiro claro.</h2>
-    <div class="ng" role="list" style="margin-top:16px">
-      <div class="nt" role="listitem"><div class="n">1</div><h3>Observar</h3><p>Como está sua noite</p></div>
-      <div class="nt" role="listitem"><div class="n">2</div><h3>Preparar</h3><p>Ajustar o ambiente</p></div>
-      <div class="nt" role="listitem"><div class="n">3</div><h3>Desacelerar</h3><p>Ritual de transição</p></div>
-      <div class="nt" role="listitem"><div class="n">4</div><h3>Sinalizar</h3><p>Horário e luz</p></div>
-      <div class="nt" role="listitem"><div class="n">5</div><h3>Proteger</h3><p>Blindar o sono</p></div>
-      <div class="nt" role="listitem"><div class="n">6</div><h3>Ajustar</h3><p>Corrigir falhas</p></div>
-      <div class="nt" role="listitem"><div class="n">7</div><h3>Fixar</h3><p>Virar hábito</p></div>
-    </div>
-    <p style="margin-top:22px;font-family:var(--serif);font-weight:800;color:var(--ink);font-size:1.12rem">Você não precisa mudar a vida. Precisa mudar a forma como entra na <span class="hl">próxima noite</span>.</p>
-  </div>
-</section>
-
-<!-- ANTES / DEPOIS -->
-<section>
-  <div class="wrap center reveal">
-    <h2>Da 1ª à 7ª noite</h2>
-    <div class="compare" style="margin-top:16px">
-      <div class="cbox"><h3>Dia 1</h3><ul>
-        <li>Deita no automático. Sono picado.</li>
-        <li>Espelho acusa a noite mal dormida.</li>
-        <li>Cérebro pesado. Disposição irregular.</li>
-        <li>Sem roteiro. Só “força de vontade”.</li>
-      </ul></div>
-      <div class="cbox ok"><h3>Dia 7</h3><ul>
-        <li>Ritual curto e claro antes de deitar.</li>
-        <li>Transição mais fácil. Manhã mais leve.</li>
-        <li>Mais estabilidade de energia e humor.</li>
-        <li>Sequência instalada. Sem depender de motivação.</li>
-      </ul></div>
-    </div>
-    <p style="margin-top:16px;font-size:.8rem;color:var(--faint);max-width:48ch;margin-left:auto;margin-right:auto">Resultados variam. O método organiza rotina noturna. Não substitui orientação médica.</p>
-  </div>
-</section>
-
-<!-- PROVA SOCIAL 55+ -->
-<section class="bgw">
-  <div class="wrap center reveal">
-    <h2>Quem aplicou conta assim</h2>
-    <div class="provas" style="margin-top:16px">
-      <article class="prova">
-        <div class="stars">★★★★★</div>
-        <p>“Eu acordava e o espelho mostrava tudo. Rosto cansado, inchaço. Nas primeiras noites já senti diferença no ritual. Hoje acordo bem mais leve e a disposição segura melhor.”</p>
-        <div class="pmeta"><div class="pav">MR</div><div><div class="pnome">Maria R., 62 anos</div><div class="ptag">7 noites de protocolo</div></div></div>
-      </article>
-      <article class="prova">
-        <div class="stars">★★★★★</div>
-        <p>“Meu sono era muito picado. Achei que era só idade. Quando entendi o ritmo circadiano, fez sentido. O checklist de ambiente ajudou muito. A mente finalmente começou a desacelerar.”</p>
-        <div class="pmeta"><div class="pav">HS</div><div><div class="pnome">Helena S., 58 anos</div><div class="ptag">7 noites de protocolo</div></div></div>
-      </article>
-      <article class="prova">
-        <div class="stars">★★★★★</div>
-        <p>“Já estava cansada de tentar de tudo. As 7 noites me deram um caminho sem cobrar perfeição. Noite ruim não virou desculpa para parar. A energia no outro dia melhorou.”</p>
-        <div class="pmeta"><div class="pav">CT</div><div><div class="pnome">Célia T., 67 anos</div><div class="ptag">7 noites de protocolo</div></div></div>
-      </article>
-    </div>
-    <p style="margin-top:16px;font-size:.8rem;color:var(--faint);max-width:48ch;margin-left:auto;margin-right:auto">Relatos individuais. Resultados variam.</p>
-  </div>
-</section>
-
-<!-- OFERTA -->
-<section id="oferta" style="padding-top:40px;padding-bottom:40px">
-  <div class="wrap center reveal">
-    <div class="offer">
-      <span class="tag">Condição de lançamento</span>
-      <h2 style="font-size:clamp(1.2rem,3vw,1.45rem);margin-bottom:6px">Tudo o que você recebe hoje</h2>
-      <p style="margin:0 auto 12px;font-size:.95rem;max-width:36ch">Método + 7 noites + 3 ferramentas. Liberado na hora.</p>
-      <div class="stack" style="text-align:left">
-        <div class="si main"><span class="nm"><span class="badge-m">Principal</span>Protocolo Ciclo Circadiano<small>5 passos + guia noite a noite. Roteiro para regular o ritmo — sem pílulas.</small></span><span class="pr">R$ 97</span></div>
-        <div class="si bn"><span class="nm"><span class="badge-b">Bônus</span>Checklist de ambiente<small>O que ajustar no quarto para a noite parar de trabalhar contra você.</small></span><span class="pr">R$ 27</span></div>
-        <div class="si bn"><span class="nm"><span class="badge-b">Bônus</span>Diário de Sono<small>Veja o que bagunça e o que funciona. Clareza em poucos dias.</small></span><span class="pr">R$ 27</span></div>
-        <div class="si bn"><span class="nm"><span class="badge-b">Bônus</span>Guia anti-ansiedade noturna<small>Passos para baixar a mente na hora de deitar.</small></span><span class="pr">R$ 27</span></div>
-        <div class="si tot"><span class="nm">Valor total</span><span class="pr">R$ 178</span></div>
+<!-- ===== 6. EVIDÊNCIA ===== -->
+<section class="proof alt">
+  <div class="wrap">
+    <span class="eyebrow left">Por que não funcionou</span>
+    <h2>Por que chá e meditação <span class="hl">não funcionam</span> com você?</h2>
+    <p style="margin-top:18px">Porque os dois pedem uma mente calma para funcionar. E uma mente calma é justamente o que você não tem na hora de deitar. A culpa nunca foi sua.</p>
+    <div class="cols">
+      <div class="box">
+        <h3>Reconheça as suas queixas</h3>
+        <ul>
+          <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D98A80" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg>A cabeça acende assim que você deita</li>
+          <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D98A80" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg>Você acorda de madrugada e não volta a dormir</li>
+          <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D98A80" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg>O corpo pede descanso, mas a mente não obedece</li>
+          <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D98A80" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg>Você depende do café para começar o dia</li>
+        </ul>
       </div>
-      <div class="price">
-        <div class="de">De R$ 178 por apenas</div>
-        <span class="amt"><sup>R$</sup>37<span style="font-size:.55em;vertical-align:baseline">,00</span></span>
-        <div class="parc">ou 2x de R$ 19,48</div>
-        <div class="term">Pagamento único · Acesso na hora</div>
-      </div>
-      <div class="urg" role="status" aria-live="polite">Essa condição some em <span class="tm" id="timer">14:59</span></div>
-      <div class="gar">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg>
-        <div><h3>Garantia 7 dias — risco zero</h3><p>Aplica as primeiras noites. Se não fizer sentido, reembolso integral. Sem enrolação.</p></div>
-      </div>
-      <div class="cta">
-        <a class="btn btn-pulse" href="https://pay.kiwify.com.br/0zQ9zGy">SIM — QUERO MINHAS 7 NOITES POR R$ 37,00</a>
-        <p class="micro">Compra segura · Acesso imediato · Garantia de 7 dias</p>
+      <div class="box">
+        <h3>Quem criou o protocolo</h3>
+        <p>A Gabriella Sampaio não é uma especialista distante. Ela passou quase dois anos perdendo noites, testou o que todo mundo recomenda e só encontrou resultado quando parou de tentar relaxar e passou a seguir uma sequência de comandos.</p>
+        <p>O Protocolo Apagão Noturno é essa sequência, organizada para você aplicar desde a primeira noite. Ele não promete milagre e não substitui acompanhamento profissional.</p>
       </div>
     </div>
-    <div class="resumo">
-      <p class="resumo-l">Em resumo</p>
-      <p class="resumo-t">7 noites para <strong>regular o ritmo circadiano</strong>: a noite recupera, a disposição volta — sem pílulas e sem depender de motivação.</p>
-      <p class="resumo-f">Protocolo + 3 ferramentas · acesso na hora · garantia 7 dias · <strong>R$ 37,00</strong></p>
+    <!-- Depoimentos: mostre apenas relatos reais e autorizados. Remova o atributo hidden. -->
+    <div class="reports" hidden>
+      <div class="report"><div class="stars" aria-hidden="true">★★★★★</div><p>Depoimento real aqui.</p><span>Nome, cidade</span></div>
+      <div class="report"><div class="stars" aria-hidden="true">★★★★★</div><p>Depoimento real aqui.</p><span>Nome, cidade</span></div>
+      <div class="report"><div class="stars" aria-hidden="true">★★★★★</div><p>Depoimento real aqui.</p><span>Nome, cidade</span></div>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="bgw">
-  <div class="wrap reveal">
-    <h2 class="center" style="margin-bottom:16px">Ainda tem dúvida?</h2>
-    <div class="faq">
-      <details open><summary>Isso é só um e-book?<span class="pl"></span></summary><p>É um sistema digital: método + guia das 7 noites + 3 ferramentas para aplicar de verdade.</p></details>
-      <details><summary>Preciso de remédio ou suplemento?<span class="pl"></span></summary><p>Não. O método usa rotina, horário e ambiente. Sem pílulas.</p></details>
-      <details><summary>Demora muito por noite?<span class="pl"></span></summary><p>Minutos. Cabe no final do dia, sem bagunçar sua rotina.</p></details>
-      <details><summary>Serve na minha idade?<span class="pl"></span></summary><p>Sim. Organiza sinais da rotina noturna — para quem sente sono picado, disposição baixa e cansaço ao acordar.</p></details>
-      <details><summary>E se eu não gostar?<span class="pl"></span></summary><p>Garantia de 7 dias. Reembolso de 100%. Sem enrolação.</p></details>
+<!-- ===== 7. OFERTA ===== -->
+<section class="offer" id="oferta">
+  <div class="wrap center">
+    <span class="eyebrow">A oferta</span>
+    <h2>Veja tudo o que você <span class="hl">recebe hoje</span></h2>
+    <p class="intro" style="margin-top:14px">Duas peças, entregues na hora, direto no seu celular.</p>
+    <div class="card" style="text-align:left">
+      <div class="inner"><div class="ribbon">Oferta de lançamento</div>
+      <div class="in">
+        <ul class="pieces">
+          <li><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><div><h3>Protocolo Apagão Noturno</h3><p>A sequência completa dos 7 minutos, com o comando para o corpo, para a respiração e para a mente, na ordem exata. Inclui o plano de 7 noites.</p></div></li>
+          <li><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><div><h3>Plano de Resgate das 3 da Manhã<span class="gift">Presente</span></h3><p>O que fazer, passo a passo, quando você acordar de madrugada e a cabeça ligar de novo.</p></div></li>
+        </ul>
+        <div class="pricebox">
+          <p class="lbl">Hoje, nesta página, por apenas</p>
+          <p class="price"><small>R$</small>27,90</p>
+          <p class="per">À vista ou parcelado no cartão. Menos de R$ 1 por noite em um mês.</p>
+        </div>
+        <div class="cta-block">
+          <a class="cta" href="#" data-checkout>Quero o protocolo por R$ 27,90</a>
+          <p class="secure"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Compra 100% segura. Acesso imediato.</p>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </section>
 
-<!-- FECHO -->
-<section class="final">
-  <div class="wrap reveal">
-    <h2>A próxima noite pode ser o começo.</h2>
-    <p class="ft">Regule o ritmo circadiano. Pare de carregar noites mal dormidas no rosto, no corpo e no humor.</p>
-    <div class="cta">
-      <a class="btn btn-pulse" href="https://pay.kiwify.com.br/0zQ9zGy">GARANTIR ACESSO POR R$ 37,00</a>
-      <p class="micro">Acesso na hora · Garantia de 7 dias · Risco zero</p>
+<!-- ===== 8. ACORDO ===== -->
+<section class="deal">
+  <div class="wrap">
+    <div class="grid">
+      <div class="seal" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="95" fill="none" stroke="#C9A45C" stroke-width="1.2"/>
+          <circle cx="100" cy="100" r="86" fill="#0B1A22" stroke="#E8CF9A" stroke-opacity="0.45" stroke-width="1"/>
+          <circle cx="100" cy="100" r="77" fill="none" stroke="#9FD3DF" stroke-opacity="0.6" stroke-width="1" stroke-dasharray="1 5"/>
+          <text x="100" y="108" text-anchor="middle" fill="#E8CF9A" font-family="Fraunces, Georgia, serif" font-style="italic" font-weight="400" font-size="74">7</text>
+          <text x="100" y="130" text-anchor="middle" fill="#9FD3DF" font-family="Figtree, Arial, sans-serif" font-weight="700" font-size="11" letter-spacing="4">DIAS</text>
+          <text x="100" y="150" text-anchor="middle" fill="#F1EEE6" font-family="Figtree, Arial, sans-serif" font-weight="600" font-size="9" letter-spacing="3">GARANTIA</text>
+        </svg>
+      </div>
+      <div>
+        <span class="eyebrow left">Garantia</span>
+        <h2>Teste por 7 dias. Se não gostar, <span class="hl">devolvemos o seu dinheiro</span></h2>
+        <p style="margin-top:14px">Aplique o protocolo nas suas noites. Se você não sentir diferença, peça o reembolso e devolvemos o valor, sem perguntas e sem burocracia. O risco é todo nosso.</p>
+      </div>
     </div>
+
+    <div class="urgency"><p><strong>Preço de lançamento.</strong> Os R$ 27,90 valem enquanto esta condição estiver aberta. Depois, o valor volta ao normal.</p></div>
+    <div class="warn"><p><strong>Aviso importante.</strong> O Protocolo Apagão Noturno é um recurso de rotina e não substitui avaliação médica. Se a sua insônia é frequente, intensa ou vem acompanhada de outros sintomas, procure atendimento profissional.</p></div>
+
+    <div class="closing">
+      <p class="choices">Você pode fechar esta página e continuar como está, ou dar o primeiro passo hoje à noite.</p>
+      <div class="cta-block">
+        <a class="cta" href="#" data-checkout>Quero apagar a mente esta noite</a>
+        <p class="micro">
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>R$ 27,90</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>7 dias de garantia</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Acesso imediato</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. Q&A ===== -->
+<section class="qa alt">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">Dúvidas</span></div>
+    <h2>Perguntas <span class="hl">frequentes</span></h2>
+    <details open><summary>Funciona se a minha cabeça é muito acelerada?<span class="pm"></span></summary>
+      <p>O protocolo foi pensado justamente para quem não consegue relaxar sozinha. Ele não pede que você acalme a mente. Pede que você siga uma sequência de comandos para o corpo, na ordem certa. Os resultados variam de pessoa para pessoa, e por isso existe a garantia de 7 dias.</p></details>
+    <details><summary>Preciso de meditação, chá ou algum remédio?<span class="pm"></span></summary>
+      <p>Não. O Protocolo Apagão Noturno não usa nenhum dos três. Você só precisa de 7 minutos e da cama.</p></details>
+    <details><summary>Quanto tempo leva por noite?<span class="pm"></span></summary>
+      <p>A sequência completa leva 7 minutos, do deitar ao apagar. O plano de 7 noites mostra como instalar o hábito aos poucos.</p></details>
+    <details><summary>Como eu recebo o material?<span class="pm"></span></summary>
+      <p>O acesso é imediato, logo depois da confirmação do pagamento, e funciona no celular. Você consegue seguir o protocolo deitada, no escuro.</p></details>
+    <details><summary>E se eu acordar de madrugada?<span class="pm"></span></summary>
+      <p>Você recebe de presente o Plano de Resgate das 3 da Manhã, com o passo a passo para voltar a dormir quando a cabeça ligar de novo.</p></details>
+    <details><summary>Isso substitui o tratamento médico?<span class="pm"></span></summary>
+      <p>Não. É um recurso de rotina. Se você tem diagnóstico de insônia ou faz tratamento, converse com o seu médico. Se a insônia é frequente ou intensa, procure atendimento.</p></details>
   </div>
 </section>
 
 <footer>
-  <p>Material educacional sobre hábitos de sono e ritmo circadiano. Não substitui orientação médica. Não é programa de emagrecimento. Resultados variam.</p>
-  <p>© 2026 Protocolo Ciclo Circadiano. Todos os direitos reservados.</p>
+  <div class="wrap">
+    <p>Este material é um guia de rotina e bem-estar. Não substitui avaliação, diagnóstico ou tratamento médico. Os resultados variam de pessoa para pessoa.</p>
+    <p>© 2026 Protocolo Apagão Noturno. Todos os direitos reservados.</p>
+  </div>
 </footer>
 
+<div class="dock" id="dock" aria-hidden="true">
+  <span class="p">R$ 27,90</span>
+  <a class="cta" href="#" data-checkout tabindex="-1">Quero o protocolo</a>
+</div>
+
 <script>
-(function(){
-  'use strict';
-  try{
-    var k='pcc_deadline',s=localStorage.getItem(k),d=s?parseInt(s,10):0;
-    if(!d||d<Date.now()){d=Date.now()+15*60*1000;localStorage.setItem(k,String(d))}
-    var el=document.getElementById('timer');
-    function tick(){
-      var diff=Math.max(0,d-Date.now()),m=Math.floor(diff/60000),sec=Math.floor((diff%60000)/1000);
-      if(el)el.textContent=(m<10?'0':'')+m+':'+(sec<10?'0':'')+sec;
-      if(diff<=0){d=Date.now()+15*60*1000;try{localStorage.setItem(k,String(d))}catch(e){}}
-    }
-    tick();setInterval(tick,1000);
-  }catch(e){}
-  var rs=document.querySelectorAll('.reveal');
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
-    rs.forEach(function(r){io.observe(r)});
-  }else rs.forEach(function(r){r.classList.add('on')});
+(function () {
+  // Troque pelo link de checkout da Kiwify.
+  var CHECKOUT_URL = "#";
+  document.querySelectorAll("[data-checkout]").forEach(function (a) { a.setAttribute("href", CHECKOUT_URL); });
+
+  var player = document.getElementById("vsl");
+  function play() { player.setAttribute("data-playing", "true"); }
+  player.addEventListener("click", play);
+  player.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); play(); }
+  });
+
+  var dock = document.getElementById("dock");
+  var offer = document.getElementById("oferta");
+  function dockState() {
+    var past = window.scrollY > 700;
+    var r = offer.getBoundingClientRect();
+    var inOffer = r.top < window.innerHeight * 0.7 && r.bottom > 0;
+    var on = past && !inOffer;
+    dock.classList.toggle("on", on);
+    dock.setAttribute("aria-hidden", on ? "false" : "true");
+    dock.querySelector("a").setAttribute("tabindex", on ? "0" : "-1");
+  }
+  window.addEventListener("scroll", dockState, { passive: true });
+  window.addEventListener("resize", dockState);
+  dockState();
 })();
 </script>
-<script src="https://player.vimeo.com/api/player.js"></script>
-<script>
-(function(){
-  'use strict';
-  var f=document.getElementById('vslPlayer'),c=document.getElementById('vslPlay');
-  if(!f||!c)return;
-  function fb(){c.style.display='none';f.src=f.src.replace('&controls=0','').replace('controls=0&','').replace('controls=0','')}
-  if(!(window.Vimeo&&window.Vimeo.Player)){fb();return}
-  var p;try{p=new window.Vimeo.Player(f)}catch(e){fb();return}
-  c.addEventListener('click',function(){var x=p.play();if(x&&x.catch)x.catch(function(){})});
-  p.on('play',function(){c.classList.add('hide')});
-  p.on('pause',function(){c.classList.remove('hide')});
-  p.on('ended',function(){c.classList.remove('hide')});
-})();
-</script>
-</body>
-</html>
+
+</body></html>
