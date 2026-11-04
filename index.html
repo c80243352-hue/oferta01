@@ -1,9 +1,15 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Protocolo Apagão Noturno</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="robots" content="noindex">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
 <style>
   /* Conceito: tundra à noite, tratada como objeto de luxo. Preto glacial, linhas topográficas, luz fria nos fundos.
      Uma única cor quente (areia champanhe) reservada para o que é ação e valor. Serifa editorial nos títulos. */
@@ -114,7 +120,7 @@
 
   .player-wrap { width: 100%; max-width: 660px; margin-bottom: 40px; position: relative; }
   .player-wrap::before { content: ''; position: absolute; inset: -1px; border-radius: 19px; background: linear-gradient(160deg, rgba(232,207,154,0.6), rgba(159,211,223,0.18) 40%, rgba(159,211,223,0.05) 70%, rgba(232,207,154,0.35)); z-index: 0; }
-  .player { position: relative; z-index: 1; width: 100%; aspect-ratio: 16 / 9; border-radius: 18px; overflow: hidden; cursor: pointer; background: #000; box-shadow: 0 50px 90px -30px rgba(43,124,134,0.6); }
+  .player { position: relative; z-index: 1; width: 100%; aspect-ratio: 16 / 9; border-radius: 18px; overflow: hidden; background: #050B10; box-shadow: 0 50px 90px -30px rgba(43,124,134,0.6); }
   .poster { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: #050B10; }
   .poster svg.bg { position: absolute; inset: 0; width: 100%; height: 100%; }
   .play { position: relative; z-index: 2; width: 84px; height: 84px; border-radius: 50%; background: linear-gradient(180deg, #F2DDAF, var(--sand-2)); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); animation: ring 2.4s ease-out infinite; }
@@ -123,15 +129,8 @@
   .sound { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; background: linear-gradient(0deg, rgba(5,11,16,0.92), rgba(5,11,16,0)); color: var(--ink); font-weight: 600; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.16em; padding: 34px 16px 16px; display: flex; align-items: center; justify-content: center; gap: 10px; text-align: center; line-height: 1.4; }
   .sound svg { flex-shrink: 0; color: var(--sand); }
   .player[data-playing="true"] .poster { display: none; }
-  .embed { position: absolute; inset: 0; background: #000; z-index: 1; }
-  .embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-  .vsl-cue {
-    position: absolute; inset: 0; z-index: 3; display: block; cursor: pointer;
-    background: transparent; border: 0; padding: 0; font: inherit; color: inherit;
-  }
-  .player[data-playing="true"] .vsl-cue,
-  .vsl-cue.is-hidden { display: none !important; }
-  .vsl-cue .poster { pointer-events: none; }
+  .embed { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 20px; color: #9AA4B8; font-size: 0.85rem; }
+  
 
   /* ---------- 3 ---------- */
   .lead h2 { margin-bottom: 26px; }
@@ -263,53 +262,55 @@
 
   ::selection { background: var(--sand); color: var(--on-sand); }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+
+  /* ===== acabamento ===== */
+  body::after { content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 50; opacity: 0.07; mix-blend-mode: overlay; background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27180%27 height=%27180%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%27.85%27 numOctaves=%272%27 stitchTiles=%27stitch%27/%3E%3CfeColorMatrix values=%270 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .6 0%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27/%3E%3C/svg%3E"); }
+  .hero::after { content: ''; position: absolute; left: -20%; top: -30%; width: 140%; height: 90%; pointer-events: none; z-index: 0;
+    background: radial-gradient(ellipse 40% 38% at 30% 40%, rgba(43,160,150,0.28), transparent 70%), radial-gradient(ellipse 30% 30% at 70% 30%, rgba(159,211,223,0.2), transparent 70%);
+    filter: blur(30px); animation: drift 18s ease-in-out infinite alternate; }
+  @keyframes drift { from { transform: translate3d(-3%, 0, 0) scale(1); } to { transform: translate3d(4%, 4%, 0) scale(1.08); } }
+  .ridge { position: absolute; left: 0; right: 0; bottom: -1px; height: 90px; z-index: 0; pointer-events: none; }
+  .ridge svg { display: block; width: 100%; height: 100%; }
+  .hero .wrap { padding-bottom: 110px; }
+
+  .hero h1 { text-shadow: 0 0 60px rgba(159,211,223,0.18); }
+  .hero .cta-block { position: relative; }
+
+  .story .bubble + p::first-letter { float: left; font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 4.2em; line-height: 0.82; padding: 6px 12px 0 0; color: var(--sand); }
+  .dial .ring2 { transform-box: fill-box; transform-origin: center; animation: spin 90s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .step { transition: transform .3s ease, border-color .3s ease, background .3s ease; }
+  .step:hover { transform: translateY(-3px); border-color: rgba(232,207,154,0.5); background: var(--glass-2); }
+  .box { transition: border-color .3s ease; }
+  .box:hover { border-color: var(--hair-2); }
+  .checks li { transition: padding-left .3s ease, background .3s ease; }
+  .checks li:hover { padding-left: 14px; background: linear-gradient(90deg, rgba(232,207,154,0.06), transparent); }
+
+  .wordmark { font-family: var(--serif); font-style: italic; font-size: 1.5rem; color: var(--sand); margin: 0 auto 6px; letter-spacing: -0.01em; }
+  .wordmark + .tag { font-size: 0.66rem; letter-spacing: 0.26em; text-transform: uppercase; color: var(--muted); margin-bottom: 28px; }
+
+  .js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1); }
+  .js .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .js .reveal { opacity: 1; transform: none; } .hero::after { animation: none; } body::after { display: none; } }
 </style>
+</head>
+<body>
+
 
 <div class="topbar">Atenção: assista ao vídeo até o final e veja o ritual de 7 minutos</div>
 
 <!-- ===== 1. HEADLINE + 2. VSL ===== -->
 <section class="hero">
+  <div class="ridge" aria-hidden="true"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,90 L0,62 L120,40 L210,58 L340,22 L440,52 L560,30 L690,62 L820,26 L930,56 L1060,18 L1180,54 L1300,34 L1440,60 L1440,90 Z" fill="#09141B"/><path d="M0,90 L0,74 L160,60 L280,72 L420,50 L560,70 L700,56 L860,74 L1000,52 L1150,72 L1290,58 L1440,72 L1440,90 Z" fill="#09141B" fill-opacity="0.7"/></svg></div>
   <div class="wrap">
     <span class="pre">Se a sua cabeça acende na hora de deitar, leia isto</span>
     <h1>Descubra o <span class="hl">ritual de 7 minutos</span> que dá ao corpo o <span class="hl">comando para apagar</span> a mente</h1>
     <p class="sub">Sem chá, sem remédio, sem meditação e sem depender de força de vontade. Assista ao vídeo e veja como a Gabriella chegou nele.</p>
 
     <div class="player-wrap">
-      <div class="player" id="vsl" data-playing="false">
-        <div class="embed">
-          <iframe
-            id="vslPlayer"
-            src="https://player.vimeo.com/video/1232587509?badge=0&autopause=0&player_id=0&app_id=58479&controls=0&title=0&byline=0&portrait=0"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            title="Ouça até o final"></iframe>
-        </div>
-        <button type="button" class="vsl-cue" id="vslPlay" aria-label="Reproduzir apresentação em vídeo">
-          <div class="poster">
-            <svg class="bg" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-              <defs>
-                <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A2230"/><stop offset="0.6" stop-color="#0B1A24"/><stop offset="1" stop-color="#050B10"/></linearGradient>
-                <radialGradient id="aur" cx="0.3" cy="0.1" r="0.7"><stop offset="0" stop-color="#2B7C86" stop-opacity="0.55"/><stop offset="1" stop-color="#2B7C86" stop-opacity="0"/></radialGradient>
-                <radialGradient id="moon" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F1EEE6" stop-opacity="0.9"/><stop offset="0.35" stop-color="#E8CF9A" stop-opacity="0.35"/><stop offset="1" stop-color="#E8CF9A" stop-opacity="0"/></radialGradient>
-              </defs>
-              <rect width="640" height="360" fill="url(#sky)"/>
-              <rect width="640" height="360" fill="url(#aur)"/>
-              <circle cx="492" cy="96" r="70" fill="url(#moon)"/>
-              <circle cx="492" cy="96" r="13" fill="#F1EEE6" fill-opacity="0.92"/>
-              <g fill="#F1EEE6"><circle cx="70" cy="50" r="1.2" fill-opacity="0.7"/><circle cx="150" cy="104" r="1" fill-opacity="0.5"/><circle cx="238" cy="38" r="1.3" fill-opacity="0.7"/><circle cx="330" cy="86" r="1" fill-opacity="0.5"/><circle cx="395" cy="40" r="1.2" fill-opacity="0.6"/><circle cx="580" cy="150" r="1" fill-opacity="0.5"/><circle cx="40" cy="150" r="1" fill-opacity="0.4"/></g>
-              <path d="M0,238 L70,190 L130,222 L220,166 L300,222 L380,184 L470,226 L560,180 L640,214 L640,360 L0,360 Z" fill="#0D2230"/>
-              <path d="M0,266 L90,236 L170,262 L270,218 L360,262 L450,230 L550,264 L640,238 L640,360 L0,360 Z" fill="#091822"/>
-              <path d="M0,300 C120,284 230,314 350,298 C470,282 560,310 640,296 L640,360 L0,360 Z" fill="#E8F3F8" fill-opacity="0.07"/>
-            </svg>
-            <div class="play"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5v14l12-7z" fill="#1A1305"/></svg></div>
-            <div class="sound">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
-              Clique para assistir
-            </div>
-          </div>
-        </button>
+      <div class="player" id="vsl" data-playing="false" aria-label="Vídeo da apresentação">
+        
+        <div class="embed"><!-- Insira aqui o iframe/script do player de VSL (VTurb, Panda Video, Vimeo, YouTube) -->Cole aqui o código do player da VSL</div>
       </div>
     </div>
 
@@ -514,6 +515,8 @@
 
 <footer>
   <div class="wrap">
+    <p class="wordmark">Apagão Noturno</p>
+    <p class="tag">Ritual de 7 minutos</p>
     <p>Este material é um guia de rotina e bem-estar. Não substitui avaliação, diagnóstico ou tratamento médico. Os resultados variam de pessoa para pessoa.</p>
     <p>© 2026 Protocolo Apagão Noturno. Todos os direitos reservados.</p>
   </div>
@@ -524,84 +527,48 @@
   <a class="cta" href="#" data-checkout tabindex="-1">Quero o protocolo</a>
 </div>
 
-<script src="https://player.vimeo.com/api/player.js"></script>
 <script>
 (function () {
   // Troque pelo link de checkout da Kiwify.
   var CHECKOUT_URL = "#";
   document.querySelectorAll("[data-checkout]").forEach(function (a) { a.setAttribute("href", CHECKOUT_URL); });
 
-  var shell = document.getElementById("vsl");
-  var frame = document.getElementById("vslPlayer");
-  var cue = document.getElementById("vslPlay");
-
-  function showPlaying() {
-    if (shell) shell.setAttribute("data-playing", "true");
-    if (cue) cue.classList.add("is-hidden");
-  }
-  function showCue() {
-    if (shell) shell.setAttribute("data-playing", "false");
-    if (cue) cue.classList.remove("is-hidden");
-  }
-
-  function fallbackControls() {
-    if (!frame) return;
-    frame.src = frame.src.replace("&controls=0", "").replace("controls=0&", "").replace("controls=0", "");
-  }
-
-  if (frame && cue) {
-    function bind() {
-      if (!(window.Vimeo && window.Vimeo.Player)) {
-        fallbackControls();
-        cue.addEventListener("click", function () {
-          showPlaying();
-        });
-        return;
-      }
-      var vplayer;
-      try { vplayer = new window.Vimeo.Player(frame); } catch (e) {
-        fallbackControls();
-        cue.addEventListener("click", function () { showPlaying(); });
-        return;
-      }
-      cue.addEventListener("click", function () {
-        showPlaying();
-        var p = vplayer.play();
-        if (p && p.catch) p.catch(function () { /* botão continua disponível no pause */ });
-      });
-      vplayer.on("play", showPlaying);
-      vplayer.on("pause", showCue);
-      vplayer.on("ended", showCue);
-    }
-    if (window.Vimeo && window.Vimeo.Player) bind();
-    else {
-      var t = setInterval(function () {
-        if (window.Vimeo && window.Vimeo.Player) { clearInterval(t); bind(); }
-      }, 80);
-      setTimeout(function () {
-        clearInterval(t);
-        if (!(window.Vimeo && window.Vimeo.Player)) bind();
-      }, 4000);
-    }
-  }
+  var player = document.getElementById("vsl");
+  function play() { player.setAttribute("data-playing", "true"); }
+  player.addEventListener("click", play);
+  player.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); play(); }
+  });
 
   var dock = document.getElementById("dock");
   var offer = document.getElementById("oferta");
   function dockState() {
-    if (!dock || !offer) return;
     var past = window.scrollY > 700;
     var r = offer.getBoundingClientRect();
     var inOffer = r.top < window.innerHeight * 0.7 && r.bottom > 0;
     var on = past && !inOffer;
     dock.classList.toggle("on", on);
     dock.setAttribute("aria-hidden", on ? "false" : "true");
-    var a = dock.querySelector("a");
-    if (a) a.setAttribute("tabindex", on ? "0" : "-1");
+    dock.querySelector("a").setAttribute("tabindex", on ? "0" : "-1");
   }
   window.addEventListener("scroll", dockState, { passive: true });
   window.addEventListener("resize", dockState);
   dockState();
+
+  var sel = [".checks li",".callout",".story .head",".bubble",".story p",".lede",".dial",".step",".benefits li",".box",".report",".pieces li",".pricebox",".seal",".urgency",".warn",".choices","details",".proof h2",".lead h2",".story h2",".pitch h2",".offer h2",".deal h2",".qa h2"];
+  var els = document.querySelectorAll(sel.join(","));
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+    els.forEach(function (el, i) {
+      if (el.getBoundingClientRect().top < window.innerHeight) return;
+      el.classList.add("reveal");
+      io.observe(el);
+    });
+  }
 })();
 </script>
 
-</body></html>
+</body>
+</html>
