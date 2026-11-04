@@ -123,8 +123,15 @@
   .sound { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; background: linear-gradient(0deg, rgba(5,11,16,0.92), rgba(5,11,16,0)); color: var(--ink); font-weight: 600; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.16em; padding: 34px 16px 16px; display: flex; align-items: center; justify-content: center; gap: 10px; text-align: center; line-height: 1.4; }
   .sound svg { flex-shrink: 0; color: var(--sand); }
   .player[data-playing="true"] .poster { display: none; }
-  .embed { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; padding: 20px; color: #9AA4B8; font-size: 0.85rem; }
-  .player[data-playing="true"] .embed { display: flex; }
+  .embed { position: absolute; inset: 0; background: #000; z-index: 1; }
+  .embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .vsl-cue {
+    position: absolute; inset: 0; z-index: 3; display: block; cursor: pointer;
+    background: transparent; border: 0; padding: 0; font: inherit; color: inherit;
+  }
+  .player[data-playing="true"] .vsl-cue,
+  .vsl-cue.is-hidden { display: none !important; }
+  .vsl-cue .poster { pointer-events: none; }
 
   /* ---------- 3 ---------- */
   .lead h2 { margin-bottom: 26px; }
@@ -268,30 +275,41 @@
     <p class="sub">Sem chá, sem remédio, sem meditação e sem depender de força de vontade. Assista ao vídeo e veja como a Gabriella chegou nele.</p>
 
     <div class="player-wrap">
-      <div class="player" id="vsl" data-playing="false" role="button" tabindex="0" aria-label="Reproduzir apresentação em vídeo">
-        <div class="poster">
-          <svg class="bg" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <defs>
-              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A2230"/><stop offset="0.6" stop-color="#0B1A24"/><stop offset="1" stop-color="#050B10"/></linearGradient>
-              <radialGradient id="aur" cx="0.3" cy="0.1" r="0.7"><stop offset="0" stop-color="#2B7C86" stop-opacity="0.55"/><stop offset="1" stop-color="#2B7C86" stop-opacity="0"/></radialGradient>
-              <radialGradient id="moon" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F1EEE6" stop-opacity="0.9"/><stop offset="0.35" stop-color="#E8CF9A" stop-opacity="0.35"/><stop offset="1" stop-color="#E8CF9A" stop-opacity="0"/></radialGradient>
-            </defs>
-            <rect width="640" height="360" fill="url(#sky)"/>
-            <rect width="640" height="360" fill="url(#aur)"/>
-            <circle cx="492" cy="96" r="70" fill="url(#moon)"/>
-            <circle cx="492" cy="96" r="13" fill="#F1EEE6" fill-opacity="0.92"/>
-            <g fill="#F1EEE6"><circle cx="70" cy="50" r="1.2" fill-opacity="0.7"/><circle cx="150" cy="104" r="1" fill-opacity="0.5"/><circle cx="238" cy="38" r="1.3" fill-opacity="0.7"/><circle cx="330" cy="86" r="1" fill-opacity="0.5"/><circle cx="395" cy="40" r="1.2" fill-opacity="0.6"/><circle cx="580" cy="150" r="1" fill-opacity="0.5"/><circle cx="40" cy="150" r="1" fill-opacity="0.4"/></g>
-            <path d="M0,238 L70,190 L130,222 L220,166 L300,222 L380,184 L470,226 L560,180 L640,214 L640,360 L0,360 Z" fill="#0D2230"/>
-            <path d="M0,266 L90,236 L170,262 L270,218 L360,262 L450,230 L550,264 L640,238 L640,360 L0,360 Z" fill="#091822"/>
-            <path d="M0,300 C120,284 230,314 350,298 C470,282 560,310 640,296 L640,360 L0,360 Z" fill="#E8F3F8" fill-opacity="0.07"/>
-          </svg>
-          <div class="play"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5v14l12-7z" fill="#1A1305"/></svg></div>
-          <div class="sound">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
-            Sua apresentação começou. Clique para ativar o som
-          </div>
+      <div class="player" id="vsl" data-playing="false">
+        <div class="embed">
+          <iframe
+            id="vslPlayer"
+            src="https://player.vimeo.com/video/1232587509?badge=0&autopause=0&player_id=0&app_id=58479&controls=0&title=0&byline=0&portrait=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            title="Ouça até o final"></iframe>
         </div>
-        <div class="embed"><!-- Insira aqui o iframe/script do player de VSL (VTurb, Panda Video, Vimeo, YouTube) -->Vídeo em reprodução...</div>
+        <button type="button" class="vsl-cue" id="vslPlay" aria-label="Reproduzir apresentação em vídeo">
+          <div class="poster">
+            <svg class="bg" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs>
+                <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A2230"/><stop offset="0.6" stop-color="#0B1A24"/><stop offset="1" stop-color="#050B10"/></linearGradient>
+                <radialGradient id="aur" cx="0.3" cy="0.1" r="0.7"><stop offset="0" stop-color="#2B7C86" stop-opacity="0.55"/><stop offset="1" stop-color="#2B7C86" stop-opacity="0"/></radialGradient>
+                <radialGradient id="moon" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F1EEE6" stop-opacity="0.9"/><stop offset="0.35" stop-color="#E8CF9A" stop-opacity="0.35"/><stop offset="1" stop-color="#E8CF9A" stop-opacity="0"/></radialGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#sky)"/>
+              <rect width="640" height="360" fill="url(#aur)"/>
+              <circle cx="492" cy="96" r="70" fill="url(#moon)"/>
+              <circle cx="492" cy="96" r="13" fill="#F1EEE6" fill-opacity="0.92"/>
+              <g fill="#F1EEE6"><circle cx="70" cy="50" r="1.2" fill-opacity="0.7"/><circle cx="150" cy="104" r="1" fill-opacity="0.5"/><circle cx="238" cy="38" r="1.3" fill-opacity="0.7"/><circle cx="330" cy="86" r="1" fill-opacity="0.5"/><circle cx="395" cy="40" r="1.2" fill-opacity="0.6"/><circle cx="580" cy="150" r="1" fill-opacity="0.5"/><circle cx="40" cy="150" r="1" fill-opacity="0.4"/></g>
+              <path d="M0,238 L70,190 L130,222 L220,166 L300,222 L380,184 L470,226 L560,180 L640,214 L640,360 L0,360 Z" fill="#0D2230"/>
+              <path d="M0,266 L90,236 L170,262 L270,218 L360,262 L450,230 L550,264 L640,238 L640,360 L0,360 Z" fill="#091822"/>
+              <path d="M0,300 C120,284 230,314 350,298 C470,282 560,310 640,296 L640,360 L0,360 Z" fill="#E8F3F8" fill-opacity="0.07"/>
+            </svg>
+            <div class="play"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5v14l12-7z" fill="#1A1305"/></svg></div>
+            <div class="sound">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+              Clique para assistir
+            </div>
+          </div>
+        </button>
       </div>
     </div>
 
@@ -506,29 +524,79 @@
   <a class="cta" href="#" data-checkout tabindex="-1">Quero o protocolo</a>
 </div>
 
+<script src="https://player.vimeo.com/api/player.js"></script>
 <script>
 (function () {
   // Troque pelo link de checkout da Kiwify.
   var CHECKOUT_URL = "#";
   document.querySelectorAll("[data-checkout]").forEach(function (a) { a.setAttribute("href", CHECKOUT_URL); });
 
-  var player = document.getElementById("vsl");
-  function play() { player.setAttribute("data-playing", "true"); }
-  player.addEventListener("click", play);
-  player.addEventListener("keydown", function (e) {
-    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); play(); }
-  });
+  var shell = document.getElementById("vsl");
+  var frame = document.getElementById("vslPlayer");
+  var cue = document.getElementById("vslPlay");
+
+  function showPlaying() {
+    if (shell) shell.setAttribute("data-playing", "true");
+    if (cue) cue.classList.add("is-hidden");
+  }
+  function showCue() {
+    if (shell) shell.setAttribute("data-playing", "false");
+    if (cue) cue.classList.remove("is-hidden");
+  }
+
+  function fallbackControls() {
+    if (!frame) return;
+    frame.src = frame.src.replace("&controls=0", "").replace("controls=0&", "").replace("controls=0", "");
+  }
+
+  if (frame && cue) {
+    function bind() {
+      if (!(window.Vimeo && window.Vimeo.Player)) {
+        fallbackControls();
+        cue.addEventListener("click", function () {
+          showPlaying();
+        });
+        return;
+      }
+      var vplayer;
+      try { vplayer = new window.Vimeo.Player(frame); } catch (e) {
+        fallbackControls();
+        cue.addEventListener("click", function () { showPlaying(); });
+        return;
+      }
+      cue.addEventListener("click", function () {
+        showPlaying();
+        var p = vplayer.play();
+        if (p && p.catch) p.catch(function () { /* botão continua disponível no pause */ });
+      });
+      vplayer.on("play", showPlaying);
+      vplayer.on("pause", showCue);
+      vplayer.on("ended", showCue);
+    }
+    if (window.Vimeo && window.Vimeo.Player) bind();
+    else {
+      var t = setInterval(function () {
+        if (window.Vimeo && window.Vimeo.Player) { clearInterval(t); bind(); }
+      }, 80);
+      setTimeout(function () {
+        clearInterval(t);
+        if (!(window.Vimeo && window.Vimeo.Player)) bind();
+      }, 4000);
+    }
+  }
 
   var dock = document.getElementById("dock");
   var offer = document.getElementById("oferta");
   function dockState() {
+    if (!dock || !offer) return;
     var past = window.scrollY > 700;
     var r = offer.getBoundingClientRect();
     var inOffer = r.top < window.innerHeight * 0.7 && r.bottom > 0;
     var on = past && !inOffer;
     dock.classList.toggle("on", on);
     dock.setAttribute("aria-hidden", on ? "false" : "true");
-    dock.querySelector("a").setAttribute("tabindex", on ? "0" : "-1");
+    var a = dock.querySelector("a");
+    if (a) a.setAttribute("tabindex", on ? "0" : "-1");
   }
   window.addEventListener("scroll", dockState, { passive: true });
   window.addEventListener("resize", dockState);
