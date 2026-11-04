@@ -529,7 +529,7 @@
 
   // Cole aqui o link do seu vídeo (YouTube, Vimeo ou arquivo .mp4). Para VTurb/Panda/outro player com código próprio,
   // apague o <img class="cover"> e o <button class="hit"> dentro de #vsl e cole o código do player no lugar.
-  var VSL_URL = "";
+  var VSL_URL = "https://player.vimeo.com/video/1232587509";
 
   var player = document.getElementById("vsl");
   function embedFor(url) {
@@ -538,7 +538,7 @@
       return '<iframe src="https://www.youtube.com/embed/' + m[1] + '?autoplay=1&rel=0&modestbranding=1&playsinline=1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Vídeo"></iframe>';
     }
     if ((m = url.match(/vimeo\.com\/(?:video\/)?(\d+)/))) {
-      return '<iframe src="https://player.vimeo.com/video/' + m[1] + '?autoplay=1" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Vídeo"></iframe>';
+      return '<iframe src="https://player.vimeo.com/video/' + m[1] + '?autoplay=1&badge=0&autopause=0&app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="Ouça até o final"></iframe>';
     }
     if (/\.(mp4|webm|mov)(\?.*)?$/i.test(url)) {
       return '<video src="' + url + '" controls autoplay playsinline></video>';
