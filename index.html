@@ -156,7 +156,8 @@
 
   /* ---------- 4 ---------- */
   .story .head { display: flex; align-items: center; gap: 18px; margin-bottom: 36px; }
-  .avatar { flex-shrink: 0; width: 66px; height: 66px; border-radius: 50%; background: radial-gradient(circle at 30% 25%, var(--bg-3), var(--bg)); color: var(--sand); border: 1px solid var(--sand-2); box-shadow: 0 0 0 5px rgba(232,207,154,0.07); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 1.35rem; }
+  .avatar { position: relative; overflow: hidden; flex-shrink: 0; width: 78px; height: 78px; border-radius: 50%; background: radial-gradient(circle at 30% 25%, var(--bg-3), var(--bg)); color: var(--sand); border: 1px solid var(--sand-2); box-shadow: 0 0 0 5px rgba(232,207,154,0.07); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 1.35rem; }
+  .avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; border-radius: 50%; display: block; }
   .story .name { font-family: var(--serif); font-weight: 500; color: var(--ink); font-size: 1.3rem; line-height: 1.2; }
   .story .role { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; margin-top: 4px; }
   .story h2 { margin-bottom: 28px; }
@@ -353,7 +354,7 @@
 <section class="story">
   <div class="wrap">
     <div class="head">
-      <div class="avatar" aria-hidden="true">GS</div>
+      <div class="avatar"><span aria-hidden="true">GS</span><img src="https://i.ibb.co/xqZ9bNht/17k-MV.jpg" alt="Gabriella Sampaio" width="132" height="132" loading="lazy" decoding="async" onerror="this.remove()"></div>
       <div><div class="name">Gabriella Sampaio</div><div class="role">Quase dois anos de noites perdidas</div></div>
     </div>
     <span class="eyebrow left">Minha história</span>
